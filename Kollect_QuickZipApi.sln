@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginWebApi", "LoginWebApi\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityDAL", "EntityDAL\EntityDAL.csproj", "{CF4643A5-80C9-40B9-AE92-F71B78B5EFD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveEditMandateAPI", "SaveEditMandateAPI\SaveEditMandateAPI.csproj", "{639740E1-8B70-4430-930C-139289D26A65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{CF4643A5-80C9-40B9-AE92-F71B78B5EFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF4643A5-80C9-40B9-AE92-F71B78B5EFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF4643A5-80C9-40B9-AE92-F71B78B5EFD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{639740E1-8B70-4430-930C-139289D26A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{639740E1-8B70-4430-930C-139289D26A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{639740E1-8B70-4430-930C-139289D26A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{639740E1-8B70-4430-930C-139289D26A65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
