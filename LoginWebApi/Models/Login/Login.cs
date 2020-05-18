@@ -99,6 +99,7 @@ namespace LoginWebApi.Models.Login
                                 var SaveLoginSessionTrxn = dbcontext.MultipleResults("[dbo].[sp_UserLogin]").With<SaveLoginSessionTrxn>().Execute("@QueryType", "@UserId", "@TokenID", "@IPAddress", "@MacAddress", "@IsLogin", "@Iscorrectattempt", "@Appid", "SaveLoginSessionTrxn", Convert.ToString(Logindata.Cast<Logindetails>().ToList().Select(x => x.UserId).First().ToString()), Convert.ToString(generator.Next(1, 1000000)), Convert.ToString(GetMacIP.GetIpAddress()), Convert.ToString(GetMacIP.GetMacAddress()), Convert.ToString(1), Convert.ToString(1),Login.APPID);
                                 foreach (var Existlogin in SaveLoginSessionTrxn)
                                 {
+
                                     //  if (Existlogin.Cast<SaveLoginSessionTrxn>().ToList().Select(x => x.SessionActive).First().ToString() == "0")
                                     //  {
                                     #region Session creation
