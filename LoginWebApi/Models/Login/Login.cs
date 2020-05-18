@@ -99,34 +99,35 @@ namespace LoginWebApi.Models.Login
                                 var SaveLoginSessionTrxn = dbcontext.MultipleResults("[dbo].[sp_UserLogin]").With<SaveLoginSessionTrxn>().Execute("@QueryType", "@UserId", "@TokenID", "@IPAddress", "@MacAddress", "@IsLogin", "@Iscorrectattempt", "@Appid", "SaveLoginSessionTrxn", Convert.ToString(Logindata.Cast<Logindetails>().ToList().Select(x => x.UserId).First().ToString()), Convert.ToString(generator.Next(1, 1000000)), Convert.ToString(GetMacIP.GetIpAddress()), Convert.ToString(GetMacIP.GetMacAddress()), Convert.ToString(1), Convert.ToString(1),Login.APPID);
                                 foreach (var Existlogin in SaveLoginSessionTrxn)
                                 {
+
                                     //  if (Existlogin.Cast<SaveLoginSessionTrxn>().ToList().Select(x => x.SessionActive).First().ToString() == "0")
                                     //  {
                                     #region Session creation
                                     // Iace.User.User.SaveUserToSession(dataList);
-                                    Flag.IsRefrenceCheck = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsRefrenceCheck).First().ToString()))).Replace("%", "_");
-                                    Flag.IsOverPrintMandate = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsOverPrintMandate).First().ToString()))).Replace("%", "_");
-                                    Flag.IsBulkMandate = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsBulkMandate).First().ToString()))).Replace("%", "_");
-                                    Flag.IsMandate = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsMandate).First().ToString()))).Replace("%", "_");
+                                    Flag.IsRefrenceCheck = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsRefrenceCheck).First().ToString()));
+                                    Flag.IsOverPrintMandate = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsOverPrintMandate).First().ToString()));
+                                    Flag.IsBulkMandate = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsBulkMandate).First().ToString()));
+                                    Flag.IsMandate = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsMandate).First().ToString()));
                                     //NewCode
-                                    Flag.IsMandateEdit = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsMandateEdit).First().ToString()))).Replace("%", "_");
-                                    Flag.IsRefrenceEdit = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsRefrenceEdit).First().ToString()))).Replace("%", "_");
-                                    Flag.IsEmandate = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsEmandate).First().ToString()))).Replace("%", "_");
-                                    Flag.IsPhysical = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsPhysical).First().ToString()))).Replace("%", "_");
-                                    Flag.IsZipShoreABPS = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsZipShoreABPS).First().ToString()))).Replace("%", "_");
-                                    Flag.UserId = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.UserId).First().ToString()))).Replace("%", "_");
-                                    Flag.ReferenceId = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(dataList.Cast<Logindetails>().ToList().Select(x => x.ReferenceId).First().ToString())).Replace("%", "_");
-                                    Flag.UserName = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.UserName).First().ToString()))).Replace("%", "_");
-                                    Flag.Password = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.Password).First().ToString()))).Replace("%", "_");
-                                    Flag.UserCode = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.UserCode).First().ToString()))).Replace("%", "_");
-                                    Flag.UserType = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.UserType).First().ToString()))).Replace("%", "_");
-                                    Flag.BranchId = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(dataList.Cast<Logindetails>().ToList().Select(x => x.BranchId).First().ToString())).Replace("%", "_");
-                                    Flag.BranchName = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.BranchName).First().ToString()))).Replace("%", "_");
-                                    Flag.IsDefaultPswdChange = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsDefaultPswdChange).First().ToString()))).Replace("%", "_");
-                                    Flag.LastLogin = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.LastLogin).First().ToString()))).Replace("%", "_");
-                                    Flag.IsActive = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsActive).First().ToString()))).Replace("%", "_");
-                                    Flag.IsDeleted = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsDeleted).First().ToString()))).Replace("%", "_");
-                                    Flag.CreatedBy = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(dataList.Cast<Logindetails>().ToList().Select(x => x.CreatedBy).First().ToString())).Replace("%", "_");
-                                    Flag.CreatedOn = HttpContext.Current.Server.UrlEncode(Dbsecurity.Encrypt(dataList.Cast<Logindetails>().ToList().Select(x => x.CreatedOn).First().ToString())).Replace("%", "_");
+                                    Flag.IsMandateEdit = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsMandateEdit).First().ToString()));
+                                    Flag.IsRefrenceEdit = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsRefrenceEdit).First().ToString()));
+                                    Flag.IsEmandate = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsEmandate).First().ToString()));
+                                    Flag.IsPhysical = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsPhysical).First().ToString()));
+                                    Flag.IsZipShoreABPS = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsZipShoreABPS).First().ToString()));
+                                    Flag.UserId = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.UserId).First().ToString()));
+                                    Flag.ReferenceId = Dbsecurity.Encrypt(dataList.Cast<Logindetails>().ToList().Select(x => x.ReferenceId).First().ToString());
+                                    Flag.UserName = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.UserName).First().ToString()));
+                                    Flag.Password = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.Password).First().ToString()));
+                                    Flag.UserCode = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.UserCode).First().ToString()));
+                                    Flag.UserType = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.UserType).First().ToString()));
+                                    Flag.BranchId = Dbsecurity.Encrypt(dataList.Cast<Logindetails>().ToList().Select(x => x.BranchId).First().ToString());
+                                    Flag.BranchName = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.BranchName).First().ToString()));
+                                    Flag.IsDefaultPswdChange =Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsDefaultPswdChange).First().ToString()));
+                                    Flag.LastLogin = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.LastLogin).First().ToString()));
+                                    Flag.IsActive = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsActive).First().ToString()));
+                                    Flag.IsDeleted = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsDeleted).First().ToString()));
+                                    Flag.CreatedBy = Dbsecurity.Encrypt(dataList.Cast<Logindetails>().ToList().Select(x => x.CreatedBy).First().ToString());
+                                    Flag.CreatedOn = Dbsecurity.Encrypt(dataList.Cast<Logindetails>().ToList().Select(x => x.CreatedOn).First().ToString());
                                     #endregion
 
                                     Flag.Flag = "1";

@@ -115,3 +115,15 @@ D:\Projects\WorkingProject\Kollect_QuickZipWebApi\Kollect_QuickZipApi\BusinessLi
 D:\Projects\WorkingProject\Kollect_QuickZipWebApi\Kollect_QuickZipApi\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CopyComplete
 D:\Projects\WorkingProject\Kollect_QuickZipWebApi\Kollect_QuickZipApi\BusinessLibrary\obj\Debug\BusinessLibrary.dll
 D:\Projects\WorkingProject\Kollect_QuickZipWebApi\Kollect_QuickZipApi\BusinessLibrary\obj\Debug\BusinessLibrary.pdb
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\bin\Debug\BusinessLibrary.dll.config
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\bin\Debug\BusinessLibrary.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\bin\Debug\BusinessLibrary.pdb
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\bin\Debug\EntityFramework.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\bin\Debug\EntityFramework.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLibrary.csprojAssemblyReference.cache
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CoreCompileInputs.cache
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CopyComplete
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLibrary.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLibrary.pdb
