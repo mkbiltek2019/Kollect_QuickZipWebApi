@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityDAL", "EntityDAL\Enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveEditMandateAPI", "SaveEditMandateAPI\SaveEditMandateAPI.csproj", "{639740E1-8B70-4430-930C-139289D26A65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankValidationWebAPI", "BankValidationWebAPI\BankValidationWebAPI.csproj", "{2B2CD023-B7F7-472F-BC1D-FCED3E551C4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{639740E1-8B70-4430-930C-139289D26A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{639740E1-8B70-4430-930C-139289D26A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{639740E1-8B70-4430-930C-139289D26A65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B2CD023-B7F7-472F-BC1D-FCED3E551C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B2CD023-B7F7-472F-BC1D-FCED3E551C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B2CD023-B7F7-472F-BC1D-FCED3E551C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B2CD023-B7F7-472F-BC1D-FCED3E551C4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
