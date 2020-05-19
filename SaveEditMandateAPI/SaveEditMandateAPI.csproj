@@ -46,6 +46,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Encryptions">
+      <HintPath>C:\Users\YoekiDev\Desktop\Encryptions.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -174,6 +177,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\BankForm\BankFormData.cs" />
+    <Compile Include="Models\BankForm\BindBankNameDetails.cs" />
+    <Compile Include="Models\BankForm\BindBankPaymentMode.cs" />
+    <Compile Include="Models\BankForm\BindBankUtilityCode.cs" />
+    <Compile Include="Models\BankForm\BindDebitType.cs" />
+    <Compile Include="Models\BankForm\BindEntityCategorytype.cs" />
+    <Compile Include="Models\BankForm\BindEntitydebitcredit.cs" />
+    <Compile Include="Models\BankForm\BindEntityDetails.cs" />
+    <Compile Include="Models\BankForm\BindEntityDetailsdata.cs" />
+    <Compile Include="Models\BankForm\BindEntityPeriods.cs" />
+    <Compile Include="Models\BankForm\Bindfrequency.cs" />
+    <Compile Include="Models\BankForm\BindGrid.cs" />
+    <Compile Include="Models\BankForm\BindLogincheck.cs" />
+    <Compile Include="Models\BankForm\BindLogoImageDetails.cs" />
+    <Compile Include="Models\BankForm\BindSponserCode.cs" />
+    <Compile Include="Models\BankForm\ChecKmandate.cs" />
+    <Compile Include="Models\BankForm\CheckReference.cs" />
+    <Compile Include="Models\BankForm\RemoveImage.cs" />
+    <Compile Include="Models\BankForm\SaveData.cs" />
+    <Compile Include="Models\BankForm\UserEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -229,7 +252,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
