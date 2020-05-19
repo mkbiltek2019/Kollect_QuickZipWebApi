@@ -13,7 +13,6 @@ namespace SaveEditMandateAPI.Controllers
     public class SaveMandateController : ApiController
     {
         BankFormData objbankform = new BankFormData();
-       
 
         [HttpPost]
         [Route("api/ReportView/GetBankFormdata")]
