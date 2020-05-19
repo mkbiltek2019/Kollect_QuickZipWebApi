@@ -122,7 +122,6 @@ E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\bin\Debug\EntityFrame
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\bin\Debug\EntityFramework.xml
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLibrary.csprojAssemblyReference.cache
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CoreCompileInputs.cache
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CopyComplete
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLibrary.dll
