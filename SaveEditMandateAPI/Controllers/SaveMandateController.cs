@@ -9,5 +9,6 @@ namespace SaveEditMandateAPI.Controllers
 {
     public class SaveMandateController : ApiController
     {
+
     }
 }
