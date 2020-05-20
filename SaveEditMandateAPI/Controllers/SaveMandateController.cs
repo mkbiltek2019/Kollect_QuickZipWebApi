@@ -18,6 +18,7 @@ namespace SaveEditMandateAPI.Controllers
         public Dictionary<string, object> GetBankFormdata([FromBody] UserEntity data)
         {
             return objbankform.GetPageLoaddata(data);
+
         }
     }
 }
