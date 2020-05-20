@@ -16,5 +16,17 @@ namespace LoginWebApi.Controllers
         {
             return objlogin.Binddetails(Login);
         }
+        [HttpGet]
+        [Route("api/Login/SentEmail/{email}")]
+        public IEnumerable<EmailSent> SentEmail(string email)
+        {
+            return objlogin.SendMail(email);
+        }
+        [HttpPost]
+        [Route("api/Login/Updatepassword")]
+        public IEnumerable<ChangePasswordRes> Updatepassword([FromBody] ChangePasswordJsn Changepassword)
+        {
+            return objlogin.UpdatePassworddtail(Changepassword);
+        }
     }
 }
