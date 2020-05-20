@@ -49,8 +49,10 @@ namespace BankValidationWebAPI.Models
     {
         public Nullable<Boolean> IsLiveIMPS { get; set; }
         public Nullable<Boolean> IsNachLive { get; set; }
-        public Nullable<Boolean> is_enach_live { get; set; }
+        public Nullable<Boolean> is_enach_live { get; set; }//emandate
         public string FullBank { get; set; }
+        public string DebitCard { get; set; }
+        public string NetBanking { get; set; }
     }
     public class EMandateTypeDataModal
     {
