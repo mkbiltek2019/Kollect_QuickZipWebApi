@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveEditMandateAPI", "SaveE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankValidationWebAPI", "BankValidationWebAPI\BankValidationWebAPI.csproj", "{2B2CD023-B7F7-472F-BC1D-FCED3E551C4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountvalidationWebAPI", "AccountvalidationWebAPI\AccountvalidationWebAPI.csproj", "{9EBBDE39-42B8-4E26-A611-5D5E5A80B3FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2B2CD023-B7F7-472F-BC1D-FCED3E551C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B2CD023-B7F7-472F-BC1D-FCED3E551C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B2CD023-B7F7-472F-BC1D-FCED3E551C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EBBDE39-42B8-4E26-A611-5D5E5A80B3FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EBBDE39-42B8-4E26-A611-5D5E5A80B3FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EBBDE39-42B8-4E26-A611-5D5E5A80B3FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EBBDE39-42B8-4E26-A611-5D5E5A80B3FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

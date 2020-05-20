@@ -52,7 +52,7 @@
     </Reference>
     <Reference Include="Encryptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\YoekiSoft\Desktop\Encryptions.dll</HintPath>
+      <HintPath>C:\Users\YoekiDev\Desktop\Encryptions.dll</HintPath>
     </Reference>
     <Reference Include="EntityDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -151,7 +151,6 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\ServerRouteConstraint.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
     <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
@@ -186,17 +185,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Login\ChangePasswordJsn.cs" />
-    <Compile Include="Models\Login\ChangePasswordRes.cs" />
     <Compile Include="Models\Login\CommonFlag.cs" />
-    <Compile Include="Models\Login\EmailSent.cs" />
-    <Compile Include="Models\Login\Forgotflag.cs" />
     <Compile Include="Models\Login\Formdataget.cs" />
     <Compile Include="Models\Login\Login.cs" />
     <Compile Include="Models\Login\Logindetails.cs" />
-    <Compile Include="Models\Login\Responsevalue.cs" />
     <Compile Include="Models\Login\SaveLoginSessionTrxn.cs" />
-    <Compile Include="Models\Login\UserDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
