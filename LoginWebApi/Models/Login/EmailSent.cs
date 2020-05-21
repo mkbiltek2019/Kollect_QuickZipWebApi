@@ -11,4 +11,5 @@ namespace LoginWebApi.Models.Login
         public string FlagValue { get; set; }
         public string EmailID { get; set; }
     }
+
 }
