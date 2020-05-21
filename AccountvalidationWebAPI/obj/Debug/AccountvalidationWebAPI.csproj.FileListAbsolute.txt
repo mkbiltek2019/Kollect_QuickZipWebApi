@@ -183,7 +183,6 @@ E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\System.Xm
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\System.Xml.XmlSerializer.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\System.Xml.XPath.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\System.Xml.XPath.XDocument.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\Encryptions.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\BusinessLibrary.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\EntityDAL.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\BusinessLibrary.pdb
@@ -382,3 +381,4 @@ E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\System.Web.Web
 E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\Antlr3.Runtime.pdb
 E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\obj\Debug\AccountvalidationWebAPI.csproj.CopyComplete
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\Encryptions.dll
