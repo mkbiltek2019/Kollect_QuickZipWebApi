@@ -190,3 +190,7 @@ D:\Projects\WorkingProject\Kollect_QuickZipWebApi\Kollect_QuickZipApi\LoginWebAp
 D:\Projects\WorkingProject\Kollect_QuickZipWebApi\Kollect_QuickZipApi\LoginWebApi\bin\EntityDAL.dll.config
 D:\Projects\WorkingProject\Kollect_QuickZipWebApi\Kollect_QuickZipApi\LoginWebApi\bin\EntityFramework.SqlServer.dll
 D:\Projects\WorkingProject\Kollect_QuickZipWebApi\Kollect_QuickZipApi\LoginWebApi\bin\EntityFramework.SqlServer.xml
+E:\Avinash_WFH\Kollect_QuickZipWebApi\LoginWebApi\obj\Debug\LoginWebApi.csprojAssemblyReference.cache
+E:\Avinash_WFH\Kollect_QuickZipWebApi\LoginWebApi\obj\Debug\LoginWebApi.csproj.CoreCompileInputs.cache
+E:\Avinash_WFH\Kollect_QuickZipWebApi\LoginWebApi\obj\Debug\LoginWebApi.dll
+E:\Avinash_WFH\Kollect_QuickZipWebApi\LoginWebApi\obj\Debug\LoginWebApi.pdb
