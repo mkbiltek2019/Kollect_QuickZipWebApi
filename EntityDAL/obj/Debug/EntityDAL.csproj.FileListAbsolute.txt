@@ -34,3 +34,15 @@ D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\EntityDAL\obj\Debug\EntityDAL.
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\EntityDAL\obj\Debug\EntityDAL.csproj.CopyComplete
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\EntityDAL\obj\Debug\EntityDAL.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\EntityDAL\obj\Debug\EntityDAL.pdb
+D:\Projects\WorkingProject\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityDAL.dll.config
+D:\Projects\WorkingProject\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityDAL.dll
+D:\Projects\WorkingProject\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityDAL.pdb
+D:\Projects\WorkingProject\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.dll
+D:\Projects\WorkingProject\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\WorkingProject\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.xml
+D:\Projects\WorkingProject\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\WorkingProject\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.csprojAssemblyReference.cache
+D:\Projects\WorkingProject\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.csproj.CoreCompileInputs.cache
+D:\Projects\WorkingProject\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.csproj.CopyComplete
+D:\Projects\WorkingProject\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.dll
+D:\Projects\WorkingProject\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.pdb
