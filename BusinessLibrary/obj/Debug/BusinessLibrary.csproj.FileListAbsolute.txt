@@ -151,3 +151,15 @@ E:\Avinash_WFH\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.
 E:\Avinash_WFH\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CopyComplete
 E:\Avinash_WFH\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.dll
 E:\Avinash_WFH\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.pdb
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BusinessLibrary\bin\Debug\BusinessLibrary.dll.config
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BusinessLibrary\bin\Debug\BusinessLibrary.dll
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BusinessLibrary\bin\Debug\BusinessLibrary.pdb
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BusinessLibrary\bin\Debug\EntityFramework.dll
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BusinessLibrary\bin\Debug\EntityFramework.xml
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BusinessLibrary\obj\Debug\BusinessLibrary.csprojAssemblyReference.cache
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CoreCompileInputs.cache
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CopyComplete
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BusinessLibrary\obj\Debug\BusinessLibrary.dll
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BusinessLibrary\obj\Debug\BusinessLibrary.pdb
