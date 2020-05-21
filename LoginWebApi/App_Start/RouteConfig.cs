@@ -18,6 +18,14 @@ namespace LoginWebApi
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+              name: "kollectquickzip",
+              url: "{*url}",
+              defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+
+              );
+
+
         }
     }
 }

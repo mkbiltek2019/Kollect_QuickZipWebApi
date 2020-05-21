@@ -10,3 +10,15 @@ D:\Projects\WorkingProject\Kollect_QuickZipWebApi\Kollect_QuickZipApi\EntityDAL\
 D:\Projects\WorkingProject\Kollect_QuickZipWebApi\Kollect_QuickZipApi\EntityDAL\bin\Debug\EntityFramework.xml
 D:\Projects\WorkingProject\Kollect_QuickZipWebApi\Kollect_QuickZipApi\EntityDAL\bin\Debug\EntityFramework.SqlServer.xml
 D:\Projects\WorkingProject\Kollect_QuickZipWebApi\Kollect_QuickZipApi\EntityDAL\obj\Debug\EntityDAL.csproj.CopyComplete
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\EntityDAL\bin\Debug\EntityDAL.dll.config
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\EntityDAL\bin\Debug\EntityDAL.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\EntityDAL\bin\Debug\EntityDAL.pdb
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\EntityDAL\bin\Debug\EntityFramework.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\EntityDAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\EntityDAL\bin\Debug\EntityFramework.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\EntityDAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\EntityDAL\obj\Debug\EntityDAL.csprojAssemblyReference.cache
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\EntityDAL\obj\Debug\EntityDAL.csproj.CoreCompileInputs.cache
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\EntityDAL\obj\Debug\EntityDAL.csproj.CopyComplete
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\EntityDAL\obj\Debug\EntityDAL.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\EntityDAL\obj\Debug\EntityDAL.pdb
