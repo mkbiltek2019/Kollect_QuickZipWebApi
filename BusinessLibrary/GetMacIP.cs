@@ -9,8 +9,7 @@ using System.Net;
 namespace BusinessLibrary
 {
     public  class GetMacIP
-    {
-
+    { 
         public static string GetIpAddress()  // Get IP Address
         {
             IPHostEntry ipEntry = Dns.GetHostEntry(Dns.GetHostName());
