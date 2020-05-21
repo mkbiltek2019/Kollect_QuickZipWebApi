@@ -163,7 +163,9 @@ namespace SendEmailAndSMS.Controllers
                 response.Message = "Invalid data";
                 response.Status = "Failure";
                 response.ResCode = "ykR20020";
-            }
+            } 
+
+
 
             return response;
         }
