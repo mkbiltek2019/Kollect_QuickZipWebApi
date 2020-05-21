@@ -52,7 +52,7 @@
     </Reference>
     <Reference Include="Encryptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\AIY-005\Desktop\Encryptions.dll</HintPath>
+      <HintPath>C:\Users\YoekiSoft\Desktop\Encryptions.dll</HintPath>
     </Reference>
     <Reference Include="EntityDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
