@@ -25,6 +25,7 @@ namespace SaveEditMandateAPI.Controllers
         public Dictionary<string, object> SaveData([FromBody] UserEntity savedata, string mandateid)
         {
             return objbankform.SaveData(savedata, mandateid);
+
         }
 
         [HttpGet]
