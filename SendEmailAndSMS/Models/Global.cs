@@ -7,8 +7,6 @@ using System.Text;
 
 namespace SendEmailAndSMSGlobal
 {
-
-
     public sealed class Global
     {
         //use to display ApplicationName
