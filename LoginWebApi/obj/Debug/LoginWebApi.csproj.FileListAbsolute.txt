@@ -533,7 +533,6 @@ E:\Fateh\CloudProjects\Kollect_QuickZipAPI\LoginWebApi\bin\System.Xml.XPath.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\LoginWebApi\bin\System.Xml.XPath.XDocument.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\LoginWebApi\bin\Antlr3.Runtime.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\LoginWebApi\bin\BusinessLibrary.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\LoginWebApi\bin\Encryptions.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\LoginWebApi\bin\EntityDAL.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\LoginWebApi\bin\EntityFramework.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\LoginWebApi\bin\EntityFramework.SqlServer.dll
@@ -957,3 +956,4 @@ D:\Kollect_QuickZip\QuickCheckWEBAPI\LoginWebApi\bin\System.Web.WebPages.Razor.x
 D:\Kollect_QuickZip\QuickCheckWEBAPI\LoginWebApi\bin\Antlr3.Runtime.pdb
 D:\Kollect_QuickZip\QuickCheckWEBAPI\LoginWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Kollect_QuickZip\QuickCheckWEBAPI\LoginWebApi\obj\Debug\LoginWebApi.csproj.CopyComplete
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\LoginWebApi\bin\Encryptions.dll

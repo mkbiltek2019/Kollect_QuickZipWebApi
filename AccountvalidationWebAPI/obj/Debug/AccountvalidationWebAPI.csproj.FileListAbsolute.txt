@@ -380,7 +380,6 @@ E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\System.Web.Web
 E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\Antlr3.Runtime.pdb
 E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\obj\Debug\AccountvalidationWebAPI.csproj.CopyComplete
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\Encryptions.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\AccountvalidationWebAPI\bin\AccountvalidationWebAPI.dll.config
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\AccountvalidationWebAPI\bin\AccountvalidationWebAPI.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\AccountvalidationWebAPI\bin\AccountvalidationWebAPI.pdb
@@ -765,3 +764,5 @@ D:\Kollect_QuickZip\QuickCheckWEBAPI\AccountvalidationWebAPI\bin\System.Web.WebP
 D:\Kollect_QuickZip\QuickCheckWEBAPI\AccountvalidationWebAPI\bin\Antlr3.Runtime.pdb
 D:\Kollect_QuickZip\QuickCheckWEBAPI\AccountvalidationWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Kollect_QuickZip\QuickCheckWEBAPI\AccountvalidationWebAPI\obj\Debug\AccountvalidationWebAPI.csproj.CopyComplete
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\obj\Debug\AccountvalidationWebAPI.csprojAssemblyReference.cache
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\Encryptions.dll
