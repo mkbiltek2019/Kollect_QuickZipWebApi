@@ -11,7 +11,6 @@ namespace SendEmailAndSMSGlobal
     {
         //use to display ApplicationName
         public const string ApplicationName = "Digital University";
-
         // Used to Generate and Get Random Number based on Code Length
         public static string ReverseString(string s)
         {
