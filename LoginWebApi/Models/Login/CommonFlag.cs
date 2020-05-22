@@ -42,6 +42,7 @@ namespace LoginWebApi
         public string IsDefaultPswdChange { get; set; }
         public string IsPhysical { get; set; }
         public string IsEmandate { get; set; }
+        public string AppId { get; set; }
     }
     
 
