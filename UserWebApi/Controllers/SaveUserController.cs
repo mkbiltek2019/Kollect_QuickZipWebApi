@@ -15,6 +15,7 @@ namespace UserWebApi.Controllers
             [HttpGet]
             [Route("api/SaveUser/BindData/{EntityId}")]
             public Dictionary<string, object> BindData(string EntityId)
+
             {
                 return obj.BindData(EntityId);
             }
