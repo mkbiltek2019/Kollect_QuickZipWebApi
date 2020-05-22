@@ -6,18 +6,7 @@ using System.Web.Http;
 
 namespace AccountvalidationWebAPI.Models
 {
-    public class LoginResponse
-    {
-        //public List<Mandate> MandateData
-        //{ get; set; }
-        public string MdtID { get; set; }
-        //public string IsliveInNach { get; set; }
-        public string Message { get; set; }
-        public string Status { get; set; }
-        public string AccountHolderName { get; set; }
-        public string ResCode { get; set; }
-        public string MandateData { get; set; }
-    }
+   
     public class AccountValidationModel
     {
         public string MandateId { get; set; }
