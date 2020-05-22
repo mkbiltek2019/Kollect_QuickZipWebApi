@@ -12,6 +12,8 @@ namespace UserWebApi.Models.User
     {
 
         QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();
+
+
         public Dictionary<string, object> BindData(string EntityId)
         {
             try
