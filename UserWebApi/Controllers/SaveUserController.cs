@@ -17,7 +17,6 @@ namespace UserWebApi.Controllers
             public Dictionary<string, object> BindData(string EntityId)
             {
                 return obj.BindData(EntityId);
-
             }
         
     }
