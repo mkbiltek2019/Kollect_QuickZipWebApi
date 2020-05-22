@@ -284,7 +284,6 @@ D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\System.Xml.XmlDocume
 D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\System.Xml.XmlSerializer.dll
 D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\System.Xml.XPath.dll
 D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\System.Xml.XPath.XDocument.dll
-D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\Encryptions.dll
 E:\Avinash_WFH\Kollect_QuickZipWebApi\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csprojAssemblyReference.cache
 E:\Avinash_WFH\Kollect_QuickZipWebApi\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CoreCompileInputs.cache
 E:\Avinash_WFH\Kollect_QuickZipWebApi\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.dll
@@ -766,3 +765,4 @@ D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\S
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CopyComplete
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.pdb
+D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\Encryptions.dll

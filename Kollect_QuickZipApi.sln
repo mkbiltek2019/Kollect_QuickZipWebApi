@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountvalidationWebAPI", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserWebApi", "UserWebApi\UserWebApi.csproj", "{839FC73F-CD30-4427-89E5-99D7C9BDE755}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendEmailAndSMS", "SendEmailAndSMS\SendEmailAndSMS.csproj", "{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{839FC73F-CD30-4427-89E5-99D7C9BDE755}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{839FC73F-CD30-4427-89E5-99D7C9BDE755}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{839FC73F-CD30-4427-89E5-99D7C9BDE755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
