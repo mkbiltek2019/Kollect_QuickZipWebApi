@@ -339,7 +339,6 @@ E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\System.Xml.XPa
 E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\System.Xml.XPath.XDocument.dll
 E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\Antlr3.Runtime.dll
 E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\BusinessLibrary.dll
-E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\Encryptions.dll
 E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\EntityDAL.dll
 E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\EntityFramework.dll
 E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\EntityFramework.SqlServer.dll
@@ -765,3 +764,4 @@ D:\Kollect_QuickZip\QuickCheckWEBAPI\AccountvalidationWebAPI\bin\Antlr3.Runtime.
 D:\Kollect_QuickZip\QuickCheckWEBAPI\AccountvalidationWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Kollect_QuickZip\QuickCheckWEBAPI\AccountvalidationWebAPI\obj\Debug\AccountvalidationWebAPI.csproj.CopyComplete
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\AccountvalidationWebAPI\bin\Encryptions.dll
+E:\Avinash_WFH\Kollect_QuickZipWebApi\AccountvalidationWebAPI\bin\Encryptions.dll
