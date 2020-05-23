@@ -46,15 +46,15 @@ D:\Kollect_QuickZip\QuickCheckWEBAPI\EntityDAL\obj\Debug\EntityDAL.csproj.CoreCo
 D:\Kollect_QuickZip\QuickCheckWEBAPI\EntityDAL\obj\Debug\EntityDAL.csproj.CopyComplete
 D:\Kollect_QuickZip\QuickCheckWEBAPI\EntityDAL\obj\Debug\EntityDAL.dll
 D:\Kollect_QuickZip\QuickCheckWEBAPI\EntityDAL\obj\Debug\EntityDAL.pdb
-E:\projects\QuickZipNew\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityDAL.dll.config
-E:\projects\QuickZipNew\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityDAL.dll
-E:\projects\QuickZipNew\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityDAL.pdb
-E:\projects\QuickZipNew\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.dll
-E:\projects\QuickZipNew\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.SqlServer.dll
-E:\projects\QuickZipNew\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.xml
-E:\projects\QuickZipNew\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.SqlServer.xml
-E:\projects\QuickZipNew\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.csprojAssemblyReference.cache
-E:\projects\QuickZipNew\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.csproj.CoreCompileInputs.cache
-E:\projects\QuickZipNew\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.csproj.CopyComplete
-E:\projects\QuickZipNew\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.dll
-E:\projects\QuickZipNew\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.pdb
+D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\bin\Debug\EntityDAL.dll.config
+D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\bin\Debug\EntityDAL.dll
+D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\bin\Debug\EntityDAL.pdb
+D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\bin\Debug\EntityFramework.dll
+D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\bin\Debug\EntityFramework.xml
+D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\obj\Debug\EntityDAL.csprojAssemblyReference.cache
+D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\obj\Debug\EntityDAL.csproj.CoreCompileInputs.cache
+D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\obj\Debug\EntityDAL.csproj.CopyComplete
+D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\obj\Debug\EntityDAL.dll
+D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\obj\Debug\EntityDAL.pdb
