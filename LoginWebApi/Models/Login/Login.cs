@@ -127,6 +127,7 @@ namespace LoginWebApi.Models.Login
                                     Flag.IsDeleted = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.IsDeleted).First().ToString()));
                                     Flag.CreatedBy = Dbsecurity.Encrypt(dataList.Cast<Logindetails>().ToList().Select(x => x.CreatedBy).First().ToString());
                                     Flag.CreatedOn = Dbsecurity.Encrypt(dataList.Cast<Logindetails>().ToList().Select(x => x.CreatedOn).First().ToString());
+                                    Flag.AppId = Dbsecurity.Encrypt(Convert.ToString(dataList.Cast<Logindetails>().ToList().Select(x => x.AppId).First().ToString()));
                                     #endregion
 
                                     Flag.Flag = "1";

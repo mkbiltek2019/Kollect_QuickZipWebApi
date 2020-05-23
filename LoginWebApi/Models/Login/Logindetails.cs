@@ -38,5 +38,6 @@ namespace LoginWebApi.Models.Login
         public Nullable<bool> IsEmandate { get; set; }
         public bool IsAccountBlocked { get; set; }
         public Int32 IswrongAttempt { get; set; }
+        public Nullable<Int64> AppId { get; set; }
     }
 }
