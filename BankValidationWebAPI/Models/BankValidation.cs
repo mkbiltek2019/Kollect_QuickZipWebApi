@@ -49,7 +49,7 @@ namespace BankValidationWebAPI.Models
     {
         public Nullable<Boolean> IsLiveIMPS { get; set; }
         public Nullable<Boolean> IsNachLive { get; set; }
-        public Nullable<Boolean> is_enach_live { get; set; }//emandate
+        public Nullable<Boolean> is_enach_live { get; set; }//emandate 
         public string FullBank { get; set; }
         public string DebitCard { get; set; }
         public string NetBanking { get; set; }
@@ -70,7 +70,7 @@ namespace BankValidationWebAPI.Models
         public List<MandateDataModal> MandateDataModallist { get; set; }
         public List<MandateActivityDataModal> MandateActivityDataModallist { get; set; }
         public List<IsLiveInNACHModal> IsLiveInNACHModallist { get; set; }
-        public List<EMandateDataModal> EMandateDataModallist { get; set; }
+        public List<EMandateDataModal> EMandateDataModallist { get; set; }//emandate data
         public List<EMandateTypeDataModal> EMandateTypeDataModallist { get; set; }
     }
 }
