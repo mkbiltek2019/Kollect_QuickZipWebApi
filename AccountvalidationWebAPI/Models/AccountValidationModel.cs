@@ -14,6 +14,7 @@ namespace AccountvalidationWebAPI.Models
         public string ActivityId { get; set; }
         public string AcNo { get; set; }
         public string IFSC { get; set; }
+        public string MICR { get; set; }
         public string UserId { get; set; }
         public string AppId { get; set; }
         public string EntityId { get; set; }
@@ -37,6 +38,8 @@ namespace AccountvalidationWebAPI.Models
         public string Status { get; set; }
         public string Tab { get; set; }
         public string type { get; set; }
+        public string BankReturnCustNme { get; set; }
+        
     }
     public class ResCust1
     {
