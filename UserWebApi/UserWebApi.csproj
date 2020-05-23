@@ -51,7 +51,7 @@
       <HintPath>..\BusinessLibrary\bin\Debug\BusinessLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Encryptions">
-      <HintPath>C:\Users\YoekiDev\Desktop\Encryptions.dll</HintPath>
+      <HintPath>C:\Users\Rock\Desktop\Encryptions.dll</HintPath>
     </Reference>
     <Reference Include="EntityDAL">
       <HintPath>..\EntityDAL\bin\Debug\EntityDAL.dll</HintPath>
