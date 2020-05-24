@@ -1,4 +1,5 @@
 ﻿using AccountvalidationWebAPI.Models;
+using Encryptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace AccountvalidationWebAPI.Controllers
             try
             {
                
-                return AccountValidationMethods.AckPaymentTestNew(Acdata.ActivityId, Acdata.MandateId, Acdata.AcNo, Acdata.IFSC, Acdata.UserId, Acdata.AppId, Acdata.EntityId);               
+                return AccountValidationMethods.AckPaymentTestNew(Acdata.ActivityId, Dbsecurity.Decypt(Acdata.MandateId), Dbsecurity.Decypt(Acdata.AcNo), Acdata.IFSC, Dbsecurity.Decypt(Acdata.UserId), Dbsecurity.Decypt(Acdata.AppId), Dbsecurity.Decypt(Acdata.EntityId));               
             }
             catch(Exception ex)
             {

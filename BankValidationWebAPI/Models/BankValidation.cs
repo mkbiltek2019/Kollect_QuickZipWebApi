@@ -61,6 +61,22 @@ namespace BankValidationWebAPI.Models
         public Nullable<Boolean> IsPhysical { get; set; }
         public Nullable<Boolean> Enach { get; set; }
         public string EMandatetype { get; set; }
+
+
+        public Nullable<Boolean> EntityEmandate { get; set; }
+        public Nullable<Boolean> EntityPhysical { get; set; }
+        public Nullable<Boolean> EntityDebit { get; set; }
+        public Nullable<Boolean> EntityNetBanking { get; set; }
+        public Nullable<Boolean> EntityNetSMS { get; set; }
+        public Nullable<Boolean> EntityNetValidateMail { get; set; }
+        public Nullable<Boolean> EntityNetManual { get; set; }
+        public Nullable<Boolean> EntityDebitSMS { get; set; }
+        public Nullable<Boolean> EntityDebitValidateMail { get; set; }
+        public Nullable<Boolean> EntityDebitManual { get; set; }
+        public Nullable<Boolean> ValidateByCooperate { get; set; }
+        public Nullable<Boolean> ValidateByCustomer { get; set; }
+
+
     }
     public class bankValidationResponseData
     {

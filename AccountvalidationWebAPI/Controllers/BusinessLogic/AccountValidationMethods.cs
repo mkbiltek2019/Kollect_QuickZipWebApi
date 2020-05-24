@@ -193,9 +193,9 @@ namespace AccountvalidationWebAPI.Models
                     //SqlDataAdapter da1 = new SqlDataAdapter(cmd1);
                     //DataSet ds1 = new DataSet();
                     //da1.Fill(ds1);
+
                     dbcontext = new QuickCheck_AngularEntities();
                     var ResResult = dbcontext.MultipleResults("[dbo].[sp_Payment]").With<ResDescription>().With<ResCust1>().With<ResIfsc>().With<Resshow>().Execute("@QueryType", "@BankRefNo", "@BeniName", "@ChkSum", "@UserId", "@EntityId", "@ErrorReason", "@MandateId", "@MerchantId", "@MessageCode", "@RRN", "@RequestDateTime", "@ResponseCode", "@TraceNo", "@IFSC", "@ActivityId", "InsertpaymentRes", Data[7], Data[9], Data[10], UserId.ToString(), EntityId, Data[5], MandateId, Data[2], Data[0], Data[6], Data[1], Data[4], Data[3], Convert.ToString(IFSC), ActivityId);
-
                     res.ResDescriptionlist = ResResult[0].Cast<ResDescription>().ToList();
                     res.ResCust1list = ResResult[1].Cast<ResCust1>().ToList();
                     res.ResIfsclist = ResResult[2].Cast<ResIfsc>().ToList();
