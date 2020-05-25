@@ -221,6 +221,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\LinkSetup\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
