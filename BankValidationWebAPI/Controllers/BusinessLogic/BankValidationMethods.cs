@@ -1,4 +1,5 @@
 ﻿using BusinessLibrary;
+using Encryptions;
 using EntityDAL;
 using System;
 using System.Collections.Generic;
@@ -28,7 +29,7 @@ namespace BankValidationWebAPI.Models
 
                 //ds = CommonManger.FillDatasetWithParam("Sp_Mandate", "@QueryType", "@MandateId", "@UserId", "UpdateIsFirstvalidation", DbSecurity.Decrypt(mandateId), DbSecurity.Decrypt(UserId));
                 var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<IFSCResultModal>().With<MICRResultModal>().With< MandateDataModal>().With<BankNameModal>().With<MandateActivityDataModal>().With<IsLiveInNACHModal>().With<EMandateDataModal>().With<EMandateTypeDataModal>().
-                    Execute("@QueryType", "@MandateId", "@Appid", "@UserId", "UpdateIsFirstvalidation", MData.MandateId, MData.AppId, MData.UserId);
+                    Execute("@QueryType", "@MandateId", "@Appid", "@UserId", "UpdateIsFirstvalidation", Dbsecurity.Decypt(MData.MandateId), Dbsecurity.Decypt(MData.AppId), Dbsecurity.Decypt(MData.UserId));
                 Result.FirstOrDefault().Cast<IFSCResultModal>().ToList();
                 res.IFSCResultModallist = Result[0].Cast<IFSCResultModal>().ToList();
 
