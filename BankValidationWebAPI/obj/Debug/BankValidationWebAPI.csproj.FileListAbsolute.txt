@@ -380,7 +380,6 @@ E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\bin\System.Xml.X
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\bin\System.Xml.XmlSerializer.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\bin\System.Xml.XPath.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\bin\System.Xml.XPath.XDocument.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\bin\Encryptions.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BankValidationWebAPI\bin\BankValidationWebAPI.dll.config
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BankValidationWebAPI\bin\BankValidationWebAPI.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\BankValidationWebAPI\bin\BankValidationWebAPI.pdb
