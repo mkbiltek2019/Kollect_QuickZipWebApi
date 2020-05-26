@@ -43,6 +43,8 @@ namespace HistoricalMandateWebAPI.Models.HistoricalMandate
 
                 return res;
             }
+
+
             catch (Exception ex)
             {
                 throw ex;
