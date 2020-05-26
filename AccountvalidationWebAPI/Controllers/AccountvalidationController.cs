@@ -1,7 +1,9 @@
-﻿using AccountvalidationWebAPI.Models;
+﻿using AccountvalidationWebAPI.Controllers.BusinessLogic;
+using AccountvalidationWebAPI.Models;
 using Encryptions;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -15,11 +17,31 @@ namespace AccountvalidationWebAPI.Controllers
         [Route("api/Accountvalidation/Accountvalidation")]
         public ResAccountValidation Acvalidate(AccountValidationModel Acdata)
         {
-
+          List<pennyDetails> res = new List<pennyDetails>();
+            List<pennyDetailsList> res1 = new List<pennyDetailsList>();
+            res = GetPennydropDetails.Getpennydata(Acdata.IFSC, Dbsecurity.Decypt(Acdata.AppId)).Cast<pennyDetails>().ToList(); 
             try
             {
-               
-                return AccountValidationMethods.AckPaymentTestNew(Acdata.ActivityId, Dbsecurity.Decypt(Acdata.MandateId), Dbsecurity.Decypt(Acdata.AcNo), Acdata.IFSC, Dbsecurity.Decypt(Acdata.UserId), Dbsecurity.Decypt(Acdata.AppId), Dbsecurity.Decypt(Acdata.EntityId));               
+                if (res[0].Name.ToUpper().Contains("IDFC"))
+                {
+                    //if (Acdata.IFSC.Substring(0, 4).Trim() == ConfigurationManager.AppSettings["IDFC_IFSC"].ToString().Trim())
+                    //{
+                    //    return AccountValidationMethods.AckPaymentTestNew(Acdata.ActivityId, Dbsecurity.Decypt(Acdata.MandateId), Dbsecurity.Decypt(Acdata.AcNo), Acdata.IFSC, Dbsecurity.Decypt(Acdata.UserId), Dbsecurity.Decypt(Acdata.AppId), Dbsecurity.Decypt(Acdata.EntityId));
+                    //}
+                    //else
+                    //{
+                        // Response.Write("In AckPaymentTestNew_IDFC");
+                        return IDFC_Acvalidate.IDFCAccountval(Acdata.ActivityId, Dbsecurity.Decypt(Acdata.MandateId), Dbsecurity.Decypt(Acdata.AcNo), Acdata.IFSC, Dbsecurity.Decypt(Acdata.UserId), Dbsecurity.Decypt(Acdata.AppId), Dbsecurity.Decypt(Acdata.EntityId),res);
+                   /// }
+
+
+                }
+                else
+                {
+                    return AccountValidationMethods.KotakAccountVal(Acdata.ActivityId, Dbsecurity.Decypt(Acdata.MandateId), Dbsecurity.Decypt(Acdata.AcNo), Acdata.IFSC, Dbsecurity.Decypt(Acdata.UserId), Dbsecurity.Decypt(Acdata.AppId), Dbsecurity.Decypt(Acdata.EntityId), res);
+                }
+
+                              
             }
             catch(Exception ex)
             {

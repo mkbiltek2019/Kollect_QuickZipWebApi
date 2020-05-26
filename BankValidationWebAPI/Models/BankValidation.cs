@@ -53,6 +53,8 @@ namespace BankValidationWebAPI.Models
         public string FullBank { get; set; }
         public string DebitCard { get; set; }
         public string NetBanking { get; set; }
+       
+       
     }
     public class EMandateTypeDataModal
     {
@@ -61,8 +63,8 @@ namespace BankValidationWebAPI.Models
         public Nullable<Boolean> IsPhysical { get; set; }
         public Nullable<Boolean> Enach { get; set; }
         public string EMandatetype { get; set; }
-
-
+        
+        public Nullable<Boolean> IsAccountvalidation { get; set; }
         public Nullable<Boolean> EntityEmandate { get; set; }
         public Nullable<Boolean> EntityPhysical { get; set; }
         public Nullable<Boolean> EntityDebit { get; set; }
@@ -75,7 +77,7 @@ namespace BankValidationWebAPI.Models
         public Nullable<Boolean> EntityDebitManual { get; set; }
         public Nullable<Boolean> ValidateByCooperate { get; set; }
         public Nullable<Boolean> ValidateByCustomer { get; set; }
-
+        public Nullable<Int64> ActivityId { get; set; }
 
     }
     public class bankValidationResponseData
