@@ -117,6 +117,7 @@ namespace SaveEditMandateAPI.Models.BankForm
             catch (Exception ex)
             {
                 throw ex;
+
             }
         }
 
