@@ -766,10 +766,6 @@ D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\S
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.pdb
 D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\Encryptions.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csprojAssemblyReference.cache
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CoreCompileInputs.cache
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.pdb
 D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll.config
 D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll
 D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\SaveEditMandateAPI.pdb
@@ -957,4 +953,8 @@ D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.WebPages.
 D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.WebPages.Razor.xml
 D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\Antlr3.Runtime.pdb
 D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csprojAssemblyReference.cache
+D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CoreCompileInputs.cache
 D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CopyComplete
+D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.dll
+D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.pdb
