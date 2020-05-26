@@ -27,16 +27,16 @@ namespace HistoricalMandateWebAPI.Models.HistoricalMandate
             {
                 gridlist res = new gridlist();
                 List<BindGrid> BindGridlist = new List<BindGrid>();
-               
-          //      var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<BindGrid>().Execute("@QueryType", "@UserId", "@AppId", "@ToDate"
-          //, "@FromDate", "grdMandateDataDateWise", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.AppId, data.ToDate, data.FromDate));
-          //      BindGridlist = Result.Cast<BindGrid>().ToList();
+
+                //      var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<BindGrid>().Execute("@QueryType", "@UserId", "@AppId", "@ToDate"
+                //, "@FromDate", "grdMandateDataDateWise", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.AppId, data.ToDate, data.FromDate));
+                //      BindGridlist = Result.Cast<BindGrid>().ToList();
 
                 var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<BindGrid>().Execute("@QueryType", "@UserId", "@AppId", "@ToDate"
          , "@FromDate", "grdMandateDataDateWise", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.AppId, data.ToDate, data.FromDate);
                 BindGridlist = Result[0].Cast<BindGrid>().ToList();
 
-               for(var i=0;i< BindGridlist.Count;i++)
+                for (var i = 0; i < BindGridlist.Count; i++)
                 {
                     BindGridlist[i].AcNo = Dbsecurity.Decypt(Convert.ToString(BindGridlist[i].AcNo));
                     BindGridlist[i].Amount_Numeric = Dbsecurity.Decypt(Convert.ToString(BindGridlist[i].Amount_Numeric));
