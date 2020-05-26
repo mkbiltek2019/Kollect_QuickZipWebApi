@@ -46,6 +46,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BusinessLibrary">
+      <HintPath>C:\Users\Rock\Desktop\BusinessLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Encryptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Users\Rock\Desktop\Encryptions.dll</HintPath>

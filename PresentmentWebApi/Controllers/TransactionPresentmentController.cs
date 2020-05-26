@@ -11,13 +11,11 @@ namespace PresentmentWebApi.Controllers
     public class TransactionPresentmentController : ApiController
     {
         TranPresntmentDataAccess ObjPDA = new TranPresntmentDataAccess();
-        //[HttpGet]
-        //[Route("api/TransactionPresentment/BindHeader/{UserId}")]
-        //public Dictionary<string, object> getlogindetails(string UserId)
-        //{
-
-
-        //    return ObjPDA.BindHeader(UserId);
-        //}
+        [HttpGet]
+        [Route("api/TransactionPresentment/BindHeader/{UserId}")]
+        public Dictionary<string, object> getlogindetails(string UserId)
+        {
+            return ObjPDA.BindHeader(UserId);
+        }
     }
 }
