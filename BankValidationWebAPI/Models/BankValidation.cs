@@ -63,7 +63,6 @@ namespace BankValidationWebAPI.Models
         public Nullable<Boolean> IsPhysical { get; set; }
         public Nullable<Boolean> Enach { get; set; }
         public string EMandatetype { get; set; }
-        
         public Nullable<Boolean> IsAccountvalidation { get; set; }
         public Nullable<Boolean> EntityEmandate { get; set; }
         public Nullable<Boolean> EntityPhysical { get; set; }
