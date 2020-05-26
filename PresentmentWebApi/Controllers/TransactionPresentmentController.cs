@@ -15,6 +15,7 @@ namespace PresentmentWebApi.Controllers
         //[Route("api/TransactionPresentment/BindHeader/{UserId}")]
         //public Dictionary<string, object> getlogindetails(string UserId)
         //{
+
         //    return ObjPDA.BindHeader(UserId);
         //}
     }
