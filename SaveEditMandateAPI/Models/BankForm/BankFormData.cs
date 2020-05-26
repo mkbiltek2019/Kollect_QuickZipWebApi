@@ -103,23 +103,36 @@ namespace SaveEditMandateAPI.Models.BankForm
             }
         }
 
-        //public Dictionary<string, object> Edit(string mandateid, string UserId, string EntityId)
-        //{
-        //    try
-        //    {
+        public Dictionary<string, object> EditMethod(UserEntity data,string mandateid)
+        {
+            try
+            {
 
 
 
-        //        var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<EditData0>().With<EditData1>().With<EditData2>().With<EditData3>().With<EditData4>().Execute("@QueryType", "@MandateId", "@UserId", "@EntityId", "EditMandate", mandateid, DbSecurity.Decrypt(HttpContext.Current.Server.UrlDecode(UserId.Replace("_", "%"))), DbSecurity.Decrypt(HttpContext.Current.Server.UrlDecode(EntityId.Replace("_", "%")))));
-        //        return Result;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw ex;
-        //    }
-        //}
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<EditData0>().With<EditData1>().With<EditData2>().With<EditData4>().Execute("@QueryType", "@MandateId", "@UserId", "@EntityId", "@AppId", "EditMandate", mandateid, Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.EntityId.Replace("_", "%"))), data.AppId));
+                return Result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
 
+        public Dictionary<string, object> BindGrid(string UserId,string AppId)
+        {
+            try
+            {
 
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<BindGrid>().Execute("@QueryType", "@UserId", "@AppId", "grdMandate", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(UserId.Replace("_", "%"))), Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(AppId.Replace("_", "%")))));
+                return Result;
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

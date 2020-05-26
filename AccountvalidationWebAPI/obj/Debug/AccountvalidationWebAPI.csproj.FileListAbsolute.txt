@@ -86,7 +86,6 @@ E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\obj\Debug\Acc
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\obj\Debug\AccountvalidationWebAPI.csproj.CopyComplete
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\obj\Debug\AccountvalidationWebAPI.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\obj\Debug\AccountvalidationWebAPI.pdb
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\obj\Debug\AccountvalidationWebAPI.csprojAssemblyReference.cache
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\Microsoft.Win32.Primitives.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\netstandard.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\AccountvalidationWebAPI\bin\System.AppContext.dll
