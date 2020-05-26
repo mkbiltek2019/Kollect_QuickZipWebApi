@@ -572,7 +572,6 @@ E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.Xml
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XmlSerializer.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XPath.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XPath.XDocument.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Encryptions.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll.config
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.pdb
@@ -766,3 +765,4 @@ D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\S
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.pdb
 D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\Encryptions.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Encryptions.dll
