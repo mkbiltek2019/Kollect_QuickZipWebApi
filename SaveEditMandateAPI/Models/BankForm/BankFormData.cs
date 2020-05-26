@@ -112,6 +112,7 @@ namespace SaveEditMandateAPI.Models.BankForm
 
                 var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<EditData0>().With<EditData1>().With<EditData2>().With<EditData4>().Execute("@QueryType", "@MandateId", "@UserId", "@EntityId", "@AppId", "EditMandate", mandateid, Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.EntityId.Replace("_", "%"))), data.AppId));
                 return Result;
+
             }
             catch (Exception ex)
             {
