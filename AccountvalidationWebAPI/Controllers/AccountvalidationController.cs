@@ -19,7 +19,7 @@ namespace AccountvalidationWebAPI.Controllers
         {
           List<pennyDetails> res = new List<pennyDetails>();
             List<pennyDetailsList> res1 = new List<pennyDetailsList>();
-            res = GetPennydropDetails.Getpennydata(Acdata.IFSC, Dbsecurity.Decypt(Acdata.AppId)).Cast<pennyDetails>().ToList(); 
+            res = GetPennydropDetails.Getpennydata(Acdata.IFSC, Dbsecurity.Decrypt(Acdata.AppId)).Cast<pennyDetails>().ToList(); 
             try
             {
                 if (res[0].Name.ToUpper().Contains("IDFC"))
@@ -31,14 +31,14 @@ namespace AccountvalidationWebAPI.Controllers
                     //else
                     //{
                         // Response.Write("In AckPaymentTestNew_IDFC");
-                        return IDFC_Acvalidate.IDFCAccountval(Acdata.ActivityId, Dbsecurity.Decypt(Acdata.MandateId), Dbsecurity.Decypt(Acdata.AcNo), Acdata.IFSC, Dbsecurity.Decypt(Acdata.UserId), Dbsecurity.Decypt(Acdata.AppId), Dbsecurity.Decypt(Acdata.EntityId),res);
+                        return IDFC_Acvalidate.IDFCAccountval(Acdata.ActivityId, Dbsecurity.Decrypt(Acdata.MandateId), Dbsecurity.Decrypt(Acdata.AcNo), Acdata.IFSC, Dbsecurity.Decrypt(Acdata.UserId), Dbsecurity.Decrypt(Acdata.AppId), Dbsecurity.Decrypt(Acdata.EntityId),res);
                    /// }
 
 
                 }
                 else
                 {
-                    return AccountValidationMethods.KotakAccountVal(Acdata.ActivityId, Dbsecurity.Decypt(Acdata.MandateId), Dbsecurity.Decypt(Acdata.AcNo), Acdata.IFSC, Dbsecurity.Decypt(Acdata.UserId), Dbsecurity.Decypt(Acdata.AppId), Dbsecurity.Decypt(Acdata.EntityId), res);
+                    return AccountValidationMethods.KotakAccountVal(Acdata.ActivityId, Dbsecurity.Decrypt(Acdata.MandateId), Dbsecurity.Decrypt(Acdata.AcNo), Acdata.IFSC, Dbsecurity.Decrypt(Acdata.UserId), Dbsecurity.Decrypt(Acdata.AppId), Dbsecurity.Decrypt(Acdata.EntityId), res);
                 }
 
                               

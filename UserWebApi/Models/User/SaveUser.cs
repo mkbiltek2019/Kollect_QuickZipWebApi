@@ -18,7 +18,7 @@ namespace UserWebApi.Models.User
         {
             try
             {
-                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_CreateUser]").With<BindUtilityCode>().With<Sponsorbankcode>().With<CategoryCode>().With<BindClientCode>().With<Product>().With<Region>().With<Branch>().Execute("@QueryType", "@EntityId", "BindData", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(EntityId.Replace("_", "%")))));
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_CreateUser]").With<BindUtilityCode>().With<Sponsorbankcode>().With<CategoryCode>().With<BindClientCode>().With<Product>().With<Region>().With<Branch>().Execute("@QueryType", "@EntityId", "BindData", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(EntityId.Replace("_", "%")))));
                 return Result;
             }
             catch (Exception ex)
