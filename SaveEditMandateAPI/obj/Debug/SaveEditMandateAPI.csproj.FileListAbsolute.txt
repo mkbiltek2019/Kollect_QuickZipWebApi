@@ -1,98 +1,3 @@
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll.config
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.pdb
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\csc.exe
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\csc.exe.config
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\csc.rsp
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\csi.exe
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\csi.exe.config
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\csi.rsp
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.CSharp.Core.targets
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.Managed.Core.targets
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.AppContext.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Collections.Immutable.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Console.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.IO.Compression.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.IO.FileSystem.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.IO.Pipes.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Reflection.Metadata.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.AccessControl.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.Claims.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.Principal.Windows.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.ValueTuple.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Xml.ReaderWriter.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Xml.XmlDocument.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Xml.XPath.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\vbc.exe
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\vbc.exe.config
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\vbc.rsp
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\VBCSCompiler.exe
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\VBCSCompiler.exe.config
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Antlr3.Runtime.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\BusinessLibrary.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityDAL.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityFramework.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityFramework.SqlServer.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Microsoft.Web.Infrastructure.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Newtonsoft.Json.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Http.Formatting.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Cors.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Helpers.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Http.Cors.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Http.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Http.WebHost.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Mvc.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Optimization.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Razor.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.WebPages.Deployment.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.WebPages.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.WebPages.Razor.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\WebGrease.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\BusinessLibrary.pdb
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\BusinessLibrary.dll.config
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityDAL.pdb
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityDAL.dll.config
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityFramework.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityFramework.SqlServer.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Http.Formatting.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Http.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Http.Cors.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Newtonsoft.Json.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Helpers.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Http.WebHost.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Mvc.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Optimization.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Razor.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.WebPages.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.WebPages.Deployment.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.WebPages.Razor.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Antlr3.Runtime.pdb
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csprojAssemblyReference.cache
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CoreCompileInputs.cache
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CopyComplete
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.pdb
 D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll.config
 D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll
 D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.pdb
@@ -476,103 +381,6 @@ E:\Avinash_WFH\Kollect_QuickZipWebApi\SaveEditMandateAPI\bin\System.Web.WebPages
 E:\Avinash_WFH\Kollect_QuickZipWebApi\SaveEditMandateAPI\bin\Antlr3.Runtime.pdb
 E:\Avinash_WFH\Kollect_QuickZipWebApi\SaveEditMandateAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\Avinash_WFH\Kollect_QuickZipWebApi\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CopyComplete
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Microsoft.Win32.Primitives.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\netstandard.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.AppContext.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Collections.Concurrent.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Collections.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Collections.NonGeneric.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Collections.Specialized.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.ComponentModel.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.ComponentModel.EventBasedAsync.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.ComponentModel.Primitives.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.ComponentModel.TypeConverter.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Console.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Data.Common.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.Contracts.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.Debug.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.FileVersionInfo.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.Process.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.StackTrace.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.TextWriterTraceListener.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.Tools.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.TraceSource.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.Tracing.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Drawing.Primitives.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Dynamic.Runtime.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Globalization.Calendars.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Globalization.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Globalization.Extensions.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.Compression.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.Compression.ZipFile.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.FileSystem.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.FileSystem.DriveInfo.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.FileSystem.Primitives.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.FileSystem.Watcher.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.IsolatedStorage.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.MemoryMappedFiles.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.Pipes.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.UnmanagedMemoryStream.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Linq.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Linq.Expressions.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Linq.Parallel.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Linq.Queryable.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Http.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.NameResolution.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.NetworkInformation.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Ping.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Primitives.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Requests.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Security.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Sockets.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.WebHeaderCollection.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.WebSockets.Client.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.WebSockets.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.ObjectModel.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Reflection.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Reflection.Extensions.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Reflection.Primitives.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Resources.Reader.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Resources.ResourceManager.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Resources.Writer.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.CompilerServices.VisualC.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Extensions.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Handles.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.InteropServices.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.InteropServices.RuntimeInformation.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Numerics.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Serialization.Formatters.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Serialization.Json.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Serialization.Primitives.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Serialization.Xml.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Claims.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Cryptography.Algorithms.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Cryptography.Csp.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Cryptography.Encoding.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Cryptography.Primitives.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Cryptography.X509Certificates.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Principal.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.SecureString.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Text.Encoding.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Text.Encoding.Extensions.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Text.RegularExpressions.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.Overlapped.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.Tasks.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.Tasks.Parallel.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.Thread.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.ThreadPool.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.Timer.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.ValueTuple.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.ReaderWriter.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XDocument.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XmlDocument.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XmlSerializer.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XPath.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XPath.XDocument.dll
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Encryptions.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll.config
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.pdb
@@ -766,195 +574,195 @@ D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\S
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.pdb
 D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\Encryptions.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll.config
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\SaveEditMandateAPI.pdb
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\csc.exe
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\csc.exe.config
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\csc.rsp
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\csi.exe
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\csi.exe.config
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\csi.rsp
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\Microsoft.Managed.Core.targets
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.AppContext.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Collections.Immutable.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Console.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.IO.Compression.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.IO.FileSystem.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.IO.Pipes.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Reflection.Metadata.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Security.AccessControl.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Security.Claims.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Security.Principal.Windows.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.ValueTuple.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Xml.ReaderWriter.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Xml.XmlDocument.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Xml.XPath.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\vbc.exe
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\vbc.exe.config
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\vbc.rsp
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\VBCSCompiler.exe
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\roslyn\VBCSCompiler.exe.config
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\Microsoft.Win32.Primitives.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\netstandard.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.AppContext.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Collections.Concurrent.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Collections.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Collections.NonGeneric.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Collections.Specialized.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.ComponentModel.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.ComponentModel.EventBasedAsync.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.ComponentModel.Primitives.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.ComponentModel.TypeConverter.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Console.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Data.Common.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Diagnostics.Contracts.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Diagnostics.Debug.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Diagnostics.FileVersionInfo.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Diagnostics.Process.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Diagnostics.StackTrace.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Diagnostics.TextWriterTraceListener.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Diagnostics.Tools.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Diagnostics.TraceSource.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Diagnostics.Tracing.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Drawing.Primitives.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Dynamic.Runtime.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Globalization.Calendars.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Globalization.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Globalization.Extensions.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.IO.Compression.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.IO.Compression.ZipFile.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.IO.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.IO.FileSystem.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.IO.FileSystem.DriveInfo.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.IO.FileSystem.Primitives.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.IO.FileSystem.Watcher.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.IO.IsolatedStorage.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.IO.MemoryMappedFiles.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.IO.Pipes.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.IO.UnmanagedMemoryStream.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Linq.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Linq.Expressions.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Linq.Parallel.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Linq.Queryable.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Net.Http.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Net.NameResolution.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Net.NetworkInformation.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Net.Ping.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Net.Primitives.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Net.Requests.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Net.Security.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Net.Sockets.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Net.WebHeaderCollection.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Net.WebSockets.Client.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Net.WebSockets.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.ObjectModel.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Reflection.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Reflection.Extensions.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Reflection.Primitives.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Resources.Reader.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Resources.ResourceManager.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Resources.Writer.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Runtime.CompilerServices.VisualC.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Runtime.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Runtime.Extensions.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Runtime.Handles.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Runtime.InteropServices.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Runtime.InteropServices.RuntimeInformation.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Runtime.Numerics.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Runtime.Serialization.Formatters.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Runtime.Serialization.Json.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Runtime.Serialization.Primitives.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Runtime.Serialization.Xml.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Security.Claims.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Security.Cryptography.Algorithms.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Security.Cryptography.Csp.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Security.Cryptography.Encoding.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Security.Cryptography.Primitives.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Security.Cryptography.X509Certificates.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Security.Principal.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Security.SecureString.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Text.Encoding.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Text.Encoding.Extensions.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Text.RegularExpressions.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Threading.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Threading.Overlapped.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Threading.Tasks.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Threading.Tasks.Parallel.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Threading.Thread.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Threading.ThreadPool.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Threading.Timer.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.ValueTuple.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Xml.ReaderWriter.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Xml.XDocument.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Xml.XmlDocument.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Xml.XmlSerializer.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Xml.XPath.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Xml.XPath.XDocument.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\Antlr3.Runtime.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\BusinessLibrary.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\Encryptions.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\EntityDAL.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\EntityFramework.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\EntityFramework.SqlServer.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\Microsoft.Web.Infrastructure.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\Newtonsoft.Json.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Net.Http.Formatting.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Cors.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Helpers.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Http.Cors.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Http.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Http.WebHost.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Mvc.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Optimization.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Razor.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.WebPages.Deployment.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.WebPages.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.WebPages.Razor.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\WebGrease.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\BusinessLibrary.pdb
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\BusinessLibrary.dll.config
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\EntityDAL.pdb
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\EntityDAL.dll.config
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\EntityFramework.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\EntityFramework.SqlServer.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Net.Http.Formatting.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Http.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Http.Cors.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\Newtonsoft.Json.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Helpers.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Http.WebHost.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Mvc.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Optimization.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.Razor.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.WebPages.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.WebPages.Deployment.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\System.Web.WebPages.Razor.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\Antlr3.Runtime.pdb
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csprojAssemblyReference.cache
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CoreCompileInputs.cache
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CopyComplete
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.dll
-D:\CloudProjects\QuickZip WebAPI Git\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.pdb
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll.config
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.pdb
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\csc.exe
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\csc.exe.config
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\csc.rsp
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\csi.exe
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\csi.exe.config
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\csi.rsp
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.AppContext.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Collections.Immutable.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Console.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.IO.Compression.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.IO.FileSystem.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.IO.Pipes.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Reflection.Metadata.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.AccessControl.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.Claims.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.ValueTuple.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Xml.XPath.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\vbc.exe
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\vbc.exe.config
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\vbc.rsp
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\VBCSCompiler.exe
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\roslyn\VBCSCompiler.exe.config
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Microsoft.Win32.Primitives.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\netstandard.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.AppContext.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Collections.Concurrent.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Collections.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Collections.NonGeneric.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Collections.Specialized.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.ComponentModel.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.ComponentModel.EventBasedAsync.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.ComponentModel.Primitives.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.ComponentModel.TypeConverter.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Console.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Data.Common.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.Contracts.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.Debug.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.FileVersionInfo.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.Process.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.StackTrace.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.TextWriterTraceListener.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.Tools.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.TraceSource.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Diagnostics.Tracing.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Drawing.Primitives.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Dynamic.Runtime.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Globalization.Calendars.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Globalization.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Globalization.Extensions.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.Compression.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.Compression.ZipFile.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.FileSystem.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.FileSystem.DriveInfo.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.FileSystem.Primitives.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.FileSystem.Watcher.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.IsolatedStorage.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.MemoryMappedFiles.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.Pipes.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.IO.UnmanagedMemoryStream.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Linq.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Linq.Expressions.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Linq.Parallel.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Linq.Queryable.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Http.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.NameResolution.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.NetworkInformation.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Ping.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Primitives.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Requests.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Security.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Sockets.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.WebHeaderCollection.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.WebSockets.Client.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.WebSockets.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.ObjectModel.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Reflection.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Reflection.Extensions.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Reflection.Primitives.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Resources.Reader.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Resources.ResourceManager.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Resources.Writer.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.CompilerServices.VisualC.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Extensions.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Handles.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.InteropServices.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Numerics.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Serialization.Formatters.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Serialization.Json.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Serialization.Primitives.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Runtime.Serialization.Xml.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Claims.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Cryptography.Algorithms.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Cryptography.Csp.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Cryptography.Encoding.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Cryptography.Primitives.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Cryptography.X509Certificates.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.Principal.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Security.SecureString.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Text.Encoding.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Text.Encoding.Extensions.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Text.RegularExpressions.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.Overlapped.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.Tasks.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.Tasks.Parallel.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.Thread.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.ThreadPool.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Threading.Timer.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.ValueTuple.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.ReaderWriter.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XDocument.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XmlDocument.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XmlSerializer.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XPath.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XPath.XDocument.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Antlr3.Runtime.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\BusinessLibrary.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Encryptions.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityDAL.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityFramework.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityFramework.SqlServer.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Microsoft.Web.Infrastructure.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Newtonsoft.Json.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Http.Formatting.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Cors.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Helpers.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Http.Cors.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Http.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Http.WebHost.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Mvc.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Optimization.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Razor.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.WebPages.Deployment.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.WebPages.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.WebPages.Razor.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\WebGrease.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\BusinessLibrary.pdb
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\BusinessLibrary.dll.config
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityDAL.pdb
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityDAL.dll.config
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityFramework.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\EntityFramework.SqlServer.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Net.Http.Formatting.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Http.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Http.Cors.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Newtonsoft.Json.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Helpers.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Http.WebHost.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Mvc.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Optimization.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.Razor.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.WebPages.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.WebPages.Deployment.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Web.WebPages.Razor.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Antlr3.Runtime.pdb
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csprojAssemblyReference.cache
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CoreCompileInputs.cache
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CopyComplete
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.dll
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.pdb

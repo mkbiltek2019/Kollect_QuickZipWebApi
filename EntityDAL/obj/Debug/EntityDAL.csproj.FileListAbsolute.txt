@@ -46,6 +46,20 @@ D:\Kollect_QuickZip\QuickCheckWEBAPI\EntityDAL\obj\Debug\EntityDAL.csproj.CoreCo
 D:\Kollect_QuickZip\QuickCheckWEBAPI\EntityDAL\obj\Debug\EntityDAL.csproj.CopyComplete
 D:\Kollect_QuickZip\QuickCheckWEBAPI\EntityDAL\obj\Debug\EntityDAL.dll
 D:\Kollect_QuickZip\QuickCheckWEBAPI\EntityDAL\obj\Debug\EntityDAL.pdb
+<<<<<<< HEAD
+E:\Avinash_WFH\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityDAL.dll.config
+E:\Avinash_WFH\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityDAL.dll
+E:\Avinash_WFH\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityDAL.pdb
+E:\Avinash_WFH\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.dll
+E:\Avinash_WFH\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Avinash_WFH\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.xml
+E:\Avinash_WFH\Kollect_QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Avinash_WFH\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.csprojAssemblyReference.cache
+E:\Avinash_WFH\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.csproj.CoreCompileInputs.cache
+E:\Avinash_WFH\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.csproj.CopyComplete
+E:\Avinash_WFH\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.dll
+E:\Avinash_WFH\Kollect_QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.pdb
+=======
 D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\bin\Debug\EntityDAL.dll.config
 D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\bin\Debug\EntityDAL.dll
 D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\bin\Debug\EntityDAL.pdb
@@ -58,3 +72,4 @@ D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\obj\Debug\EntityDAL.csproj.CoreCo
 D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\obj\Debug\EntityDAL.csproj.CopyComplete
 D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\obj\Debug\EntityDAL.dll
 D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\obj\Debug\EntityDAL.pdb
+>>>>>>> 9afa2534b5bc2a01c0665a2e1fbc84ce7ad46b62

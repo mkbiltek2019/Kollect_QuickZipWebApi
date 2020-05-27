@@ -10,6 +10,12 @@ namespace EntityDAL
  
     public class Global
     {
+        public static string ReverseString(string s)
+        {
+            char[] charArray = s.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+        }
         //use to display ApplicationName
         public const string ApplicationName = "Digital University";
 
