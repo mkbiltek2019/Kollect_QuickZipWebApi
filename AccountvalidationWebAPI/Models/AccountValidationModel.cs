@@ -6,18 +6,7 @@ using System.Web.Http;
 
 namespace AccountvalidationWebAPI.Models
 {
-    public class LoginResponse
-    {
-        //public List<Mandate> MandateData
-        //{ get; set; }
-        public string MdtID { get; set; }
-        //public string IsliveInNach { get; set; }
-        public string Message { get; set; }
-        public string Status { get; set; }
-        public string AccountHolderName { get; set; }
-        public string ResCode { get; set; }
-        public string MandateData { get; set; }
-    }
+
     public class AccountValidationModel
     {
         public string MandateId { get; set; }
@@ -25,6 +14,7 @@ namespace AccountvalidationWebAPI.Models
         public string ActivityId { get; set; }
         public string AcNo { get; set; }
         public string IFSC { get; set; }
+        public string MICR { get; set; }
         public string UserId { get; set; }
         public string AppId { get; set; }
         public string EntityId { get; set; }
@@ -33,8 +23,8 @@ namespace AccountvalidationWebAPI.Models
     {
         public string Customer1 { get; set; }
         //public string IsliveInNach { get; set; }
-        public Int32 LengthName { get; set; }
-        public Int64 paymentRequestId { get; set; }
+        public Nullable<Int32> LengthName { get; set; }
+        public Nullable<Int64> paymentRequestId { get; set; }
 
     }
     public class InsertrequestNOModel
@@ -48,6 +38,8 @@ namespace AccountvalidationWebAPI.Models
         public string Status { get; set; }
         public string Tab { get; set; }
         public string type { get; set; }
+        public string BankReturnCustNme { get; set; }
+
     }
     public class ResCust1
     {
@@ -70,4 +62,83 @@ namespace AccountvalidationWebAPI.Models
         public List<ResIfsc> ResIfsclist { get; set; }
         public List<Resshow> Resshowlist { get; set; }
     }
+    public class Error
+    {
+        public string cd { get; set; }
+        public string rsn { get; set; }
+    }
+    public class MsgBdyRes
+    {
+        public string sts { get; set; }
+        public string respCd { get; set; }
+        public string txnId { get; set; }
+        public string cdtrAcctId { get; set; }
+        public string cdtrNm { get; set; }
+        public string txnRfNo { get; set; }
+    }
+    public class MsgHdrRes
+    {
+        public string rslt { get; set; }
+        public Error error { get; set; }
+    }
+    public class InitiateAuthIMPSFundTransferResp
+    {
+        public MsgHdrRes msgHdr { get; set; }
+        public MsgBdyRes msgBdy { get; set; }
+    }
+    public class ResponseObject
+    {
+        public InitiateAuthIMPSFundTransferResp initiateAuthIMPSFundTransferResp { get; set; }
+    }
+    public class ReuestObject
+    {
+        public InitiateAuthIMPSFundTransferReq InitiateAuthIMPSFundTransferReq { get; set; }
+
+    }
+    public class MsgHdr
+    {
+        public string msgId { get; set; }
+        public string cnvId { get; set; }
+        public string extRefId { get; set; }
+        public string bizObjId { get; set; }
+        public string appId { get; set; }
+        public string timestamp { get; set; }
+    }
+    public class InitiateAuthIMPSFundTransferReq
+    {
+        public MsgHdr msgHdr { get; set; }
+        public MsgBdy msgBdy { get; set; }
+    }
+    public class MsgBdy
+    {
+        public string remNm { get; set; }
+        public string remMobNb { get; set; }
+        public string cnsmrNm { get; set; }
+        public string dbtrAcctId { get; set; }
+        public string acctTp { get; set; }
+        public string cdtrAcctId { get; set; }
+        public string finInstnId { get; set; }
+        public string amt { get; set; }
+        public string ccy { get; set; }
+        public string pmtDesc { get; set; }
+        public string txnRfNo { get; set; }
+
+    }
+    public class pennyDetails
+    {
+        public Int64 PennyDropId { get; set; }
+        public string Name { get; set; }
+        public string URL { get; set; }
+        public string MERCHANT { get; set; }
+        public string CheckSum { get; set; }
+        public string IDFCextRefId { get; set; }
+        public string dbtrAcctId_idfc { get; set; }
+        public string remMobNb { get; set; }
+    }
+    public class pennyDetailsList
+    {
+      public  List<pennyDetails> pennyDetailsListData { get; set; }
+    }
+
+
 }

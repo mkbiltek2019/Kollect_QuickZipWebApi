@@ -77,7 +77,7 @@ namespace SaveEditMandateAPI.Models.BankForm
         public string IFSC { get; set; }
         public string MICR { get; set; }
 
-        public decimal AmountRupees { get; set; }
+        public string AmountRupees { get; set; }
         public string Amount { get; set; }
         public string Refrence1 { get; set; }
         public string Refrence2 { get; set; }
