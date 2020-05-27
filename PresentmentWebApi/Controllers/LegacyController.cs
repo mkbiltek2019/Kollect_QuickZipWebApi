@@ -18,7 +18,7 @@ namespace PresentmentWebApi.Controllers
         //        return LegacyHeaderBind.bankvalida(LHMData);
 
         //        // ds.Tables[4].Rows[0]["mandateid"] = DbSecurity.Encrypt(Convert.ToString(ds.Tables[4].Rows[0]["mandateid"]));
-        //    }
+        //     }
         //    catch
         //    {
         //        return null;
