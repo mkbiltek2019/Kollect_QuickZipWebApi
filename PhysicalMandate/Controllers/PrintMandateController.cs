@@ -28,6 +28,7 @@ namespace PhysicalMandate.Controllers
                 else
                 {
 
+
                     return PrintWithoutQR.PrintWIthoutQR(Dbsecurity.Decypt(MData.MandateId), Dbsecurity.Decypt(MData.AppId));
 
                 }
