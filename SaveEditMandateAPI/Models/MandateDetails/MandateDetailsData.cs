@@ -27,6 +27,7 @@ namespace SaveEditMandateAPI.Models.MandateDetails
 
         string TempMandateID = "";
 
+
         public Dictionary<string, object> GetMandateDetails(MandateHeader data)
         {
             try
