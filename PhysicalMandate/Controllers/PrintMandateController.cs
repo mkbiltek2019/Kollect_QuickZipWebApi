@@ -13,6 +13,8 @@ namespace PhysicalMandate.Controllers
     public class PrintMandateController : ApiController
     {
         
+
+
         [HttpPost]
         [Route("api/PrintMandate/PrintMandate")]
         public string PrintMandate(PrintmandateModal MData)
