@@ -135,8 +135,8 @@ namespace AccountvalidationWebAPI.Models
                     if (Convert.ToString(ConfigurationManager.AppSettings["IsLocal"]) == "1")
 
                     {
-                        // webData = "6220|24082018120636|YK17|wIw4GP24082018122440|KPY00|Successful Transaction|823612654816|KMB0000037731||Fateh singh|1658580580";
-                        webData = "6220|24082018120636|YK17|wIw4GP24082018122440|KPYM3|Invalid Beneficiary details, Inform customer|823612654816|KMB0000037731||Fateh singh|1658580580";
+                         webData = "6220|24082018120636|YK17|wIw4GP24082018122440|KPY00|Successful Transaction|823612654816|KMB0000037731||Fateh singh|1658580580";
+                       // webData = "6220|24082018120636|YK17|wIw4GP24082018122440|KPYM3|Invalid Beneficiary details, Inform customer|823612654816|KMB0000037731||Fateh singh|1658580580";
                     }
                     else
                     {

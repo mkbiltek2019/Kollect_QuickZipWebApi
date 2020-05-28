@@ -179,6 +179,8 @@
     <Compile Include="Controllers\BusinessLogic\GetPennydropDetails.cs" />
     <Compile Include="Controllers\BusinessLogic\GetTraceNoClass.cs" />
     <Compile Include="Controllers\BusinessLogic\IDFC_AcValidate.cs" />
+    <Compile Include="Controllers\BusinessLogic\UpdateNameMethod.cs" />
+    <Compile Include="Controllers\UpdateNameController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
