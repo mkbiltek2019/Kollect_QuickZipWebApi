@@ -764,5 +764,5 @@ D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\S
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CopyComplete
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.pdb
-D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\Encryptions.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Encryptions.dll
+D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\Encryptions.dll
