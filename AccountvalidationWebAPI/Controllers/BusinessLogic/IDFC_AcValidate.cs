@@ -53,7 +53,7 @@ namespace AccountvalidationWebAPI.Controllers.BusinessLogic
 
 
                 var Result = dbcontext.MultipleResults("[dbo].[sp_Payment]").With<InsertrequestModel>().With<InsertrequestNOModel>().Execute("@QueryType", "@BeniACNo", "@BeniAcType", "@BeniAmount", "@BeniIFSC", "@ChkSum", "@UserId" , "@EntityId", "@Filler1", "@Filler2", "@Filler3", "@Filler4",
-             "@Filler5", "@MandateId", "@MerchantId", "@MessageCode", "@Remarks", "@RequestDateTime", "@RequestType", "@TraceNo", "@ActivityId", "@msgId", "@cnvId", "@AppId", "InsertpaymentReq", AcNo, "10", "1",IFSC, Convert.ToString(uni), UserId.ToString(),EntityId, "Yoeki Soft Pvt. Ltd",PendydropData[0].remMobNb.Replace("+91-", ""), "", "", "", MandateId,Dbsecurity.Decypt(PendydropData[0].MERCHANT), "6211" , "Payment", GMTformattedDateTime, "R", TraceNumber,ActivityId, msgId, cnvId, AppId);
+             "@Filler5", "@MandateId", "@MerchantId", "@MessageCode", "@Remarks", "@RequestDateTime", "@RequestType", "@TraceNo", "@ActivityId", "@msgId", "@cnvId", "@AppId", "InsertpaymentReq", AcNo, "10", "1",IFSC, Convert.ToString(uni), UserId.ToString(),EntityId, "Yoeki Soft Pvt. Ltd",PendydropData[0].remMobNb.Replace("+91-", ""), "", "", "", MandateId,Dbsecurity.Decrypt(PendydropData[0].MERCHANT), "6211" , "Payment", GMTformattedDateTime, "R", TraceNumber,ActivityId, msgId, cnvId, AppId);
 
 
                 //Edited by Bibhu on 25Jan2020 End
@@ -75,13 +75,13 @@ namespace AccountvalidationWebAPI.Controllers.BusinessLogic
                             msgId = msgId,
                             cnvId = cnvId,
                             extRefId = Convert.ToString(PendydropData[0].IDFCextRefId),//ConfigurationManager.AppSettings["IDFCextRefId"]),
-                            appId =Dbsecurity.Decypt(PendydropData[0].MERCHANT),//ConfigurationManager.AppSettings["IDFCAppId"]),
+                            appId =Dbsecurity.Decrypt(PendydropData[0].MERCHANT),//ConfigurationManager.AppSettings["IDFCAppId"]),
                             timestamp = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss", CultureInfo.CurrentCulture)
                         },
                         msgBdy = new MsgBdy
                         {
                             remNm = "",
-                            cnsmrNm = Dbsecurity.Decypt(PendydropData[0].MERCHANT),
+                            cnsmrNm = Dbsecurity.Decrypt(PendydropData[0].MERCHANT),
                             //Convert.ToString(ConfigurationManager.AppSettings["IDFCAppId"]),
                             remMobNb = PendydropData[0].remMobNb,//Convert.ToString(ConfigurationManager.AppSettings["remMobNb"]),
                             dbtrAcctId = PendydropData[0].dbtrAcctId_idfc,//Convert.ToString(ConfigurationManager.AppSettings["dbtrAcctId"]),
@@ -176,17 +176,17 @@ namespace AccountvalidationWebAPI.Controllers.BusinessLogic
 
                                 if (Convert.ToString(UserList.initiateAuthIMPSFundTransferResp.msgHdr.rslt) == "OK")
                                 {
-                                    webData = "6221|" + GMTformattedDateTime + "|" +Dbsecurity.Decypt( PendydropData[0].MERCHANT) + "|" + TraceNumber + "|" + UserList.initiateAuthIMPSFundTransferResp.msgBdy.respCd + "|Successful Transaction|" + UserList.initiateAuthIMPSFundTransferResp.msgBdy.txnId + "|||" + UserList.initiateAuthIMPSFundTransferResp.msgBdy.cdtrNm + "|";
+                                    webData = "6221|" + GMTformattedDateTime + "|" +Dbsecurity.Decrypt( PendydropData[0].MERCHANT) + "|" + TraceNumber + "|" + UserList.initiateAuthIMPSFundTransferResp.msgBdy.respCd + "|Successful Transaction|" + UserList.initiateAuthIMPSFundTransferResp.msgBdy.txnId + "|||" + UserList.initiateAuthIMPSFundTransferResp.msgBdy.cdtrNm + "|";
                                 }
                                 else
                                 {
                                     if (!string.IsNullOrEmpty(UserList.initiateAuthIMPSFundTransferResp.msgBdy.txnId))
                                     {
-                                        webData = "6221|" + GMTformattedDateTime + "|" + Dbsecurity.Decypt(PendydropData[0].MERCHANT) + "|" + TraceNumber + "|" + UserList.initiateAuthIMPSFundTransferResp.msgHdr.error.cd + "|" + UserList.initiateAuthIMPSFundTransferResp.msgHdr.error.rsn + "|" + UserList.initiateAuthIMPSFundTransferResp.msgBdy.txnId + "|||" + UserList.initiateAuthIMPSFundTransferResp.msgBdy.cdtrNm + "|";
+                                        webData = "6221|" + GMTformattedDateTime + "|" + Dbsecurity.Decrypt(PendydropData[0].MERCHANT) + "|" + TraceNumber + "|" + UserList.initiateAuthIMPSFundTransferResp.msgHdr.error.cd + "|" + UserList.initiateAuthIMPSFundTransferResp.msgHdr.error.rsn + "|" + UserList.initiateAuthIMPSFundTransferResp.msgBdy.txnId + "|||" + UserList.initiateAuthIMPSFundTransferResp.msgBdy.cdtrNm + "|";
                                     }
                                     else
                                     {
-                                        webData = "6221|" + GMTformattedDateTime + "|" + Dbsecurity.Decypt(PendydropData[0].MERCHANT) + "|" + TraceNumber + "|" + UserList.initiateAuthIMPSFundTransferResp.msgHdr.error.cd + "|" + UserList.initiateAuthIMPSFundTransferResp.msgHdr.error.rsn + "||||" + UserList.initiateAuthIMPSFundTransferResp.msgBdy.cdtrNm + "|";
+                                        webData = "6221|" + GMTformattedDateTime + "|" + Dbsecurity.Decrypt(PendydropData[0].MERCHANT) + "|" + TraceNumber + "|" + UserList.initiateAuthIMPSFundTransferResp.msgHdr.error.cd + "|" + UserList.initiateAuthIMPSFundTransferResp.msgHdr.error.rsn + "||||" + UserList.initiateAuthIMPSFundTransferResp.msgBdy.cdtrNm + "|";
                                     }
                                 }
                             }

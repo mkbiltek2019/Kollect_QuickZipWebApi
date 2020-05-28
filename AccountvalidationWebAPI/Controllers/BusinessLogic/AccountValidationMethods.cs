@@ -55,7 +55,7 @@ namespace AccountvalidationWebAPI.Models
                 hash_string = hash_string + GMTformattedDateTime;//	Date and Time  in GMT
                 hash_string = hash_string + '|';
 
-                hash_string = hash_string + Dbsecurity.Decypt(PendydropData[0].MERCHANT);// Dbsecurity.Decypt(ConfigurationManager.AppSettings["MERCHANT"]);//Merchant Id
+                hash_string = hash_string + Dbsecurity.Decrypt(PendydropData[0].MERCHANT);// Dbsecurity.Decypt(ConfigurationManager.AppSettings["MERCHANT"]);//Merchant Id
                 hash_string = hash_string + '|';
 
                 hash_string = hash_string + TraceNumber;//Trace number
@@ -97,7 +97,7 @@ namespace AccountvalidationWebAPI.Models
 
                 //}
 
-                hash1 = hash_string + '|' + Dbsecurity.Decypt(PendydropData[0].CheckSum);
+                hash1 = hash_string + '|' + Dbsecurity.Decrypt(PendydropData[0].CheckSum);
 
                 byte[] Message = Encoding.UTF8.GetBytes(hash1);
 
@@ -107,7 +107,7 @@ namespace AccountvalidationWebAPI.Models
                 List<InsertrequestNOModel> InsertrequestNOModelllist = new List<InsertrequestNOModel>();
 
                 var Result = dbcontext.MultipleResults("[dbo].[sp_Payment]").With<InsertrequestModel>().With<InsertrequestNOModel>().Execute("@QueryType", "@BeniACNo", "@BeniAcType", "@BeniAmount", "@BeniIFSC", "@ChkSum", "@UserId", "@EntityId", "@Filler1", "@Filler2", "@Filler3", "@Filler4",
-               "@Filler5", "@MandateId", "@MerchantId", "@MessageCode", "@Remarks", "@RequestDateTime", "@RequestType", "@TraceNo", "@ActivityId", "@AppId", "InsertpaymentReq", AcNo, "10", "1.00", IFSC, Convert.ToString(uni), UserId, EntityId, "Yoeki Soft Pvt. Ltd", "9810462147", "", "", "", MandateId, Dbsecurity.Decypt(PendydropData[0].MERCHANT), "6210", "Payment", GMTformattedDateTime, "R", TraceNumber, ActivityId,AppId);
+               "@Filler5", "@MandateId", "@MerchantId", "@MessageCode", "@Remarks", "@RequestDateTime", "@RequestType", "@TraceNo", "@ActivityId", "@AppId", "InsertpaymentReq", AcNo, "10", "1.00", IFSC, Convert.ToString(uni), UserId, EntityId, "Yoeki Soft Pvt. Ltd", "9810462147", "", "", "", MandateId, Dbsecurity.Decrypt(PendydropData[0].MERCHANT), "6210", "Payment", GMTformattedDateTime, "R", TraceNumber, ActivityId,AppId);
 
                 if (Result.Count > 2)
                 {
