@@ -18,7 +18,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
             try
             {              
                 var Result = dbcontext.MultipleResults("[dbo].[sp_ENach]").With<UpdateSelectModeRes>().
-                    Execute("@QueryType", "@MandateId", "@IsPhysical", "@Enach", "@MobileNo", "@EmailId", "@EMandatetype", "@Amount","@AppId", "@AmountRupeesInWords", "UpdateENach", Dbsecurity.Decypt(MData.MandateId),MData.Physical,MData.EMandate,MData.MobileNumber,MData.Email,MData.EMandatetype,MData.Amount, Dbsecurity.Decypt(MData.AppId),MData.AmountRupeesInWords);
+                    Execute("@QueryType", "@MandateId", "@IsPhysical", "@Enach", "@MobileNo", "@EmailId", "@EMandatetype", "@Amount","@AppId", "@AmountRupeesInWords", "UpdateENach", Dbsecurity.Decrypt(MData.MandateId),MData.Physical,MData.EMandate,MData.MobileNumber,MData.Email,MData.EMandatetype,MData.Amount, Dbsecurity.Decrypt(MData.AppId),MData.AmountRupeesInWords);
 
                // Result[0].Cast<EMandateTypeDataModal>().ToList();
             }

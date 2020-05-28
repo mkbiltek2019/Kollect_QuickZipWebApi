@@ -20,7 +20,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
             QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();
             
             var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<UpdateNameRes>().
-                    Execute("@QueryType", "@MandateId", "@AppId", "@UserId", "UpdateIsPHysical", MandateId, AppId,Dbsecurity.Decypt(UserId));
+                    Execute("@QueryType", "@MandateId", "@AppId", "@UserId", "UpdateIsPHysical", MandateId, AppId,Dbsecurity.Decrypt(UserId));
             return "1";
 
         }

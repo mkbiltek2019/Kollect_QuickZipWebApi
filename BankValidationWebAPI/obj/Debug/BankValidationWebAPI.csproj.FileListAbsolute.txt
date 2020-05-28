@@ -185,8 +185,8 @@ E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\bin\System.Web.W
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\bin\System.Web.WebPages.Razor.xml
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\bin\Antlr3.Runtime.pdb
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\obj\Debug\BankValidationWebAPI.csprojAssemblyReference.cache
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\obj\Debug\BankValidationWebAPI.csproj.CoreCompileInputs.cache
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\obj\Debug\BankValidationWebAPI.csproj.CopyComplete
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\obj\Debug\BankValidationWebAPI.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\obj\Debug\BankValidationWebAPI.pdb
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BankValidationWebAPI\obj\Debug\BankValidationWebAPI.csprojAssemblyReference.cache

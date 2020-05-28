@@ -49,7 +49,7 @@ namespace AccountvalidationWebAPI.Controllers.BusinessLogic
                 List<InsertrequestModel> InsertrequestModellist = new List<InsertrequestModel>();
                 List<InsertrequestNOModel> InsertrequestNOModelllist = new List<InsertrequestNOModel>();
                 //var Result = dbcontext.MultipleResults("[dbo].[sp_Payment]").With<InsertrequestModel>().With<InsertrequestNOModel>().Execute("@QueryType", "@BeniACNo", "@BeniAcType", "@BeniAmount", "@BeniIFSC", "@ChkSum", "@UserId", "@EntityId", "@Filler1", "@Filler2", "@Filler3", "@Filler4",
-                // "@Filler5", "@MandateId", "@MerchantId", "@MessageCode", "@Remarks", "@RequestDateTime", "@RequestType", "@TraceNo", "@ActivityId", "@msgId", "@cnvId", "@AppId", "InsertpaymentReq", AcNo, "10", "1.00", IFSC, Convert.ToString(uni), UserId, EntityId, "Yoeki Soft Pvt. Ltd", "9810462147", "", "", "", MandateId, Dbsecurity.Decypt(), "6210", "Payment", GMTformattedDateTime, "R", TraceNumber, ActivityId, msgId, cnvId, AppId);
+                // "@Filler5", "@MandateId", "@MerchantId", "@MessageCode", "@Remarks", "@RequestDateTime", "@RequestType", "@TraceNo", "@ActivityId", "@msgId", "@cnvId", "@AppId", "InsertpaymentReq", AcNo, "10", "1.00", IFSC, Convert.ToString(uni), UserId, EntityId, "Yoeki Soft Pvt. Ltd", "9810462147", "", "", "", MandateId, Dbsecurity.Decrypt(), "6210", "Payment", GMTformattedDateTime, "R", TraceNumber, ActivityId, msgId, cnvId, AppId);
 
 
                 var Result = dbcontext.MultipleResults("[dbo].[sp_Payment]").With<InsertrequestModel>().With<InsertrequestNOModel>().Execute("@QueryType", "@BeniACNo", "@BeniAcType", "@BeniAmount", "@BeniIFSC", "@ChkSum", "@UserId" , "@EntityId", "@Filler1", "@Filler2", "@Filler3", "@Filler4",

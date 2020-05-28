@@ -18,7 +18,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
             try
             {
                 var Result = dbcontext.MultipleResults("[dbo].[Sp_GetMandatemodeData]").With<EMandateTypeDataModal>().
-                    Execute("@QueryType", "@MandateId", "@Appid", "GetMandatemode", Dbsecurity.Decypt(MData.MandateId), Dbsecurity.Decypt(MData.AppId));
+                    Execute("@QueryType", "@MandateId", "@Appid", "GetMandatemode", Dbsecurity.Decrypt(MData.MandateId), Dbsecurity.Decrypt(MData.AppId));
 
                 res.EMandateTypeDataModalList = Result[0].Cast<EMandateTypeDataModal>().ToList();
             }

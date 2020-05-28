@@ -55,7 +55,7 @@ namespace AccountvalidationWebAPI.Models
                 hash_string = hash_string + GMTformattedDateTime;//	Date and Time  in GMT
                 hash_string = hash_string + '|';
 
-                hash_string = hash_string + Dbsecurity.Decrypt(PendydropData[0].MERCHANT);// Dbsecurity.Decypt(ConfigurationManager.AppSettings["MERCHANT"]);//Merchant Id
+                hash_string = hash_string + Dbsecurity.Decrypt(PendydropData[0].MERCHANT);// Dbsecurity.Decrypt(ConfigurationManager.AppSettings["MERCHANT"]);//Merchant Id
                 hash_string = hash_string + '|';
 
                 hash_string = hash_string + TraceNumber;//Trace number
