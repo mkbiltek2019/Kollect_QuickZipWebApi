@@ -5,9 +5,9 @@ using System.Web;
 
 namespace UserWebApi.Models.User
 {
-    public class CategoryCode
+    public class bindalldata
     {
-        public string categoryId { get; set; }
-        public string name { get; set; }
+        public string EntityId { get; set; }
+        public string AppId { get; set; }
     }
 }

@@ -5,9 +5,8 @@ using System.Web;
 
 namespace UserWebApi.Models.User
 {
-    public class CategoryCode
+    public class tblUserCategoryCode
     {
-        public string categoryId { get; set; }
-        public string name { get; set; }
+        public string CategoryCode { get; set; }
     }
 }

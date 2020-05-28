@@ -5,9 +5,9 @@ using System.Web;
 
 namespace UserWebApi.Models.User
 {
-    public class CategoryCode
+    public class TempData
     {
-        public string categoryId { get; set; }
-        public string name { get; set; }
+        public Nullable<Int32> IsNxtRequired { get; set; }
+        public string TR { get; set; }
     }
 }

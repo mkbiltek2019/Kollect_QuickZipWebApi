@@ -5,9 +5,9 @@ using System.Web;
 
 namespace UserWebApi.Models.User
 {
-    public class CategoryCode
+    public class tblUserBranch
     {
-        public string categoryId { get; set; }
-        public string name { get; set; }
+        public Nullable<Int64> BranchId { get; set; }
+       
     }
 }
