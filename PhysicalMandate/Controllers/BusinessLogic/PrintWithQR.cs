@@ -707,7 +707,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         //PdfMidCell.Border = Rectangle.TOP_BORDER;
                         PdfMidTable.AddCell(PdfMidCell);
 
-                        string AccountNo =Dbsecurity.Decypt(dr["AccountNo"].ToString());
+                        string AccountNo =Dbsecurity.Decrypt(dr["AccountNo"].ToString());
                         char[] chrAcountNo = new char[Convert.ToInt32(AccountNo.Length)];
                         chrAcountNo = AccountNo.ToCharArray();
                         if (Convert.ToInt32(AccountNo.Length) <= 26)
@@ -897,7 +897,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfMidCell.VerticalAlignment = iTextSharp.text.Element.ALIGN_LEFT;
                         PdfMidTable.AddCell(PdfMidCell);
 
-                        PdfMidCell = new PdfPCell(new Phrase(PrintHelper.NumberToWords(Convert.ToInt32(Dbsecurity.Decypt(Convert.ToString(dr["AmountInWord"])))), fontA11B));
+                        PdfMidCell = new PdfPCell(new Phrase(PrintHelper.NumberToWords(Convert.ToInt32(Dbsecurity.Decrypt(Convert.ToString(dr["AmountInWord"])))), fontA11B));
                         PdfMidCell.NoWrap = false;
                         PdfMidCell.RunDirection = PdfWriter.RUN_DIRECTION_LTR;
                         PdfMidCell.Colspan = 22;
@@ -909,7 +909,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         documentAmountInDigit.Open();
                         Paragraph pAmountInDigit = new Paragraph();
                         pAmountInDigit.Add(new Chunk(Rupee, PdfPCell.ALIGN_CENTER, PdfPCell.ALIGN_CENTER));
-                        pAmountInDigit.Add(new Phrase(" " + Dbsecurity.Decypt(dr["AmountInDigit"].ToString()), fontA119B));
+                        pAmountInDigit.Add(new Phrase(" " + Dbsecurity.Decrypt(dr["AmountInDigit"].ToString()), fontA119B));
                         PdfMidCell = new PdfPCell(pAmountInDigit);
                         PdfMidCell.NoWrap = false;
                         PdfMidCell.RunDirection = PdfWriter.RUN_DIRECTION_LTR;
@@ -1363,7 +1363,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         //PdfDetailCell.Border = Rectangle.LEFT_BORDER;
                         PdfDetailTable.AddCell(PdfDetailCell);
 
-                        string PeriodFrom = Convert.ToDateTime(Dbsecurity.Decypt(dr["PeriodFrom"].ToString())).ToString("ddMMyyyy");
+                        string PeriodFrom = Convert.ToDateTime(Dbsecurity.Decrypt(dr["PeriodFrom"].ToString())).ToString("ddMMyyyy");
                         char[] chrPeriodFrom = new char[8];
                         chrPeriodFrom = PeriodFrom.ToCharArray();
                         if (Convert.ToInt32(chrPeriodFrom.Length) > 0)
@@ -1428,7 +1428,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         string PeriodTo = "";// dr["PeriodTo"].ToString();
                         try
                         {
-                            PeriodTo = Convert.ToDateTime(Dbsecurity.Decypt(Convert.ToString(dr["PeriodTo"]))).ToString("ddMMyyyy");
+                            PeriodTo = Convert.ToDateTime(Dbsecurity.Decrypt(Convert.ToString(dr["PeriodTo"]))).ToString("ddMMyyyy");
                         }
                         catch { }
 
@@ -2329,7 +2329,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfMidTable1.AddCell(PdfMidCell1);
 
 
-                        string AccountNo1 = Dbsecurity.Decypt(dr["AccountNo"].ToString());
+                        string AccountNo1 = Dbsecurity.Decrypt(dr["AccountNo"].ToString());
                         char[] chrAcountNo1 = new char[Convert.ToInt32(AccountNo1.Length)];
                         chrAcountNo1 = AccountNo1.ToCharArray();
                         if (Convert.ToInt16(ds.Tables[0].Rows[0]["NoOfQRCopy"]) > 1)
@@ -2585,7 +2585,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfMidTable1.AddCell(PdfMidCell1);
                         if (Convert.ToInt16(ds.Tables[0].Rows[0]["NoOfQRCopy"]) > 1)
                         {
-                            PdfMidCell1 = new PdfPCell(new Phrase(PrintHelper.NumberToWords(Convert.ToInt32( Dbsecurity.Decypt(Convert.ToString(dr["AmountInWord"])))), fontA11B));
+                            PdfMidCell1 = new PdfPCell(new Phrase(PrintHelper.NumberToWords(Convert.ToInt32( Dbsecurity.Decrypt(Convert.ToString(dr["AmountInWord"])))), fontA11B));
                         }
                         else
                         {
@@ -2604,7 +2604,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         pAmountInDigit1.Add(new Chunk(Rupee, PdfPCell.ALIGN_CENTER, PdfPCell.ALIGN_CENTER));
                         if (Convert.ToInt16(ds.Tables[0].Rows[0]["NoOfQRCopy"]) > 1)
                         {
-                            pAmountInDigit1.Add(new Phrase(" " + Dbsecurity.Decypt(dr["AmountInDigit"].ToString()), fontA119B));
+                            pAmountInDigit1.Add(new Phrase(" " + Dbsecurity.Decrypt(dr["AmountInDigit"].ToString()), fontA119B));
                         }
                         else
                         {
@@ -3121,7 +3121,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         //PdfDetailCell1.Border = Rectangle.LEFT_BORDER;
                         PdfDetailTable1.AddCell(PdfDetailCell1);
 
-                        string PeriodFrom1 =Convert.ToDateTime(Dbsecurity.Decypt(dr["PeriodFrom"].ToString())).ToString("ddMMyyyy");
+                        string PeriodFrom1 =Convert.ToDateTime(Dbsecurity.Decrypt(dr["PeriodFrom"].ToString())).ToString("ddMMyyyy");
                         char[] chrPeriodFrom1 = new char[8];
                         chrPeriodFrom1 = PeriodFrom1.ToCharArray();
                         if (Convert.ToInt16(ds.Tables[0].Rows[0]["NoOfQRCopy"]) > 1)
@@ -3215,7 +3215,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         string PeriodTo1 = "";
                         try
                         { 
-                        PeriodTo1 =Convert.ToDateTime(Dbsecurity.Decypt(Convert.ToString(dr["PeriodTo"]))).ToString("ddMMyyyy");
+                        PeriodTo1 =Convert.ToDateTime(Dbsecurity.Decrypt(Convert.ToString(dr["PeriodTo"]))).ToString("ddMMyyyy");
                         }
                         catch { }
                         char[] chrPeriodTo1 = new char[8];
@@ -4057,7 +4057,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfMidCell2.Border = Rectangle.NO_BORDER;
                         PdfMidTable2.AddCell(PdfMidCell2);
 
-                        string AccountNo2 = Dbsecurity.Decypt(dr["AccountNo"].ToString());
+                        string AccountNo2 = Dbsecurity.Decrypt(dr["AccountNo"].ToString());
                         char[] chrAcountNo2 = new char[Convert.ToInt32(AccountNo2.Length)];
                         chrAcountNo2 = AccountNo2.ToCharArray();
                         if (Convert.ToInt16(ds.Tables[0].Rows[0]["NoOfQRCopy"]) > 2)
@@ -4313,7 +4313,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfMidTable2.AddCell(PdfMidCell2);
                         if (Convert.ToInt16(ds.Tables[0].Rows[0]["NoOfQRCopy"]) > 2)
                         {
-                            PdfMidCell2 = new PdfPCell(new Phrase(PrintHelper.NumberToWords(Convert.ToInt32(Dbsecurity.Decypt(Convert.ToString(dr["AmountInWord"])))), fontA11B));
+                            PdfMidCell2 = new PdfPCell(new Phrase(PrintHelper.NumberToWords(Convert.ToInt32(Dbsecurity.Decrypt(Convert.ToString(dr["AmountInWord"])))), fontA11B));
                         }
                         else
                         {
@@ -4332,7 +4332,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         pAmountInDigit2.Add(new Chunk(Rupee, PdfPCell.ALIGN_CENTER, PdfPCell.ALIGN_CENTER));
                         if (Convert.ToInt16(ds.Tables[0].Rows[0]["NoOfQRCopy"]) > 2)
                         {
-                            pAmountInDigit2.Add(new Phrase(" " + Dbsecurity.Decypt(dr["AmountInDigit"].ToString()), fontA119B));
+                            pAmountInDigit2.Add(new Phrase(" " + Dbsecurity.Decrypt(dr["AmountInDigit"].ToString()), fontA119B));
                         }
                         else
                         {
@@ -4845,7 +4845,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         //PdfDetailCell2.Border = Rectangle.LEFT_BORDER;
                         PdfDetailTable2.AddCell(PdfDetailCell2);
 
-                        string PeriodFrom2 = Convert.ToDateTime(Dbsecurity.Decypt(dr["PeriodFrom"].ToString())).ToString("ddMMyyyy");
+                        string PeriodFrom2 = Convert.ToDateTime(Dbsecurity.Decrypt(dr["PeriodFrom"].ToString())).ToString("ddMMyyyy");
                         char[] chrPeriodFrom2 = new char[8];
                         chrPeriodFrom2 = PeriodFrom2.ToCharArray();
                         if (Convert.ToInt16(ds.Tables[0].Rows[0]["NoOfQRCopy"]) > 2)
@@ -4939,7 +4939,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         string PeriodTo2 = "";// dr["PeriodTo"].ToString();
                         try
                         {
-                            PeriodTo2 = Convert.ToDateTime(Dbsecurity.Decypt(Convert.ToString(dr["PeriodTo"]))).ToString("ddMMyyyy");
+                            PeriodTo2 = Convert.ToDateTime(Dbsecurity.Decrypt(Convert.ToString(dr["PeriodTo"]))).ToString("ddMMyyyy");
                         }
                         catch { }
                         char[] chrPeriodTo2 = new char[8];

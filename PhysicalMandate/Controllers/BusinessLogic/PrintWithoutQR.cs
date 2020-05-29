@@ -589,7 +589,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfMidCell.HorizontalAlignment = 1;
                         PdfHeaderCell.VerticalAlignment = iTextSharp.text.Element.ALIGN_MIDDLE;
                         PdfMidTable.AddCell(PdfMidCell);
-                        string AccountNo = Dbsecurity.Decypt(dr["AccountNo"].ToString());
+                        string AccountNo = Dbsecurity.Decrypt(dr["AccountNo"].ToString());
                         char[] chrAcountNo = new char[Convert.ToInt32(AccountNo.Length)];
                         chrAcountNo = AccountNo.ToCharArray();
                         if (Convert.ToInt32(AccountNo.Length) <= 26)
@@ -739,7 +739,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfMidCell.HorizontalAlignment = 1;
                         PdfMidTable.AddCell(PdfMidCell);
 
-                        PdfMidCell = new PdfPCell(new Phrase(PrintHelper.NumberToWords(Convert.ToInt32(Dbsecurity.Decypt(Convert.ToString(dr["AmountInWord"])))), fontA11B));
+                        PdfMidCell = new PdfPCell(new Phrase(PrintHelper.NumberToWords(Convert.ToInt32(Dbsecurity.Decrypt(Convert.ToString(dr["AmountInWord"])))), fontA11B));
                         PdfMidCell.NoWrap = false;
                         PdfMidCell.RunDirection = PdfWriter.RUN_DIRECTION_LTR;
                         PdfMidCell.Colspan = 22;
@@ -751,7 +751,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         documentAmountInDigit.Open();
                         Paragraph pAmountInDigit = new Paragraph();
                         pAmountInDigit.Add(new Chunk(Rupee, PdfPCell.ALIGN_CENTER, PdfPCell.ALIGN_CENTER));
-                        pAmountInDigit.Add(new Phrase(" " + Dbsecurity.Decypt(dr["AmountInDigit"].ToString()), fontA119B));
+                        pAmountInDigit.Add(new Phrase(" " + Dbsecurity.Decrypt(dr["AmountInDigit"].ToString()), fontA119B));
                         PdfMidCell = new PdfPCell(pAmountInDigit);
 
                         PdfMidCell.NoWrap = false;
@@ -1092,7 +1092,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfDetailCell.HorizontalAlignment = 1;
                         PdfDetailTable.AddCell(PdfDetailCell);
 
-                        string PeriodFrom = Convert.ToDateTime(Dbsecurity.Decypt(dr["PeriodFrom"].ToString())).ToString("ddMMyyyy");
+                        string PeriodFrom = Convert.ToDateTime(Dbsecurity.Decrypt(dr["PeriodFrom"].ToString())).ToString("ddMMyyyy");
                         char[] chrPeriodFrom = new char[8];
                         chrPeriodFrom = PeriodFrom.ToCharArray();
                         if (Convert.ToInt32(chrPeriodFrom.Length) > 0)
@@ -1134,7 +1134,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         string PeriodTo = "";// dr["PeriodTo"].ToString();
                         try
                         {
-                            PeriodTo = Convert.ToDateTime(Dbsecurity.Decypt(Convert.ToString(dr["PeriodTo"]))).ToString("ddMMyyyy");
+                            PeriodTo = Convert.ToDateTime(Dbsecurity.Decrypt(Convert.ToString(dr["PeriodTo"]))).ToString("ddMMyyyy");
                         }
                         catch { }
                         char[] chrPeriodTo = new char[8];
@@ -1765,7 +1765,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfMidCell1.HorizontalAlignment = 1;
                         PdfMidTable1.AddCell(PdfMidCell1);
                         //---------------------------Add AccountNo-------------------------------------
-                        string AccountNo1 = Dbsecurity.Decypt(dr["AccountNo"].ToString());
+                        string AccountNo1 = Dbsecurity.Decrypt(dr["AccountNo"].ToString());
                         char[] chrAcountNo1 = new char[Convert.ToInt32(AccountNo1.Length)];
                         chrAcountNo1 = AccountNo1.ToCharArray();
 
@@ -1939,7 +1939,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfMidCell1.Colspan = 3;
                         PdfMidCell1.HorizontalAlignment = 1;
                         PdfMidTable1.AddCell(PdfMidCell1);
-                        PdfMidCell1 = new PdfPCell(new Phrase(PrintHelper.NumberToWords(Convert.ToInt32(Dbsecurity.Decypt(Convert.ToString(dr["AmountInWord"])))), fontA11B));
+                        PdfMidCell1 = new PdfPCell(new Phrase(PrintHelper.NumberToWords(Convert.ToInt32(Dbsecurity.Decrypt(Convert.ToString(dr["AmountInWord"])))), fontA11B));
                         PdfMidCell1.NoWrap = false;
                         PdfMidCell1.RunDirection = PdfWriter.RUN_DIRECTION_LTR;
                         PdfMidCell1.Colspan = 22;
@@ -1951,7 +1951,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         documentAmountInDigit1.Open();
                         Paragraph pAmountInDigit1 = new Paragraph();
                         pAmountInDigit1.Add(new Chunk(Rupee, PdfPCell.ALIGN_CENTER, PdfPCell.ALIGN_CENTER));
-                        pAmountInDigit1.Add(new Phrase(" " + Dbsecurity.Decypt(dr["AmountInDigit"].ToString()), fontA119B));
+                        pAmountInDigit1.Add(new Phrase(" " + Dbsecurity.Decrypt(dr["AmountInDigit"].ToString()), fontA119B));
                         PdfMidCell1 = new PdfPCell(pAmountInDigit1);
 
                         PdfMidCell1.NoWrap = false;
@@ -2276,7 +2276,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfDetailCell1.RunDirection = PdfWriter.RUN_DIRECTION_LTR;
                         PdfDetailCell1.HorizontalAlignment = 1;
                         PdfDetailTable1.AddCell(PdfDetailCell1);
-                        string PeriodFrom1 = Convert.ToDateTime(Dbsecurity.Decypt(dr["PeriodFrom"].ToString())).ToString("ddMMyyyy");
+                        string PeriodFrom1 = Convert.ToDateTime(Dbsecurity.Decrypt(dr["PeriodFrom"].ToString())).ToString("ddMMyyyy");
                         char[] chrPeriodFrom1 = new char[8];
                         chrPeriodFrom1 = PeriodFrom1.ToCharArray();
                         if (Convert.ToInt32(chrPeriodFrom1.Length) > 0)
@@ -2317,7 +2317,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         string PeriodTo1 = "";// dr["PeriodTo"].ToString();
                         try
                         {
-                            PeriodTo1 = Convert.ToDateTime(Dbsecurity.Decypt(Convert.ToString(dr["PeriodTo"]))).ToString("ddMMyyyy");
+                            PeriodTo1 = Convert.ToDateTime(Dbsecurity.Decrypt(Convert.ToString(dr["PeriodTo"]))).ToString("ddMMyyyy");
                         }
                         catch { }
                         char[] chrPeriodTo1 = new char[8];
@@ -3138,7 +3138,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfMidCell2.HorizontalAlignment = 1;
                         PdfMidTable2.AddCell(PdfMidCell2);
 
-                        string AccountNo2 = Dbsecurity.Decypt(dr["AccountNo"].ToString());
+                        string AccountNo2 = Dbsecurity.Decrypt(dr["AccountNo"].ToString());
                         char[] chrAcountNo2 = new char[Convert.ToInt32(AccountNo2.Length)];
                         chrAcountNo2 = AccountNo2.ToCharArray();
                         if (Convert.ToInt32(AccountNo2.Length) <= 26)
@@ -3656,7 +3656,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfMidTable2.AddCell(PdfMidCell2);
 
 
-                        PdfMidCell2 = new PdfPCell(new Phrase(PrintHelper.NumberToWords(Convert.ToInt32(Dbsecurity.Decypt(Convert.ToString(dr["AmountInWord"])))), fontA11B));
+                        PdfMidCell2 = new PdfPCell(new Phrase(PrintHelper.NumberToWords(Convert.ToInt32(Dbsecurity.Decrypt(Convert.ToString(dr["AmountInWord"])))), fontA11B));
                         PdfMidCell2.NoWrap = false;
                         PdfMidCell2.FixedHeight = 10f;
                         PdfMidCell2.RunDirection = PdfWriter.RUN_DIRECTION_LTR;
@@ -3668,7 +3668,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         documentAmountInDigit2.Open();
                         Paragraph pAmountInDigit2 = new Paragraph();
                         pAmountInDigit2.Add(new Chunk(Rupee, PdfPCell.ALIGN_CENTER, PdfPCell.ALIGN_CENTER));
-                        pAmountInDigit2.Add(new Phrase(" " + Dbsecurity.Decypt(dr["AmountInDigit"].ToString()), fontA119B));
+                        pAmountInDigit2.Add(new Phrase(" " + Dbsecurity.Decrypt(dr["AmountInDigit"].ToString()), fontA119B));
                         PdfMidCell2 = new PdfPCell(pAmountInDigit2);
 
                         PdfMidCell2.NoWrap = false;
@@ -4044,7 +4044,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         PdfDetailCell2.HorizontalAlignment = 1;
                         PdfDetailTable2.AddCell(PdfDetailCell2);
 
-                        string PeriodFrom2 = Convert.ToDateTime(Dbsecurity.Decypt(dr["PeriodFrom"].ToString())).ToString("ddMMyyyy");
+                        string PeriodFrom2 = Convert.ToDateTime(Dbsecurity.Decrypt(dr["PeriodFrom"].ToString())).ToString("ddMMyyyy");
                         char[] chrPeriodFrom2 = new char[8];
                         chrPeriodFrom2 = PeriodFrom2.ToCharArray();
                         if (Convert.ToInt32(chrPeriodFrom2.Length) > 0)
@@ -4135,7 +4135,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         string PeriodTo2 = "";// dr["PeriodTo"].ToString();
                         try
                         {
-                            PeriodTo2 = Convert.ToDateTime(Dbsecurity.Decypt(Convert.ToString(dr["PeriodTo"]))).ToString("ddMMyyyy");
+                            PeriodTo2 = Convert.ToDateTime(Dbsecurity.Decrypt(Convert.ToString(dr["PeriodTo"]))).ToString("ddMMyyyy");
                         }
                         catch { }
                         char[] chrPeriodTo2 = new char[8];

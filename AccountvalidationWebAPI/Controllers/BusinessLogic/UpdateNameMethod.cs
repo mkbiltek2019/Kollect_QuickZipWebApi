@@ -19,7 +19,7 @@ namespace AccountvalidationWebAPI.Controllers.BusinessLogic
             //                 "@MandateId",
             //                "UpdateName", rdoName.SelectedValue, ViewState["id"].ToString());
             var Result = dbcontext.MultipleResults("[dbo].[sp_Payment]").With<UpdateNameRes>().
-                    Execute("@QueryType", "@Type","@MandateId", "@Appid", "UpdateName",Data.RadioValue, Dbsecurity.Decypt(Data.MandateId), Dbsecurity.Decypt(Data.AppId));
+                    Execute("@QueryType", "@Type","@MandateId", "@Appid", "UpdateName",Data.RadioValue, Dbsecurity.Decrypt(Data.MandateId), Dbsecurity.Decrypt(Data.AppId));
             return "1";
                  
         }

@@ -59,7 +59,9 @@ namespace PhysicalMandate.Models
         public Nullable<Boolean> ValidateByCooperate { get; set; }
         public Nullable<Boolean> ValidateByCustomer { get; set; }
         public Nullable<Boolean> liveOnEmandate { get; set; }
-        
+        public Nullable<Int64> EmandateAmt { get; set; }
+        public Nullable<Boolean> PrintQR { get; set; }
+        public Nullable<Boolean> PrintLogo { get; set; }
 
     }
 }
