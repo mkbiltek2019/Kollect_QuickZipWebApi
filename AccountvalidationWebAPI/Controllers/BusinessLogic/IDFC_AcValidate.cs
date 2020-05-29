@@ -38,11 +38,11 @@ namespace AccountvalidationWebAPI.Controllers.BusinessLogic
                 TraceNumber = GetTraceNoClass.getTraceNo(AppId); //Global.CreateRandomCode(6) + GMTformattedDateTime;
 
                 string TempId = MandateId;
-                TempId = Global.ReverseString(TempId);
-                TempId = Global.CreateRandomCode(6) + TempId;
+                TempId = EntityDAL.Global.ReverseString(TempId);
+                TempId = EntityDAL.Global.CreateRandomCode(6) + TempId;
                 string msgId, cnvId, txnRfNo = "";
                 msgId = TempId.Substring(0, 6).ToUpper();
-                cnvId = Global.ReverseString(TempId.Substring(0, 6)).ToUpper();
+                cnvId = EntityDAL.Global.ReverseString(TempId.Substring(0, 6)).ToUpper();
 
 
                 QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();

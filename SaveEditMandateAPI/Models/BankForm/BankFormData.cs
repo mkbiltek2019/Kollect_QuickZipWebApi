@@ -77,7 +77,7 @@ namespace SaveEditMandateAPI.Models.BankForm
                     Result = Common.Getdata(res);
                     //Result[0].Cast<CutterImag>().ToList();
                     //MandateDataList = 
-                    QRCodeMaker.QRGenerator(MandateDataList[0].mandateid, Dbsecurity.Decypt(savedata.EntityId).ToString(), savedata.Refrence1,savedata.AppId);
+                    QRCodeMaker.QRGenerator(MandateDataList[0].mandateid, Dbsecurity.Decrypt(savedata.EntityId).ToString(), savedata.Refrence1,savedata.AppId);
                     
                 }
                 else
