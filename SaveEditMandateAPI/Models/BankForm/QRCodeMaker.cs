@@ -20,7 +20,6 @@ namespace SaveEditMandateAPI.Models.BankForm
         public static void QRGenerator(string MandateID, string EntityId, string Refrence1,string AppId)
         {
             QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();
-
             string code = MandateID + "_" + Refrence1;
             QRCodeGenerator qrGenerator = new QRCodeGenerator();
             QRCodeGenerator.QRCode qrCode = qrGenerator.CreateQrCode(code, QRCodeGenerator.ECCLevel.H);
@@ -37,70 +36,37 @@ namespace SaveEditMandateAPI.Models.BankForm
                     string result = Convert.ToBase64String(byteImage, 0, byteImage.Length);
                     string check = CreateImage(result.ToString(), MandateID, AppId);
                     if (check != "")
-                    {
-                        // DataSet ds = CommonManger.FillDatasetWithParam("Sp_Mandate", "@QueryType", "@EntityId", "@MandateId", "@QRCodeImagepath", "QRCodeImagepath", EntityId, MandateID, check);
+                    {                        
                         var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").Execute("@QueryType", "@EntityId", "@MandateId", "@QRCodeImagepath", "QRCodeImagepath", EntityId, MandateID, check);
-
                     }
-                }
-                //plQRCode.Controls.Add(imgBarCode);
+                }               
             }
         }
 
         public static string CreateImage(string Byt, string MandateID,string AppId)
         {
-
             try
             {
                 byte[] data = Convert.FromBase64String(Byt);
-
                 var filename = MandateID + ".png";
-
-
-                string FolderPath = System.Web.Hosting.HostingEnvironment.MapPath("~/MandateQrcode/"+ AppId + "/"+ MandateID + "");
+                string FolderPath = System.Web.Hosting.HostingEnvironment.MapPath("~/MandateQrcode/"+ AppId);
                 string FilePath = FolderPath +'/' + filename;
                 if (!Directory.Exists(FolderPath))   // CHECK IF THE FOLDER EXISTS. IF NOT, CREATE A NEW FOLDER.
                 {
                     Directory.CreateDirectory(FolderPath);
                 }
-
                 if (File.Exists(FilePath))
                 {
                     File.Delete(FilePath);
-                }
-
-                //var path = System.Web.Hosting.HostingEnvironment.MapPath("~/MandateQrcode/" + AppId + "/" + MandateID + "");
-                //if (!Directory.Exists(path))   // CHECK IF THE FOLDER EXISTS. IF NOT, CREATE A NEW FOLDER.
-                //{
-                //    Directory.CreateDirectory(path);
-                //}
-                ////var file = System.Web.Hosting.HostingEnvironment.MapPath(path + filename);
-                ////if (File.Exists(file))
-                ////{
-                ////    File.Delete(file);
-                ////}
-                //var file = HttpContext.Current.Server.MapPath(path + filename);
-                ////FileUpload1.PostedFile.SaveAs(Server.MapPath("~\\Uploadform\\" + filename.Trim()));
-                ////fileuploadimages.SaveAs(Server.MapPath("~/" + filename));
-                //System.IO.File.WriteAllBytes(file, data);
-                //path = path + filename;
-
-
+                }    
                 System.IO.File.WriteAllBytes(FilePath, data);
                 FolderPath = FolderPath + filename;
-
-
                 string ImgName = ".../profileimages/" + filename;
-
-
                 return FilePath;
-
             }
-
             catch (Exception e)
             {
                 return "Error";
-
             }
         }
     }
