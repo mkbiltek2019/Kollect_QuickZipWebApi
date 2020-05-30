@@ -764,7 +764,6 @@ D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\LoginWebApi\obj\Debug\LoginWeb
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\LoginWebApi\obj\Debug\LoginWebApi.csproj.CopyComplete
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\LoginWebApi\obj\Debug\LoginWebApi.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\LoginWebApi\obj\Debug\LoginWebApi.pdb
-D:\Kollect_QuickZip\QuickCheckWEBAPI\LoginWebApi\obj\Debug\LoginWebApi.csprojAssemblyReference.cache
 D:\Kollect_QuickZip\QuickCheckWEBAPI\LoginWebApi\obj\Debug\LoginWebApi.csproj.CoreCompileInputs.cache
 D:\Kollect_QuickZip\QuickCheckWEBAPI\LoginWebApi\obj\Debug\LoginWebApi.dll
 D:\Kollect_QuickZip\QuickCheckWEBAPI\LoginWebApi\obj\Debug\LoginWebApi.pdb
@@ -957,3 +956,4 @@ D:\Kollect_QuickZip\QuickCheckWEBAPI\LoginWebApi\bin\Antlr3.Runtime.pdb
 D:\Kollect_QuickZip\QuickCheckWEBAPI\LoginWebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Kollect_QuickZip\QuickCheckWEBAPI\LoginWebApi\obj\Debug\LoginWebApi.csproj.CopyComplete
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\LoginWebApi\bin\Encryptions.dll
+D:\Kollect_QuickZip\QuickCheckWEBAPI\LoginWebApi\obj\Debug\LoginWebApi.csprojAssemblyReference.cache

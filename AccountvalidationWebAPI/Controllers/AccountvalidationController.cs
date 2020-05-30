@@ -19,7 +19,7 @@ namespace AccountvalidationWebAPI.Controllers
             try
             {
                
-                return AccountValidationMethods.AckPaymentTestNew(Acdata.ActivityId, Dbsecurity.Decypt(Acdata.MandateId), Dbsecurity.Decypt(Acdata.AcNo), Acdata.IFSC, Dbsecurity.Decypt(Acdata.UserId), Dbsecurity.Decypt(Acdata.AppId), Dbsecurity.Decypt(Acdata.EntityId));               
+                return AccountValidationMethods.AckPaymentTestNew(Acdata.ActivityId, Dbsecurity.Decrypt(Acdata.MandateId), Dbsecurity.Decrypt(Acdata.AcNo), Acdata.IFSC, Dbsecurity.Decrypt(Acdata.UserId), Dbsecurity.Decrypt(Acdata.AppId), Dbsecurity.Decrypt(Acdata.EntityId));               
             }
             catch(Exception ex)
             {
