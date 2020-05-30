@@ -64,12 +64,21 @@ namespace SaveEditMandateAPI.Models.BankForm
             {
                 if (mandateid == "0")
                 {
-                    Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<SaveData0>().With<SaveData1>().With<SaveData2>().With<SaveData3>().With<SaveData4>().With<SaveData5>().With<SaveData6>().With<SaveData7>().With<SaveData8>().Execute("@QueryType", "@SponsorCode", "@UtilityCode", "@DebitType", "@Frequency", "@UserId", "@EntityId",
+                    List<SaveData4> MandateDataList = new List<SaveData4>();
+                    var res = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<SaveData0>().With<SaveData1>().With<SaveData2>().With<SaveData3>().With<SaveData4>().With<SaveData5>().With<SaveData6>().With<SaveData7>().With<SaveData8>().Execute("@QueryType", "@SponsorCode", "@UtilityCode", "@DebitType", "@Frequency", "@UserId", "@EntityId",
                         "@ToDebit", "@AcNo", "@BankName", "@IFSC", "@MICR", "@AmountRupees", "@Refrence1", "@Refrence2", "@PhNumber",
                                 "@EmailId", "@From", "@To", "@Customer1", "@Customer2", "@Customer3", "@DateOnMandate", "@MandateMode", "@AmountWords", "@CategoryCode", "@AppId", "SaveData", savedata.Sponsorcode, savedata.Utilitycode, savedata.Debittype, savedata.Frequency, Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(savedata.UserId.Replace("_", "%"))), Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(savedata.EntityId.Replace("_", "%"))),
                                 savedata.Todebit, savedata.Bankaccountno, savedata.Withbank,
                        savedata.IFSC.ToUpper(), savedata.MICR.ToUpper(), savedata.Amountrupees, savedata.Refrence1, savedata.Refrence2, savedata.Phoneno, savedata.Email, savedata.PeriodFrom, savedata.PeriodTo, savedata.Customer1.ToUpper(),
-                       savedata.Customer2.ToUpper(), savedata.Customer3.ToUpper(), savedata.UMRNDATE, savedata.MandateMode, savedata.Amount, savedata.Catagorycode, savedata.AppId));
+                       savedata.Customer2.ToUpper(), savedata.Customer3.ToUpper(), savedata.UMRNDATE, savedata.MandateMode, savedata.Amount, savedata.Catagorycode, savedata.AppId);
+
+                       MandateDataList = res[4].Cast<SaveData4>().ToList();
+
+                    Result = Common.Getdata(res);
+                    //Result[0].Cast<CutterImag>().ToList();
+                    //MandateDataList = 
+                    QRCodeMaker.QRGenerator(MandateDataList[0].mandateid, Dbsecurity.Decrypt(savedata.EntityId).ToString(), savedata.Refrence1,savedata.AppId);
+                    
                 }
                 else
                 {

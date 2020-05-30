@@ -137,8 +137,16 @@ namespace AccountvalidationWebAPI.Models
     }
     public class pennyDetailsList
     {
-      public  List<pennyDetails> pennyDetailsListData { get; set; }
+        public List<pennyDetails> pennyDetailsListData { get; set; }
     }
-
-
+    public class UpdateName
+    {
+        public string MandateId { get; set; }
+        public string AppId { get; set; }
+        public string RadioValue { get; set; }
+    }
+    public class UpdateNameRes
+    {
+        public string done { get; set; }
+    }
 }
