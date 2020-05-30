@@ -46,13 +46,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BusinessLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\BusinessLibrary\bin\Debug\BusinessLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="Encryptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Encryptions.dll</HintPath>
+      <HintPath>C:\Users\AIY-0010\Desktop\Encryptions.dll</HintPath>
     </Reference>
     <Reference Include="EntityDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -280,6 +276,12 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLibrary\BusinessLibrary.csproj">
+      <Project>{82e12120-2ba7-4313-ab7f-f845f69980bb}</Project>
+      <Name>BusinessLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

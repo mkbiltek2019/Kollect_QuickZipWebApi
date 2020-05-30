@@ -12,18 +12,13 @@ namespace EntityDAL
     using System;
     using System.Collections.Generic;
     
-    public partial class Tbl_Links
+    public partial class TblRoleLinkBinding
     {
-        public long LinkID { get; set; }
-        public string LinkName { get; set; }
-        public string url { get; set; }
-        public string Purpose { get; set; }
-        public int OrderNo { get; set; }
-        public string IconName { get; set; }
+        public long LinkRoleID { get; set; }
+        public int LinkID { get; set; }
+        public int RoleID { get; set; }
         public bool IsActive { get; set; }
         public bool IsDeleted { get; set; }
         public System.DateTime CreatedOn { get; set; }
-        public Nullable<System.DateTime> ModifiedOn { get; set; }
-        public int ParetmenuID { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Projects\WorkingProject\Kollect_QuickZipWebApi\Kollect_QuickZipApi\EntityDAL\Kollect_QuickZip.edmx'. 
+﻿// T4 code generation is enabled for model 'E:\Avinash_WFH\Kollect_QuickZipWebApi\EntityDAL\Kollect_QuickZip.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
