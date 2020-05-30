@@ -18,7 +18,7 @@ namespace SetupAPI.Controllers
         [Route("api/LinkSetup/BindGrid/")]
         public Dictionary<string, object> BindGrid(Initial_LinkSetup IL)
         { 
-
+        
             DataSet ds = new DataSet();
             try
             {
