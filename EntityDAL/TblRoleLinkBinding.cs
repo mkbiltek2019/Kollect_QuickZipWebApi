@@ -12,16 +12,13 @@ namespace EntityDAL
     using System;
     using System.Collections.Generic;
     
-    public partial class tblRedirectURL
+    public partial class TblRoleLinkBinding
     {
-        public long RedirectURLId { get; set; }
-        public string URL { get; set; }
-        public string AppId { get; set; }
-        public System.DateTime CreatedOn { get; set; }
-        public System.DateTime UpdatedOn { get; set; }
-        public long CreatedBy { get; set; }
-        public long UpdatedBy { get; set; }
+        public long LinkRoleID { get; set; }
+        public int LinkID { get; set; }
+        public int RoleID { get; set; }
         public bool IsActive { get; set; }
         public bool IsDeleted { get; set; }
+        public System.DateTime CreatedOn { get; set; }
     }
 }

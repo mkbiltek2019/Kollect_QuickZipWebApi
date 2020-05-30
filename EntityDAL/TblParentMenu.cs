@@ -10,21 +10,16 @@
 namespace EntityDAL
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class GetMandateStatus_Result
+    public partial class TblParentMenu
     {
-        public long MandateTransactionId { get; set; }
-        public Nullable<long> MandateId { get; set; }
-        public string Description { get; set; }
-        public string Status { get; set; }
-        public Nullable<long> EntityId { get; set; }
+        public int ParentID { get; set; }
+        public string ParentMenuName { get; set; }
+        public int OrderNo { get; set; }
         public System.DateTime CreatedOn { get; set; }
-        public System.DateTime UpdatedOn { get; set; }
-        public long CreatedBy { get; set; }
-        public long UpdatedBy { get; set; }
+        public int CreatedBy { get; set; }
         public bool IsActive { get; set; }
         public bool IsDeleted { get; set; }
-        public Nullable<long> TransactionNo { get; set; }
-        public Nullable<long> ActivityID { get; set; }
     }
 }

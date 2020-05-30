@@ -12,15 +12,16 @@ namespace EntityDAL
     using System;
     using System.Collections.Generic;
     
-    public partial class tblPresentmentDetailSeqCount
+    public partial class TblRoleMaster
     {
-        public long TPDSCID { get; set; }
-        public Nullable<long> DetailCount { get; set; }
-        public Nullable<System.DateTime> CreatedOn { get; set; }
-        public Nullable<System.DateTime> UpdatedOn { get; set; }
-        public Nullable<long> CreatedBy { get; set; }
-        public Nullable<long> UpdatedBy { get; set; }
-        public Nullable<bool> IsActive { get; set; }
-        public Nullable<bool> IsDeleted { get; set; }
+        public int RoleID { get; set; }
+        public int RoleType { get; set; }
+        public string RoleName { get; set; }
+        public bool IsActive { get; set; }
+        public bool IsDeleted { get; set; }
+        public System.DateTime Createdon { get; set; }
+        public System.DateTime UpdatedOn { get; set; }
+        public int Createdby { get; set; }
+        public int Updatedby { get; set; }
     }
 }
