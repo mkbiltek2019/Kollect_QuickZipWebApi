@@ -13,14 +13,14 @@ namespace PhysicalMandate.Controllers.BusinessLogic
 {
     public static class PrintHelper
     {
-       
-        public static string UpdateIsPHysical(string MandateId, string UserId,String AppId)
+
+        public static string UpdateIsPHysical(string MandateId, string UserId, String AppId)
         {
 
             QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();
-            
+
             var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<UpdateNameRes>().
-                    Execute("@QueryType", "@MandateId", "@AppId", "@UserId", "UpdateIsPHysical", MandateId, AppId,Dbsecurity.Decrypt(UserId));
+                    Execute("@QueryType", "@MandateId", "@AppId", "@UserId", "UpdateIsPHysical", MandateId, AppId, Dbsecurity.Decrypt(UserId));
             return "1";
 
         }
@@ -32,7 +32,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                 List<ImagePathData> ImagePathDataList = new List<ImagePathData>();
                 List<ShowData> ShowDataList = new List<ShowData>();
                 var Result = dbcontext.MultipleResults("[dbo].[Sp_GetEmailData]").With<ShowData>().With<ImagePathData>().
-                        Execute("@QueryType", "@Id", "@AppId",  "ShowData", MandateId, AppId);
+                        Execute("@QueryType", "@Id", "@AppId", "ShowData", MandateId, AppId);
                 ///  return "1";
 
                 //string query = "Sp_GetEmailData";
@@ -41,7 +41,7 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                 //cmd.Parameters.AddWithValue("@QueryType", "ShowData");
                 //cmd.Parameters.AddWithValue("@Id", MandateId);
                 //SqlDataAdapter da = new SqlDataAdapter(cmd);
-                ShowDataList= Result[0].Cast<ShowData>().ToList();
+                ShowDataList = Result[0].Cast<ShowData>().ToList();
                 ImagePathDataList = Result[1].Cast<ImagePathData>().ToList();
                 var tb = new DataTable(typeof(ShowData).Name);
 
@@ -99,11 +99,11 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                 List<CutterImag> CutterImagList = new List<CutterImag>();
                 List<ShowData> ShowDataList = new List<ShowData>();
                 var Result = dbcontext.MultipleResults("[dbo].[Sp_LogoImageData]").With<CutterImag>().
-                        Execute("@QueryType",  "Getcutternew");
-                CutterImagList= Result[0].Cast<CutterImag>().ToList();
+                        Execute("@QueryType", "Getcutternew");
+                CutterImagList = Result[0].Cast<CutterImag>().ToList();
 
                 DataSet dsData = new DataSet();
-             
+
                 return (byte[])CutterImagList[0].ImageData;
             }
             catch (Exception ex)
@@ -127,6 +127,22 @@ namespace PhysicalMandate.Controllers.BusinessLogic
             catch (Exception ex)
             {
                 return null;
+            }
+        }
+        public static void UpdatePrintcount(string AppId, string MandateId, string UserId)
+        {
+            //int value = CommonManger.IntMethodWithParam("sp_Payment", "@QueryType", "@MandateId", "@UserId", "IncreaseCounter", ViewState["id"].ToString(), Convert.ToString(Iace.User.CurrentUser.User.UserId));
+
+            try
+            {
+                QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();
+                List<UpdateNameRes> CutterImagList = new List<UpdateNameRes>();
+                var Result = dbcontext.MultipleResults("[dbo].[sp_Payment]").With<UpdateNameRes>().Execute("@QueryType", "@MandateId", "@UserId", "@AppId", "IncreaseCounter", MandateId, UserId, AppId);
+
+            }
+            catch (Exception ex)
+            {
+
             }
         }
         public static string NumberToWords(int number)
@@ -175,8 +191,8 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                 }
             }
 
-            return words+ " Only";
+            return words + " Only";
         }
-        
+
     }
 }
