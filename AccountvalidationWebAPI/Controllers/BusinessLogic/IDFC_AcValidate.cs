@@ -38,18 +38,18 @@ namespace AccountvalidationWebAPI.Controllers.BusinessLogic
                 TraceNumber = GetTraceNoClass.getTraceNo(AppId); //Global.CreateRandomCode(6) + GMTformattedDateTime;
 
                 string TempId = MandateId;
-                TempId = Global.ReverseString(TempId);
-                TempId = Global.CreateRandomCode(6) + TempId;
+                TempId = EntityDAL.Global.ReverseString(TempId);
+                TempId = EntityDAL.Global.CreateRandomCode(6) + TempId;
                 string msgId, cnvId, txnRfNo = "";
                 msgId = TempId.Substring(0, 6).ToUpper();
-                cnvId = Global.ReverseString(TempId.Substring(0, 6)).ToUpper();
+                cnvId = EntityDAL.Global.ReverseString(TempId.Substring(0, 6)).ToUpper();
 
 
                 QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();
                 List<InsertrequestModel> InsertrequestModellist = new List<InsertrequestModel>();
                 List<InsertrequestNOModel> InsertrequestNOModelllist = new List<InsertrequestNOModel>();
                 //var Result = dbcontext.MultipleResults("[dbo].[sp_Payment]").With<InsertrequestModel>().With<InsertrequestNOModel>().Execute("@QueryType", "@BeniACNo", "@BeniAcType", "@BeniAmount", "@BeniIFSC", "@ChkSum", "@UserId", "@EntityId", "@Filler1", "@Filler2", "@Filler3", "@Filler4",
-                // "@Filler5", "@MandateId", "@MerchantId", "@MessageCode", "@Remarks", "@RequestDateTime", "@RequestType", "@TraceNo", "@ActivityId", "@msgId", "@cnvId", "@AppId", "InsertpaymentReq", AcNo, "10", "1.00", IFSC, Convert.ToString(uni), UserId, EntityId, "Yoeki Soft Pvt. Ltd", "9810462147", "", "", "", MandateId, Dbsecurity.Decypt(), "6210", "Payment", GMTformattedDateTime, "R", TraceNumber, ActivityId, msgId, cnvId, AppId);
+                // "@Filler5", "@MandateId", "@MerchantId", "@MessageCode", "@Remarks", "@RequestDateTime", "@RequestType", "@TraceNo", "@ActivityId", "@msgId", "@cnvId", "@AppId", "InsertpaymentReq", AcNo, "10", "1.00", IFSC, Convert.ToString(uni), UserId, EntityId, "Yoeki Soft Pvt. Ltd", "9810462147", "", "", "", MandateId, Dbsecurity.Decrypt(), "6210", "Payment", GMTformattedDateTime, "R", TraceNumber, ActivityId, msgId, cnvId, AppId);
 
 
                 var Result = dbcontext.MultipleResults("[dbo].[sp_Payment]").With<InsertrequestModel>().With<InsertrequestNOModel>().Execute("@QueryType", "@BeniACNo", "@BeniAcType", "@BeniAmount", "@BeniIFSC", "@ChkSum", "@UserId" , "@EntityId", "@Filler1", "@Filler2", "@Filler3", "@Filler4",

@@ -23,13 +23,13 @@ namespace PhysicalMandate.Controllers
             {
                 if (MData.QR == "1")
                 {
-                    return PrintWithQR.PrintWIthQR(Dbsecurity.Decypt(MData.MandateId), Dbsecurity.Decypt(MData.AppId));
+                    return PrintWithQR.PrintWIthQR(Dbsecurity.Decrypt(MData.MandateId), Dbsecurity.Decrypt(MData.AppId));
                 }
                 else
                 {
 
 
-                    return PrintWithoutQR.PrintWIthoutQR(Dbsecurity.Decypt(MData.MandateId), Dbsecurity.Decypt(MData.AppId));
+                    return PrintWithoutQR.PrintWIthoutQR(Dbsecurity.Decrypt(MData.MandateId), Dbsecurity.Decrypt(MData.AppId));
 
                 }
                 // ds.Tables[4].Rows[0]["mandateid"] = DbSecurity.Encrypt(Convert.ToString(ds.Tables[4].Rows[0]["mandateid"]));
