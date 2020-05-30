@@ -10,9 +10,15 @@ namespace EntityDAL
  
     public class Global
     {
+       
         //use to display ApplicationName
         public const string ApplicationName = "Digital University";
-
+        public static string ReverseString(string s)
+        {
+            char[] charArray = s.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
+        }
         // Used to Generate and Get Random Number based on Code Length
         public static string CreateRandomCode(int CodeLength)
         {

@@ -7,7 +7,7 @@ using System.Web;
 
 namespace AccountvalidationWebAPI.Models
 {
-    public sealed class Global
+    public sealed class GlobalAc
     {
         //use to display ApplicationName
         public const string ApplicationName = "Digital University";
