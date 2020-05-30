@@ -1,31 +1,24 @@
-﻿using AccountvalidationWebAPI.Controllers.BusinessLogic;
-using BusinessLibrary;
+﻿using BusinessLibrary;
 using Encryptions;
 using EntityDAL;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Globalization;
-using System.IO;
 using System.Linq;
-using System.Net;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Web;
-using System.Web.Script.Serialization;
 
 namespace AccountvalidationWebAPI.Models
 {
     public static class AccountValidationMethods
     {
 
-        public static ResAccountValidation KotakAccountVal(string ActivityId, string MandateId, string AcNo, string IFSC, string UserId, string AppId, string EntityId, List<pennyDetails> PendydropData)
+        public static ResAccountValidation AckPaymentTestNew(string ActivityId, string MandateId, string AcNo, string IFSC, string UserId, string AppId, string EntityId)
         {
-            //string temp = Dbsecurity.Encrypt("YK17");
-            //string temp1 = Dbsecurity.Encrypt("KMBANK");
+            string temp = Dbsecurity.Encrypt("YK17");
+            string temp1 = Dbsecurity.Encrypt("KMBANK");
             string hash1 = string.Empty;
             QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();
             ResAccountValidation res = new ResAccountValidation();
@@ -45,7 +38,7 @@ namespace AccountvalidationWebAPI.Models
 
 
                 string TraceNumber = string.Empty;
-                TraceNumber = GetTraceNoClass.getTraceNo(AppId);//Global.CreateRandomCode(6) + GMTformattedDateTime;
+                TraceNumber = Global.CreateRandomCode(6) + GMTformattedDateTime;
                 //if (string.IsNullOrEmpty(Request.Form["hash"])) // generating hash value
                 //{
 
@@ -55,7 +48,7 @@ namespace AccountvalidationWebAPI.Models
                 hash_string = hash_string + GMTformattedDateTime;//	Date and Time  in GMT
                 hash_string = hash_string + '|';
 
-                hash_string = hash_string + Dbsecurity.Decrypt(PendydropData[0].MERCHANT);// Dbsecurity.Decypt(ConfigurationManager.AppSettings["MERCHANT"]);//Merchant Id
+                hash_string = hash_string + Dbsecurity.Decrypt(ConfigurationManager.AppSettings["MERCHANT"]);//Merchant Id
                 hash_string = hash_string + '|';
 
                 hash_string = hash_string + TraceNumber;//Trace number
@@ -93,21 +86,55 @@ namespace AccountvalidationWebAPI.Models
 
                 hash_string = hash_string + "";//Filler 5
 
-                action1 = PendydropData[0].URL; //ConfigurationManager.AppSettings["PAYU_BASE_URL"];
+                action1 = ConfigurationManager.AppSettings["PAYU_BASE_URL"];
 
                 //}
 
-                hash1 = hash_string + '|' + Dbsecurity.Decrypt(PendydropData[0].CheckSum);
+                hash1 = hash_string + '|' + Dbsecurity.Decrypt(ConfigurationManager.AppSettings["CheckSum"]);
 
                 byte[] Message = Encoding.UTF8.GetBytes(hash1);
 
-                uni = DamienG.Security.Cryptography.Crc32.Compute(Message);//Checksum             
+                uni = DamienG.Security.Cryptography.Crc32.Compute(Message);//Checksum
+
+
+                //string query = "sp_Payment";
+
+                //SqlCommand cmd = new SqlCommand(query, con);
+                //cmd.CommandType = CommandType.StoredProcedure;
+                //cmd.Parameters.AddWithValue("@QueryType", "InsertpaymentReq");
+                //cmd.Parameters.AddWithValue("@BeniACNo", AcNo);
+                //cmd.Parameters.AddWithValue("@BeniAcType", "10");
+                //cmd.Parameters.AddWithValue("@BeniAmount", "1.00");
+                //cmd.Parameters.AddWithValue("@BeniIFSC", IFSC);
+                //cmd.Parameters.AddWithValue("@ChkSum", Convert.ToString(uni));
+                //cmd.Parameters.AddWithValue("@UserId", UserId);
+
+                //cmd.Parameters.AddWithValue("@EntityId", 0);
+                //cmd.Parameters.AddWithValue("@Filler1", "Yoeki Soft Pvt. Ltd");
+                //cmd.Parameters.AddWithValue("@Filler2", "9810462147");
+                //cmd.Parameters.AddWithValue("@Filler3", "");
+                //cmd.Parameters.AddWithValue("@Filler4", "");
+
+                //cmd.Parameters.AddWithValue("@Filler5", "");
+                //cmd.Parameters.AddWithValue("@MandateId", MandateId);
+                //cmd.Parameters.AddWithValue("@MerchantId", Dbsecurity.Decrypt(ConfigurationManager.AppSettings["MERCHANT"], ConfigurationManager.AppSettings["MERCHANT_KEY"]));
+                //cmd.Parameters.AddWithValue("@MessageCode", "6210");
+                //cmd.Parameters.AddWithValue("@Remarks", "Payment");
+
+                //cmd.Parameters.AddWithValue("@RequestDateTime", GMTformattedDateTime);
+                //cmd.Parameters.AddWithValue("@RequestType", "R");
+                //cmd.Parameters.AddWithValue("@TraceNo", TraceNumber);
+                //cmd.Parameters.AddWithValue("@ActivityId", ActivityId);
+
+                //SqlDataAdapter da = new SqlDataAdapter(cmd);
+                //DataTable dt = new DataTable();
+                //da.Fill(dt);
 
                 List<InsertrequestModel> InsertrequestModellist = new List<InsertrequestModel>();
                 List<InsertrequestNOModel> InsertrequestNOModelllist = new List<InsertrequestNOModel>();
 
                 var Result = dbcontext.MultipleResults("[dbo].[sp_Payment]").With<InsertrequestModel>().With<InsertrequestNOModel>().Execute("@QueryType", "@BeniACNo", "@BeniAcType", "@BeniAmount", "@BeniIFSC", "@ChkSum", "@UserId", "@EntityId", "@Filler1", "@Filler2", "@Filler3", "@Filler4",
-               "@Filler5", "@MandateId", "@MerchantId", "@MessageCode", "@Remarks", "@RequestDateTime", "@RequestType", "@TraceNo", "@ActivityId", "@AppId", "InsertpaymentReq", AcNo, "10", "1.00", IFSC, Convert.ToString(uni), UserId, EntityId, "Yoeki Soft Pvt. Ltd", "9810462147", "", "", "", MandateId, Dbsecurity.Decrypt(PendydropData[0].MERCHANT), "6210", "Payment", GMTformattedDateTime, "R", TraceNumber, ActivityId,AppId);
+               "@Filler5", "@MandateId", "@MerchantId", "@MessageCode", "@Remarks", "@RequestDateTime", "@RequestType", "@TraceNo", "@ActivityId", "InsertpaymentReq", AcNo, "10", "1.00", IFSC, Convert.ToString(uni), UserId, EntityId, "Yoeki Soft Pvt. Ltd", "9810462147", "", "", "", MandateId, Dbsecurity.Decrypt(ConfigurationManager.AppSettings["MERCHANT"]), "6210", "Payment", GMTformattedDateTime, "R", TraceNumber, ActivityId);
 
                 if (Result.Count > 2)
                 {
@@ -121,7 +148,6 @@ namespace AccountvalidationWebAPI.Models
                     //if (dt != null && dt.Rows.Count > 0)
                     //{
                     //lblMandateName.Text = dt.Rows[0][0].ToString();
-                    
                     string msg = hash_string + '|' + Convert.ToString(uni); //hash_string = hash_string + '|' + Convert.ToString(uni);
 
                     string ActionUrl = action1 + msg;
@@ -135,8 +161,8 @@ namespace AccountvalidationWebAPI.Models
                     if (Convert.ToString(ConfigurationManager.AppSettings["IsLocal"]) == "1")
 
                     {
-                         webData = "6220|24082018120636|YK17|wIw4GP24082018122440|KPY00|Successful Transaction|823612654816|KMB0000037731||Fateh singh|1658580580";
-                       // webData = "6220|24082018120636|YK17|wIw4GP24082018122440|KPYM3|Invalid Beneficiary details, Inform customer|823612654816|KMB0000037731||Fateh singh|1658580580";
+                        // webData = "6220|24082018120636|YK17|wIw4GP24082018122440|KPY00|Successful Transaction|823612654816|KMB0000037731||Fateh singh|1658580580";
+                        webData = "6220|24082018120636|YK17|wIw4GP24082018122440|KPYM3|Invalid Beneficiary details, Inform customer|823612654816|KMB0000037731||Fateh singh|1658580580";
                     }
                     else
                     {
@@ -169,7 +195,7 @@ namespace AccountvalidationWebAPI.Models
                     //da1.Fill(ds1);
 
                     dbcontext = new QuickCheck_AngularEntities();
-                    var ResResult = dbcontext.MultipleResults("[dbo].[sp_Payment]").With<ResDescription>().With<ResCust1>().With<ResIfsc>().With<Resshow>().Execute("@QueryType", "@BankRefNo", "@BeniName", "@ChkSum", "@UserId", "@EntityId", "@ErrorReason", "@MandateId", "@MerchantId", "@MessageCode", "@RRN", "@RequestDateTime", "@ResponseCode", "@TraceNo", "@IFSC", "@ActivityId", "@AppId", "InsertpaymentRes", Data[7], Data[9], Data[10], UserId.ToString(), EntityId, Data[5], MandateId, Data[2], Data[0], Data[6], Data[1], Data[4], Data[3], Convert.ToString(IFSC), ActivityId, AppId);
+                    var ResResult = dbcontext.MultipleResults("[dbo].[sp_Payment]").With<ResDescription>().With<ResCust1>().With<ResIfsc>().With<Resshow>().Execute("@QueryType", "@BankRefNo", "@BeniName", "@ChkSum", "@UserId", "@EntityId", "@ErrorReason", "@MandateId", "@MerchantId", "@MessageCode", "@RRN", "@RequestDateTime", "@ResponseCode", "@TraceNo", "@IFSC", "@ActivityId", "InsertpaymentRes", Data[7], Data[9], Data[10], UserId.ToString(), EntityId, Data[5], MandateId, Data[2], Data[0], Data[6], Data[1], Data[4], Data[3], Convert.ToString(IFSC), ActivityId);
                     res.ResDescriptionlist = ResResult[0].Cast<ResDescription>().ToList();
                     res.ResCust1list = ResResult[1].Cast<ResCust1>().ToList();
                     res.ResIfsclist = ResResult[2].Cast<ResIfsc>().ToList();
@@ -189,7 +215,5 @@ namespace AccountvalidationWebAPI.Models
             } 
             return res;
         }
-        
-       
     }
 }
