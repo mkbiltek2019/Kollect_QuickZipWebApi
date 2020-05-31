@@ -1922,15 +1922,15 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         }
                         else
                         {
-                            for (int j = 0; j < 9; j++)
-                            {
-                                PdfMidCell1 = new PdfPCell(new Phrase(" ", fontA119B));
-                                PdfMidCell1.NoWrap = false;
-                                PdfMidCell1.RunDirection = PdfWriter.RUN_DIRECTION_LTR;
-                                PdfMidCell1.HorizontalAlignment = 1;
-                                PdfMidCell1.VerticalAlignment = iTextSharp.text.Element.ALIGN_MIDDLE;
-                                PdfMidTable1.AddCell(PdfMidCell1);
-                            }
+                            //for (int j = 0; j < 9; j++)
+                            //{
+                            //    PdfMidCell1 = new PdfPCell(new Phrase(" ", fontA119B));
+                            //    PdfMidCell1.NoWrap = false;
+                            //    PdfMidCell1.RunDirection = PdfWriter.RUN_DIRECTION_LTR;
+                            //    PdfMidCell1.HorizontalAlignment = 1;
+                            //    PdfMidCell1.VerticalAlignment = iTextSharp.text.Element.ALIGN_MIDDLE;
+                            //    PdfMidTable1.AddCell(PdfMidCell1);
+                            //}
                         }
                         PdfMidCell1 = new PdfPCell(new Phrase("an amount of Rupees", fontAb11B));
                         PdfMidCell1.NoWrap = false;
