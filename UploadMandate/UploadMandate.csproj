@@ -50,7 +50,9 @@
       <HintPath>..\BusinessLibrary\bin\Debug\BusinessLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Encryptions">
+
       <HintPath>..\..\..\TempData\Encryptions.dll</HintPath>
+
     </Reference>
     <Reference Include="EntityDAL">
       <HintPath>..\EntityDAL\bin\Debug\EntityDAL.dll</HintPath>
@@ -138,11 +140,13 @@
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+
     <Reference Include="zxing">
       <HintPath>..\..\QuickZip\QuickZip\Banking System\bin\zxing.dll</HintPath>
     </Reference>
     <Reference Include="zxing.presentation">
       <HintPath>..\..\QuickZip\QuickZip\Banking System\bin\zxing.presentation.dll</HintPath>
+
     </Reference>
   </ItemGroup>
   <ItemGroup>
