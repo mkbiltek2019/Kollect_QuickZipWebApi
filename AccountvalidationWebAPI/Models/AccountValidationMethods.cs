@@ -48,7 +48,7 @@ namespace AccountvalidationWebAPI.Models
                 hash_string = hash_string + GMTformattedDateTime;//	Date and Time  in GMT
                 hash_string = hash_string + '|';
 
-                hash_string = hash_string + Dbsecurity.Decypt(ConfigurationManager.AppSettings["MERCHANT"]);//Merchant Id
+                hash_string = hash_string + Dbsecurity.Decrypt(ConfigurationManager.AppSettings["MERCHANT"]);//Merchant Id
                 hash_string = hash_string + '|';
 
                 hash_string = hash_string + TraceNumber;//Trace number
@@ -90,7 +90,7 @@ namespace AccountvalidationWebAPI.Models
 
                 //}
 
-                hash1 = hash_string + '|' + Dbsecurity.Decypt(ConfigurationManager.AppSettings["CheckSum"]);
+                hash1 = hash_string + '|' + Dbsecurity.Decrypt(ConfigurationManager.AppSettings["CheckSum"]);
 
                 byte[] Message = Encoding.UTF8.GetBytes(hash1);
 
@@ -134,7 +134,7 @@ namespace AccountvalidationWebAPI.Models
                 List<InsertrequestNOModel> InsertrequestNOModelllist = new List<InsertrequestNOModel>();
 
                 var Result = dbcontext.MultipleResults("[dbo].[sp_Payment]").With<InsertrequestModel>().With<InsertrequestNOModel>().Execute("@QueryType", "@BeniACNo", "@BeniAcType", "@BeniAmount", "@BeniIFSC", "@ChkSum", "@UserId", "@EntityId", "@Filler1", "@Filler2", "@Filler3", "@Filler4",
-               "@Filler5", "@MandateId", "@MerchantId", "@MessageCode", "@Remarks", "@RequestDateTime", "@RequestType", "@TraceNo", "@ActivityId", "InsertpaymentReq", AcNo, "10", "1.00", IFSC, Convert.ToString(uni), UserId, EntityId, "Yoeki Soft Pvt. Ltd", "9810462147", "", "", "", MandateId, Dbsecurity.Decypt(ConfigurationManager.AppSettings["MERCHANT"]), "6210", "Payment", GMTformattedDateTime, "R", TraceNumber, ActivityId);
+               "@Filler5", "@MandateId", "@MerchantId", "@MessageCode", "@Remarks", "@RequestDateTime", "@RequestType", "@TraceNo", "@ActivityId", "InsertpaymentReq", AcNo, "10", "1.00", IFSC, Convert.ToString(uni), UserId, EntityId, "Yoeki Soft Pvt. Ltd", "9810462147", "", "", "", MandateId, Dbsecurity.Decrypt(ConfigurationManager.AppSettings["MERCHANT"]), "6210", "Payment", GMTformattedDateTime, "R", TraceNumber, ActivityId);
 
                 if (Result.Count > 2)
                 {

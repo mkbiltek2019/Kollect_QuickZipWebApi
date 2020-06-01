@@ -187,3 +187,14 @@ D:\CloudProjects\QuickZip WebAPI Git\BusinessLibrary\obj\Debug\BusinessLibrary.c
 D:\CloudProjects\QuickZip WebAPI Git\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CopyComplete
 D:\CloudProjects\QuickZip WebAPI Git\BusinessLibrary\obj\Debug\BusinessLibrary.dll
 D:\CloudProjects\QuickZip WebAPI Git\BusinessLibrary\obj\Debug\BusinessLibrary.pdb
+E:\Projects\NEW_QuickZip\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\BusinessLibrary.dll.config
+E:\Projects\NEW_QuickZip\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\BusinessLibrary.dll
+E:\Projects\NEW_QuickZip\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\BusinessLibrary.pdb
+E:\Projects\NEW_QuickZip\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\EntityFramework.dll
+E:\Projects\NEW_QuickZip\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\NEW_QuickZip\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\EntityFramework.xml
+E:\Projects\NEW_QuickZip\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\NEW_QuickZip\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CoreCompileInputs.cache
+E:\Projects\NEW_QuickZip\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CopyComplete
+E:\Projects\NEW_QuickZip\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.dll
+E:\Projects\NEW_QuickZip\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.pdb
