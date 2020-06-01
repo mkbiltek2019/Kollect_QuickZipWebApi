@@ -10,7 +10,7 @@ namespace SaveEditMandateAPI.Models.BankForm
         public string UserId { get; set; }
         public string EntityId { get; set; }
         public string AppId { get; set; }
-
+        public string MandateId { get; set; }
         public string MandateMode { get; set; }
         public string Bankaccountno { get; set; }
         public string Catagorycode { get; set; }

@@ -20,10 +20,10 @@ namespace SaveEditMandateAPI.Controllers
         //}
 
         [HttpPost]
-        [Route("api/EditMandate/EditMethod/{mandateid}")]
-        public Dictionary<string, object> EditMethod([FromBody] UserEntity data, string mandateid)
+        [Route("api/EditMandate/EditMethod")]
+        public Dictionary<string, object> EditMethod([FromBody] UserEntity data)
         {
-            return objbankform.EditMethod(data, mandateid);
+            return objbankform.EditMethod(data);
 
         }
 
