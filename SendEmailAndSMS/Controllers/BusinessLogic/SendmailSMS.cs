@@ -1,4 +1,5 @@
-﻿using Encryptions;
+﻿using BusinessLibrary;
+using Encryptions;
 using EntityDAL;
 using SendEmailAndSMS.Models;
 using System;
@@ -21,14 +22,23 @@ namespace SendEmailAndSMS.Controllers.BusinessLogic
             string Msg = "";
             try
             {
-                string WebAppUrl = ConfigurationManager.AppSettings["EWebAppUrl"].ToString();
-                string SMTPHost = ConfigurationManager.AppSettings["Amazon_SMTPHost"].ToString();
-                string UserId = ConfigurationManager.AppSettings["Amazon_UserId"].ToString();
-                string MailPassword = ConfigurationManager.AppSettings["Amazon_MailPassword"].ToString();
-                string SMTPPort = ConfigurationManager.AppSettings["Amazon_SMTPPort"].ToString();
-                string SMTPEnableSsl = ConfigurationManager.AppSettings["Amazon_SMTPEnableSsl"].ToString();
-                string FromMailId = ConfigurationManager.AppSettings["Amazon_FromMailId" + Dbsecurity.Decrypt(Data.AppId)].ToString();
-                string Teamtext = ConfigurationManager.AppSettings["Team"].ToString();
+                QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();
+                List<GetCredential> GetCredentialList = new List<GetCredential>();
+
+
+                var Result = dbcontext.MultipleResults("[dbo].[Sp_GetMandatemodeData]").With<GetCredential>().
+               Execute("@QueryType", "@AppId", "GetEntityCredential",  Dbsecurity.Decrypt(Data.AppId));
+
+                GetCredentialList = Result[0].Cast<GetCredential>().ToList();
+
+                string WebAppUrl = GetCredentialList[0].EWebAppUrl; // ConfigurationManager.AppSettings["EWebAppUrl"].ToString();
+                string SMTPHost = GetCredentialList[0].Amazon_SMTPHost;// ConfigurationManager.AppSettings["Amazon_SMTPHost"].ToString();
+                string UserId = GetCredentialList[0].Amazon_UserId;// ConfigurationManager.AppSettings["Amazon_UserId"].ToString();
+                string MailPassword = GetCredentialList[0].Amazon_MailPassword;// ConfigurationManager.AppSettings["Amazon_MailPassword"].ToString();
+                string SMTPPort = GetCredentialList[0].Amazon_SMTPPort;// ConfigurationManager.AppSettings["Amazon_SMTPPort"].ToString();
+                string SMTPEnableSsl = GetCredentialList[0].Amazon_SMTPEnableSsl;// ConfigurationManager.AppSettings["Amazon_SMTPEnableSsl"].ToString();
+                string FromMailId = GetCredentialList[0].Amazon_FromMailId;// ConfigurationManager.AppSettings["Amazon_FromMailId" + Dbsecurity.Decrypt(Data.AppId)].ToString();
+                string Teamtext = GetCredentialList[0].Team; //ConfigurationManager.AppSettings["Team"].ToString();
 
                 string response = string.Empty;//Added by Bibhu on 18Mar2020  ** Reason to insert MessageRequstId SP-
                 int SmsCount = 0;
@@ -42,7 +52,7 @@ namespace SendEmailAndSMS.Controllers.BusinessLogic
                 //string Emandatetype = Data.Emandatetype;// txtmandatetype.Text;
                 string EntityName = "";
                 string Amt = "";
-                string TempId = ConfigurationManager.AppSettings["APPId"] + mandateid;
+                string TempId = Dbsecurity.Decrypt(Data.AppId) + mandateid;
                 TempId = Global.ReverseString(TempId);
                 TempId = Global.CreateRandomCode(6) + TempId;
                 DataSet ds = SendMailAndSMSMethods.GetMobileNo(mandateid, Dbsecurity.Decrypt(Data.AppId), Data.Emandatetype);//CommonManger.FillDatasetWithParam("sp_ESign", "@QueryType", "@mandateid", "@emandatetype", "GetMobileNo", mandateid, Emandatetype);
@@ -57,7 +67,7 @@ namespace SendEmailAndSMS.Controllers.BusinessLogic
                         {
                             StringBuilder sb = new StringBuilder();
                             sb.Append(dtset.Tables[2].Rows[0][0].ToString());
-                            sb.Append("Team " + Convert.ToString(ConfigurationManager.AppSettings["Team"]));
+                            sb.Append("Team " + GetCredentialList[0].Team); //Convert.ToString(ConfigurationManager.AppSettings["Team"]));
                             sb.Append("<br/>");
                             sb.Append("<i style='font-size:11px'>(Email Generated from Unattendable MailBox, Please Do Not reply.)</i>");
 
@@ -66,7 +76,7 @@ namespace SendEmailAndSMS.Controllers.BusinessLogic
                             MailAddress mailaddress = new MailAddress(FromMailId);
                             mailmsg.To.Add(ds.Tables[0].Rows[0]["emailid"].ToString());
                             mailmsg.From = mailaddress;
-                            mailmsg.Subject = dtset.Tables[3].Rows[0][0].ToString() + " " + Convert.ToString(ConfigurationManager.AppSettings["Team"]);
+                            mailmsg.Subject = dtset.Tables[3].Rows[0][0].ToString() + " " + GetCredentialList[0].Team;// Convert.ToString(ConfigurationManager.AppSettings["Team"]);
                             mailmsg.IsBodyHtml = true;
                             mailmsg.Body = sb.ToString();
                             smtpClient.Host = SMTPHost;
@@ -91,9 +101,11 @@ namespace SendEmailAndSMS.Controllers.BusinessLogic
                         sb.Append(dtset.Tables[1].Rows[0][0].ToString());
 
                         string URL = "";
-                        if (ConfigurationManager.AppSettings["IsSmsApi"] == "0")
+                  if( GetCredentialList[0].IsClientSmsApi=="0") //  if (ConfigurationManager.AppSettings["IsSmsApi"] == "0")
                         {
-                            URL = "http://api.msg91.com/api/sendhttp.php?sender=" + ConfigurationManager.AppSettings["SenderId" + Dbsecurity.Decrypt(Data.AppId)] + "&route=4&mobiles=" + Convert.ToString(ds.Tables[0].Rows[0]["phonenumber"].ToString()) + "&authkey=" + ConfigurationManager.AppSettings["authkey"] + "&country=91&message=" + sb.ToString() + "";
+                            //URL = "http://api.msg91.com/api/sendhttp.php?sender=" + ConfigurationManager.AppSettings["SenderId" + Dbsecurity.Decrypt(Data.AppId)] + "&route=4&mobiles=" + Convert.ToString(ds.Tables[0].Rows[0]["phonenumber"].ToString()) + "&authkey=" + ConfigurationManager.AppSettings["authkey"] + "&country=91&message=" + sb.ToString() + "";
+
+                            URL = "http://api.msg91.com/api/sendhttp.php?sender=" + GetCredentialList[0].SenderId+ "&route=4&mobiles=" + Convert.ToString(ds.Tables[0].Rows[0]["phonenumber"].ToString()) + "&authkey=" + GetCredentialList[0].AuthKey + "&country=91&message=" + sb.ToString() + "";
 
                         }
                         else

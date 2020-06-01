@@ -50,7 +50,9 @@
       <HintPath>..\BusinessLibrary\bin\Debug\BusinessLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Encryptions">
-      <HintPath>C:\Users\AIY-0010\Desktop\Encryptions.dll</HintPath>
+
+      <HintPath>..\..\..\TempData\Encryptions.dll</HintPath>
+
     </Reference>
     <Reference Include="EntityDAL">
       <HintPath>..\EntityDAL\bin\Debug\EntityDAL.dll</HintPath>
@@ -138,11 +140,13 @@
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="zxing, Version=0.16.5.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
-      <HintPath>..\packages\ZXing.Net.0.16.5\lib\net461\zxing.dll</HintPath>
+
+    <Reference Include="zxing">
+      <HintPath>..\..\QuickZip\QuickZip\Banking System\bin\zxing.dll</HintPath>
     </Reference>
-    <Reference Include="zxing.presentation, Version=0.16.5.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
-      <HintPath>..\packages\ZXing.Net.0.16.5\lib\net461\zxing.presentation.dll</HintPath>
+    <Reference Include="zxing.presentation">
+      <HintPath>..\..\QuickZip\QuickZip\Banking System\bin\zxing.presentation.dll</HintPath>
+
     </Reference>
   </ItemGroup>
   <ItemGroup>
