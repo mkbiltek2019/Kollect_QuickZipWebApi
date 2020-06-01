@@ -9,6 +9,7 @@ namespace SendEmailAndSMSGlobal
 {
     public sealed class Global
     {
+
         //use to display ApplicationName
         public const string ApplicationName = "Digital University";
         // Used to Generate and Get Random Number based on Code Length
