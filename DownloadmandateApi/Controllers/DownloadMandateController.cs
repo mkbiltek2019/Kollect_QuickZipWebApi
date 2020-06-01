@@ -84,6 +84,7 @@ namespace DownloadmandateApi.Controllers
             //}
             return objdmandate.getzip(data);
 
+
             //Create HTTP Response.
             //HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK);
             //    string[] url = { "E:/vscode angular/QuickcheckApi/QuickZipWebAPI/Images/CHKrDLa.jpg", "E:/vscode angular/QuickcheckApi/QuickZipWebAPI/Images/LW8EKdK.jpg" };
