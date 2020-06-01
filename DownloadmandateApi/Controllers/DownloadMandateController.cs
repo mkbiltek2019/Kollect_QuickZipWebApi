@@ -31,6 +31,7 @@ namespace DownloadmandateApi.Controllers
 
 
 
+
         [HttpGet]
         [Route("api/DownloadMandate/getBindGridRef/{userID}/{refNo}")]
         public IEnumerable<DownloadMandateGridDetails> getBindGridRef(string userID, string refNo)
