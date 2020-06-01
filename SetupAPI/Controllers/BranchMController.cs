@@ -14,7 +14,7 @@ namespace SetupAPI.Controllers
 
         
          BranchClass bmc = new BranchClass();
-       // BrachMasterAttribute fjsnf=new BrachMasterAttribute()
+      
 
         [HttpPost]
         [Route("api/Branch_Master/GetAllData")]
