@@ -138,7 +138,6 @@ D:\Kollect_QuickZip\QuickCheckWEBAPI\BusinessLibrary\obj\Debug\BusinessLibrary.c
 D:\Kollect_QuickZip\QuickCheckWEBAPI\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CopyComplete
 D:\Kollect_QuickZip\QuickCheckWEBAPI\BusinessLibrary\obj\Debug\BusinessLibrary.dll
 D:\Kollect_QuickZip\QuickCheckWEBAPI\BusinessLibrary\obj\Debug\BusinessLibrary.pdb
-E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLibrary.csprojAssemblyReference.cache
 E:\Avinash_WFH\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\BusinessLibrary.dll.config
 E:\Avinash_WFH\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\BusinessLibrary.dll
 E:\Avinash_WFH\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\BusinessLibrary.pdb
