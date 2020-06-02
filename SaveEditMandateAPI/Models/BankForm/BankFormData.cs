@@ -79,6 +79,7 @@ namespace SaveEditMandateAPI.Models.BankForm
                     //MandateDataList = 
                     QRCodeMaker.QRGenerator(MandateDataList[0].mandateid, Dbsecurity.Decrypt(savedata.EntityId).ToString(), savedata.Refrence1, savedata.AppId);
 
+
                 }
                 else
                 {
