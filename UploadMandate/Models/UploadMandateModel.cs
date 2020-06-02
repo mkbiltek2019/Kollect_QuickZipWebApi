@@ -12,6 +12,7 @@ namespace UploadMandate.Models
         public string ScannedImage { get; set; }
         public string RefrenceNo { get; set; }
         public string UserId { get; set; }
+        public string Extention { get; set; }
 
     }
 }
