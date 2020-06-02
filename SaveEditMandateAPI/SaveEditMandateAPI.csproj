@@ -175,6 +175,7 @@
     <Compile Include="Controllers\BindGridMandateController.cs" />
     <Compile Include="Controllers\EditMandateController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MandateDetailsController.cs" />
     <Compile Include="Controllers\SaveMandateController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
