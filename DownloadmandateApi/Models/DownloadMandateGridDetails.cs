@@ -48,5 +48,7 @@ namespace DownloadmandateApi.Models
         public string createdon { get; set; }
 
         public Nullable<Int32> value { get; set; }
+        public string JPGPath { get; set; }
+        public string TIPPath { get; set; }
     }
 }
