@@ -573,6 +573,9 @@ E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.Xml
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XPath.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\System.Xml.XPath.XDocument.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\SaveEditMandateAPI\bin\Encryptions.dll
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\EntityFramework.SqlServer.dll
+D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\EntityFramework.xml
+D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\Encryptions.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll.config
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\SaveEditMandateAPI.pdb
@@ -723,7 +726,6 @@ D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\Busines
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\Encryptions.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\EntityDAL.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\EntityFramework.dll
-D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\EntityFramework.SqlServer.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\Microsoft.Web.Infrastructure.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\Newtonsoft.Json.dll
@@ -744,7 +746,6 @@ D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\Busines
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\BusinessLibrary.dll.config
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\EntityDAL.pdb
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\EntityDAL.dll.config
-D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\EntityFramework.xml
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\EntityFramework.SqlServer.xml
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\System.Net.Http.Formatting.xml
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\bin\System.Web.Http.xml
@@ -765,4 +766,3 @@ D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\S
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.csproj.CopyComplete
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.dll
 D:\Garima\Quickzip_kollect\Kollect_QuickZipWebAPI\SaveEditMandateAPI\obj\Debug\SaveEditMandateAPI.pdb
-D:\Kollect_QuickZip\QuickCheckWEBAPI\SaveEditMandateAPI\bin\Encryptions.dll

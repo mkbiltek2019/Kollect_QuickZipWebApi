@@ -18,7 +18,7 @@ namespace UserWebApi.Models.User
         {
             try
             {
-                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_CreateUser]").With<BindUtilityCode>().With<Sponsorbankcode>().With<CategoryCode>().With<BindClientCode>().With<Product>().With<Region>().With<Branch>().Execute("@QueryType", "@EntityId", "BindData", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(_bindalldata.EntityId.Replace("_", "%"))),Dbsecurity.Decypt(_bindalldata.AppId)));
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_CreateUser]").With<BindUtilityCode>().With<Sponsorbankcode>().With<CategoryCode>().With<BindClientCode>().With<Product>().With<Region>().With<Branch>().Execute("@QueryType", "@EntityId", "BindData", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(_bindalldata.EntityId.Replace("_", "%"))),Dbsecurity.Decrypt(_bindalldata.AppId)));
                 return Result;
             }
             catch (Exception ex)
@@ -36,7 +36,7 @@ namespace UserWebApi.Models.User
 
                 var Result = dbcontext.MultipleResults("[dbo].[Sp_CreateUser]").With<createUser>().Execute("@QueryType", "@AppId", "@EntityId", "@UserId", "@EmailId", "@userName", "@ContactNo",
          "@password", "@ProductId", "@RegionId", "@EditPerMandate", "@MandatesPerRefrence", "@XmlSponsorBankCode", "@XmlCategoryCode", "@XmlUtilityCode", "@XmlClientCode", "@XmlSecBranch","@IsActive","@BranchId", "SaveUser"
-                       , Dbsecurity.Decypt(AppId), Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(EntityId.Replace("_", "%"))), Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(UserId.Replace("_", "%"))),createuser.EmailId, createuser.UserName,createuser.phoneno, createuser.password,
+                       , Dbsecurity.Decrypt(AppId), Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(EntityId.Replace("_", "%"))), Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(UserId.Replace("_", "%"))),createuser.EmailId, createuser.UserName,createuser.phoneno, createuser.password,
              createuser.product.ToString(), createuser.region.ToString(), createuser.editcount.ToString(), createuser.mandatecount.ToString(), dtSponsorbankcode, dtCategorycode, dtUtilitycode, dtClientcode, dtSecBranch,IsActive.ToString(),createuser.branch.ToString());
 
                 foreach (var userdata in Result)
@@ -62,7 +62,7 @@ namespace UserWebApi.Models.User
                 
             var Result = dbcontext.MultipleResults("[dbo].[Sp_CreateUser]").With<createUser>().Execute("@QueryType", "@AppId", "@EntityId", "@UserId", "@EmailId", "@userName", "@ContactNo",
          "@ProductId", "@RegionId", "@EditPerMandate", "@MandatesPerRefrence", "@XmlSponsorBankCode", "@XmlCategoryCode", "@XmlUtilityCode", "@XmlClientCode", "@XmlSecBranch", "@IsActive", "@BranchId","@User", "UpdateUser"
-                       , Dbsecurity.Decypt(AppId), Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(EntityId.Replace("_", "%"))), Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(UserId.Replace("_", "%"))), createuser.EmailId, createuser.UserName, createuser.phoneno, 
+                       , Dbsecurity.Decrypt(AppId), Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(EntityId.Replace("_", "%"))), Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(UserId.Replace("_", "%"))), createuser.EmailId, createuser.UserName, createuser.phoneno, 
              createuser.product.ToString(), createuser.region.ToString(), createuser.editcount.ToString(), createuser.mandatecount.ToString(), dtSponsorbankcode, dtCategorycode, dtUtilitycode, dtClientcode, dtSecBranch, IsActive.ToString(), createuser.branch.ToString(),createuser.Id.ToString());
 
                 foreach (var userdata in Result)
@@ -84,7 +84,7 @@ namespace UserWebApi.Models.User
       {
             try
             {
-                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_CreateUser]").With<bindUser>().With<TempData>().Execute("@QueryType", "@EntityId","@AppId","@SearchText", "@PageCount", "BindUser", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(_binduserdata.EntityId.Replace("_", "%"))),Dbsecurity.Decypt(_binduserdata.AppId),_binduserdata.SearchText,_binduserdata.PageCount));
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_CreateUser]").With<bindUser>().With<TempData>().Execute("@QueryType", "@EntityId","@AppId","@SearchText", "@PageCount", "BindUser", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(_binduserdata.EntityId.Replace("_", "%"))),Dbsecurity.Decrypt(_binduserdata.AppId),_binduserdata.SearchText,_binduserdata.PageCount));
                 return Result;
             }
             catch (Exception ex)
@@ -97,7 +97,7 @@ namespace UserWebApi.Models.User
         {
             try
             {
-                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_CreateUser]").With<userReport>().Execute("@QueryType", "@EntityId", "@AppId", "ExportExcel_UserGrid", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(_bindalldata.EntityId.Replace("_", "%"))), Dbsecurity.Decypt(_bindalldata.AppId)));
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_CreateUser]").With<userReport>().Execute("@QueryType", "@EntityId", "@AppId", "ExportExcel_UserGrid", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(_bindalldata.EntityId.Replace("_", "%"))), Dbsecurity.Decrypt(_bindalldata.AppId)));
                 return Result;
             }
             catch (Exception ex)
