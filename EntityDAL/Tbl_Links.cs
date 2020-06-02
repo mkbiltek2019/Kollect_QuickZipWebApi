@@ -24,5 +24,6 @@ namespace EntityDAL
         public bool IsDeleted { get; set; }
         public System.DateTime CreatedOn { get; set; }
         public Nullable<System.DateTime> ModifiedOn { get; set; }
+        public int ParetmenuID { get; set; }
     }
 }

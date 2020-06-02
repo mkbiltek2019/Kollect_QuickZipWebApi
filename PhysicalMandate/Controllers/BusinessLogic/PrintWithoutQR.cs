@@ -1,4 +1,6 @@
-﻿using Encryptions;
+﻿using BusinessLibrary;
+using Encryptions;
+using EntityDAL;
 using iTextSharp.text;
 using iTextSharp.text.html.simpleparser;
 using iTextSharp.text.pdf;
@@ -23,14 +25,19 @@ namespace PhysicalMandate.Controllers.BusinessLogic
             string PDFBase64 = "";
             try
             {
+                QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();
+                List<GetCredential> GetCredentialList = new List<GetCredential>();
+                var Result = dbcontext.MultipleResults("[dbo].[Sp_GetMandatemodeData]").With<GetCredential>().
+               Execute("@QueryType", "@AppId", "GetEntityCredential", AppId);
+                GetCredentialList = Result[0].Cast<GetCredential>().ToList();
 
                 string temppath = System.Web.Hosting.HostingEnvironment.MapPath("~");
                 string ID = MandateId;
                 DataSet ds = new DataSet();
 
                 // var result = CreatePdf.CheckQrLogo(DbSecurity.Encrypt(Iace.User.CurrentUser.User.ReferenceId.ToString()));
-               // var result = Request.QueryString["Type"];
-                string filePath = ConfigurationManager.AppSettings["FilePath"];
+                // var result = Request.QueryString["Type"];
+                string filePath = GetCredentialList[0].FilePath_SaveEditAPI; //ConfigurationManager.AppSettings["FilePath"];
                 Byte[] bytes;
                 //if (result == "1")
                 //{
@@ -1922,15 +1929,15 @@ namespace PhysicalMandate.Controllers.BusinessLogic
                         }
                         else
                         {
-                            for (int j = 0; j < 9; j++)
-                            {
-                                PdfMidCell1 = new PdfPCell(new Phrase(" ", fontA119B));
-                                PdfMidCell1.NoWrap = false;
-                                PdfMidCell1.RunDirection = PdfWriter.RUN_DIRECTION_LTR;
-                                PdfMidCell1.HorizontalAlignment = 1;
-                                PdfMidCell1.VerticalAlignment = iTextSharp.text.Element.ALIGN_MIDDLE;
-                                PdfMidTable1.AddCell(PdfMidCell1);
-                            }
+                            //for (int j = 0; j < 9; j++)
+                            //{
+                            //    PdfMidCell1 = new PdfPCell(new Phrase(" ", fontA119B));
+                            //    PdfMidCell1.NoWrap = false;
+                            //    PdfMidCell1.RunDirection = PdfWriter.RUN_DIRECTION_LTR;
+                            //    PdfMidCell1.HorizontalAlignment = 1;
+                            //    PdfMidCell1.VerticalAlignment = iTextSharp.text.Element.ALIGN_MIDDLE;
+                            //    PdfMidTable1.AddCell(PdfMidCell1);
+                            //}
                         }
                         PdfMidCell1 = new PdfPCell(new Phrase("an amount of Rupees", fontAb11B));
                         PdfMidCell1.NoWrap = false;

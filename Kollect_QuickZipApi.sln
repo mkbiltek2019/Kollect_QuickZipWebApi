@@ -17,8 +17,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountvalidationWebAPI", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserWebApi", "UserWebApi\UserWebApi.csproj", "{839FC73F-CD30-4427-89E5-99D7C9BDE755}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendEmailAndSMS", "SendEmailAndSMS\SendEmailAndSMS.csproj", "{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetupAPI", "SetupAPI\SetupAPI.csproj", "{046237DB-50B7-4259-B06F-A2EED4A55A06}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentmentWebApi", "PresentmentWebApi\PresentmentWebApi.csproj", "{041E7DA6-7844-4EF2-8333-831F0F776676}"
@@ -28,6 +26,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploadMandate", "UploadMandate\UploadMandate.csproj", "{D108D451-DA08-4479-B767-A72FBC3BDAD0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicalMandate", "PhysicalMandate\PhysicalMandate.csproj", "{54AE3420-11C7-42BD-890A-D3713D2D0FA8}"
+
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendEmailAndSMS", "SendEmailAndSMS\SendEmailAndSMS.csproj", "{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SidebarLinksAPI", "SidebarLinksAPI\SidebarLinksAPI.csproj", "{B8D995E7-DDA9-4EC3-B500-56320D6A9167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadmandateApi", "DownloadmandateApi\DownloadmandateApi.csproj", "{625F28A3-DD0C-4CFB-8AFF-B34047C1252F}"
+
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,10 +69,6 @@ Global
 		{839FC73F-CD30-4427-89E5-99D7C9BDE755}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{839FC73F-CD30-4427-89E5-99D7C9BDE755}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{839FC73F-CD30-4427-89E5-99D7C9BDE755}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{046237DB-50B7-4259-B06F-A2EED4A55A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{046237DB-50B7-4259-B06F-A2EED4A55A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{046237DB-50B7-4259-B06F-A2EED4A55A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,6 +89,21 @@ Global
 		{54AE3420-11C7-42BD-890A-D3713D2D0FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54AE3420-11C7-42BD-890A-D3713D2D0FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54AE3420-11C7-42BD-890A-D3713D2D0FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+
+
+		{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE39F156-EBE7-4E4E-A60F-AE9D31AE955A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8D995E7-DDA9-4EC3-B500-56320D6A9167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D995E7-DDA9-4EC3-B500-56320D6A9167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D995E7-DDA9-4EC3-B500-56320D6A9167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D995E7-DDA9-4EC3-B500-56320D6A9167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{625F28A3-DD0C-4CFB-8AFF-B34047C1252F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{625F28A3-DD0C-4CFB-8AFF-B34047C1252F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{625F28A3-DD0C-4CFB-8AFF-B34047C1252F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{625F28A3-DD0C-4CFB-8AFF-B34047C1252F}.Release|Any CPU.Build.0 = Release|Any CPU
+
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

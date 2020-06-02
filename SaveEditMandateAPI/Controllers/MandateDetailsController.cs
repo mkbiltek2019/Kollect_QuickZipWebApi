@@ -11,7 +11,7 @@ namespace SaveEditMandateAPI.Controllers
     public class MandateDetailsController : ApiController
     {
         MandateDetailsData objmandate = new MandateDetailsData();
-
+        
         [HttpPost]
         [Route("api/MandateDetails/GetMandateDetails")]
         public Dictionary<string, object> GetMandateDetails([FromBody] MandateHeader data)

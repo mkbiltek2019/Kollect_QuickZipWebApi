@@ -14,6 +14,7 @@ namespace HistoricalMandateWebAPI.Models.HistoricalMandate
         public string MandateStatus { get; set; }
         public string SendToBankDate { get; set; }
         public string MandateFreshId { get; set; }
+        public string EncryptMandateId { get; set; }
         public string mandateMode { get; set; }
         public string AutoRejectReason { get; set; }
         public string updatedon { get; set; }

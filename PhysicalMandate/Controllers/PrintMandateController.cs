@@ -21,14 +21,15 @@ namespace PhysicalMandate.Controllers
         {
             try
             {
-                if (MData.QR == "1")
+                if (MData.QR.ToLower() == "true".ToLower())
                 {
+                    PrintHelper.UpdatePrintcount(Dbsecurity.Decrypt(MData.AppId), Dbsecurity.Decrypt(MData.MandateId), Dbsecurity.Decrypt(MData.UserId));
                     return PrintWithQR.PrintWIthQR(Dbsecurity.Decrypt(MData.MandateId), Dbsecurity.Decrypt(MData.AppId));
                 }
                 else
                 {
 
-
+                    PrintHelper.UpdatePrintcount(Dbsecurity.Decrypt(MData.AppId), Dbsecurity.Decrypt(MData.MandateId), Dbsecurity.Decrypt(MData.UserId));
                     return PrintWithoutQR.PrintWIthoutQR(Dbsecurity.Decrypt(MData.MandateId), Dbsecurity.Decrypt(MData.AppId));
 
                 }
