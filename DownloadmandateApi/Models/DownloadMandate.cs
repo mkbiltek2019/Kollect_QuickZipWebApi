@@ -31,9 +31,9 @@ namespace DownloadmandateApi.Models
         public IEnumerable<DownloadMandateDetails> Binddropdownbank(string userId)
         {
             // List<DownloadMandateDetails> dataList = new List<DownloadMandateDetails>();
-            try//Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(userId.Replace("_", "%")))
+            try//Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(userId.Replace("_", "%")))
             {
-                 var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateDetails>().Execute("@QueryType", "@UserId", "UserBank", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(userId.Replace("_", "%"))));
+                 var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateDetails>().Execute("@QueryType", "@UserId", "UserBank", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(userId.Replace("_", "%"))));
 
                 foreach (var employe in Result)
                 {
@@ -58,7 +58,7 @@ namespace DownloadmandateApi.Models
 
 
                 // var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@SponsorBankCode", "grdMandateRefrenceWise", userId, todate, fromdate, sponsorbankcode));
-                var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@SponsorBankCode", "grdMandateDateWise", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(griddata.UserId.Replace("_", "%"))), griddata.strToDate, griddata.strFromDate, griddata.SponsorBankCode);
+                var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@SponsorBankCode", "grdMandateDateWise", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(griddata.UserId.Replace("_", "%"))), griddata.strToDate, griddata.strFromDate, griddata.SponsorBankCode);
 
                 foreach (var bgrid in Result)
                 {
@@ -81,7 +81,7 @@ namespace DownloadmandateApi.Models
             try
             {
                 // var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@SponsorBankCode", "grdMandateRefrenceWise", userId, todate, fromdate, sponsorbankcode));
-                var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@Refrence1", "grdMandateRefrenceWise", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(userId.Replace("_", "%"))), refNo);
+                var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@Refrence1", "grdMandateRefrenceWise", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(userId.Replace("_", "%"))), refNo);
 
                 foreach (var bgrid in Result)
                 {
@@ -133,7 +133,7 @@ namespace DownloadmandateApi.Models
 
             try
             {
-                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@RejectedReason", "RejectdataDateWise", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), todate[0], fromdate[0], strTable,data.RejectedReason));
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@RejectedReason", "RejectdataDateWise", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), todate[0], fromdate[0], strTable,data.RejectedReason));
                 return Result;
             }
             catch (Exception ex)
@@ -166,7 +166,7 @@ namespace DownloadmandateApi.Models
 
             try
             {
-                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strTable", "UpdateSubmitted", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(userID.Replace("_", "%"))), strTable));
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strTable", "UpdateSubmitted", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(userID.Replace("_", "%"))), strTable));
                 return Result;
             }
             catch (Exception ex)
@@ -198,8 +198,8 @@ namespace DownloadmandateApi.Models
 
         //    try
         //    {      //.With<ExcelGrid>()  .With<ExcelGrid>() .With<ExcelGrid>()
-        //        var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ExcelGrid1>().With<ExcelGrid>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@BankName", "testExeceldataDateWise", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable, data.BankName));
-        //        //   var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ExcelGrid1>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@BankName", "testExeceldataDateWise", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable, data.BankName);
+        //        var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ExcelGrid1>().With<ExcelGrid>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@BankName", "testExeceldataDateWise", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable, data.BankName));
+        //        //   var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ExcelGrid1>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@BankName", "testExeceldataDateWise", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable, data.BankName);
         //        ///  var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_user]").With<Maker>().With<NachUser>().Execute("@QueryType", "@EntityId", "@UserId", "BindPresentmentMaker", DbSecurity.Decrypt(HttpContext.Current.Server.UrlDecode(EntityId.Replace("_", "%"))), DbSecurity.Decrypt(HttpContext.Current.Server.UrlDecode(UserId.Replace("_", "%")))));
         //        //foreach (var employe in Result)
         //        //{
@@ -443,10 +443,10 @@ namespace DownloadmandateApi.Models
 
                 }
                 string strTable = GetXmlByDatable(dt);
-                string UserID = Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%")));
+                string UserID = Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%")));
                 //var Result = dbcontext.MultipleResults("[dbo].[Sp_ProductMaster]").With<GridBind>().With<Count>().
                 //    Execute("@QueryType", "@PageCount", "@SearchText", "@AppId", "@EntityId", "BindGrid", obj2.PageCount, obj2.SearchText, obj2.AppId, Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(obj2.EntityId.Replace("_", "%"))));
-                var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ExcelGrid1>().With<ExcelGrid>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@BankName", "testExeceldataDateWise", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable, data.BankName);
+                var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ExcelGrid1>().With<ExcelGrid>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@BankName", "testExeceldataDateWise", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable, data.BankName);
                 //.With<ExcelGrid>()s
                // res.ExcelGrid_1_list=Result[0].Cast<ExcelGrid1>().ToList();
 
@@ -505,13 +505,13 @@ namespace DownloadmandateApi.Models
             try
             {
 
-                // var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "SnapdataDateWise", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable));
+                // var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "SnapdataDateWise", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable));
 
                 //  var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@RejectedReason", "RejectdataDateWise", DbSecurity.Decrypt(HttpContext.Current.Server.UrlDecode(userID.Replace("_", "%"))), todate, fromdate, strTable, rejectcomnt));
-                var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateDetails>().Execute("@QueryType", "@UserId", "UserBank", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode("0IMQt1aVz7k_3d_7cXydbXRkAQiA_3d".Replace("_", "%"))));
+                var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateDetails>().Execute("@QueryType", "@UserId", "UserBank", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode("0IMQt1aVz7k_3d_7cXydbXRkAQiA_3d".Replace("_", "%"))));
 
 
-                //var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ZipGrid>().Execute("@QueryType", "@strTable", "@strToDate" , "@strFromDate", "@UserId", "SnapdataDateWise", strTable, data.strToDate,data.strFromDate, Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))));
+                //var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ZipGrid>().Execute("@QueryType", "@strTable", "@strToDate" , "@strFromDate", "@UserId", "SnapdataDateWise", strTable, data.strToDate,data.strFromDate, Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))));
 
                 foreach (var employe in Result)
                 {
