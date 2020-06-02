@@ -39,6 +39,7 @@ namespace HistoricalMandateWebAPI.Models.HistoricalMandate
                     BindGridlist[i].AcNo = Dbsecurity.Decrypt(Convert.ToString(BindGridlist[i].AcNo));
                     BindGridlist[i].Amount_Numeric = Dbsecurity.Decrypt(Convert.ToString(BindGridlist[i].Amount_Numeric));
                     BindGridlist[i].EncryptMandateId = Dbsecurity.Encrypt(Convert.ToString(BindGridlist[i].MandateFreshId));
+
                 }
                 res.BindGridlist = BindGridlist;
 
