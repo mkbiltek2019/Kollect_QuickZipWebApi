@@ -52,7 +52,7 @@
     </Reference>
     <Reference Include="Encryptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\AIY-005\Desktop\Encryptions.dll</HintPath>
+      <HintPath>..\..\..\..\Encryptions.dll</HintPath>
     </Reference>
     <Reference Include="EntityDAL">
       <HintPath>..\EntityDAL\bin\Debug\EntityDAL.dll</HintPath>
@@ -185,27 +185,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\User\bindalldata.cs" />
     <Compile Include="Models\User\BindClientCode.cs" />
-    <Compile Include="Models\User\bindUser.cs" />
-    <Compile Include="Models\User\binduserdata.cs" />
     <Compile Include="Models\User\BindUtilityCode.cs" />
     <Compile Include="Models\User\Branch.cs" />
     <Compile Include="Models\User\CategoryCode.cs" />
-    <Compile Include="Models\User\createUser.cs" />
     <Compile Include="Models\User\Product.cs" />
     <Compile Include="Models\User\Region.cs" />
     <Compile Include="Models\User\SaveUser.cs" />
     <Compile Include="Models\User\Sponsorbankcode.cs" />
-    <Compile Include="Models\User\tblUser.cs" />
-    <Compile Include="Models\User\tblUserBranch.cs" />
-    <Compile Include="Models\User\tblUserCategoryCode.cs" />
-    <Compile Include="Models\User\tblUserClientCode.cs" />
-    <Compile Include="Models\User\tbluserprimarybranch.cs" />
-    <Compile Include="Models\User\tblUserSponsorBankCode.cs" />
-    <Compile Include="Models\User\tblUserUtilityCode.cs" />
-    <Compile Include="Models\User\TempData.cs" />
-    <Compile Include="Models\User\userReport.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

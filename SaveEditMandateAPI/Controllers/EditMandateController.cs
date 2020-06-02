@@ -12,20 +12,27 @@ namespace SaveEditMandateAPI.Controllers
     {
         BankFormData objbankform = new BankFormData();
 
-        [HttpGet]
-        [Route("api/BankForm/EditMethod/{mandateid}")]
-        public Dictionary<string, object> EditMethod([FromBody] UserEntity data,string mandateid)
+        //[HttpGet]
+        //[Route("api/BankForm/EditMethod/{mandateid}")]
+        //public Dictionary<string, object> EditMethod([FromBody] UserEntity data,string mandateid)
+        //{
+        //    return objbankform.EditMethod(data,mandateid);
+        //}
+
+        [HttpPost]
+        [Route("api/EditMandate/EditMethod")]
+        public Dictionary<string, object> EditMethod([FromBody] UserEntity data)
         {
-            return objbankform.EditMethod(data,mandateid);
+            return objbankform.EditMethod(data);
+
         }
-
-
 
         [HttpPost]
         [Route("api/EditMandate/UpdateData/{mandateid}")]
         public Dictionary<string, object> UpdateData([FromBody] UserEntity savedata, string mandateid)
         {
             return objbankform.SaveData(savedata, mandateid);
+
 
         }
     }

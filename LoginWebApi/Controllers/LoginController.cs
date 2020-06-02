@@ -9,7 +9,6 @@ namespace LoginWebApi.Controllers
 {
     public class LoginController : ApiController
     {
-
         Login objlogin = new Login();
         [HttpPost]
         [Route("api/Login/getlogindetails")]
