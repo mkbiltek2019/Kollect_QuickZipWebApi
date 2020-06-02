@@ -20,6 +20,7 @@ namespace DownloadmandateApi.Models
 {
     public class DownloadMandate
     {
+
         QuickCheck_AngularEntities dbcontext = new QuickCheck_AngularEntities();
         //List<CommonFlag> common = new List<CommonFlag>();
         //CommonFlag Flag = new CommonFlag();
