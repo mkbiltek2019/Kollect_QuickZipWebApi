@@ -103,14 +103,14 @@ namespace SaveEditMandateAPI.Models.BankForm
             }
         }
 
-        public Dictionary<string, object> EditMethod(UserEntity data,string mandateid)
+        public Dictionary<string, object> EditMethod(UserEntity data)
         {
             try
             {
 
 
 
-                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<EditData0>().With<EditData1>().With<EditData2>().With<EditData3>().With<EditData4>().Execute("@QueryType", "@MandateId", "@UserId", "@EntityId", "@AppId", "EditMandate", mandateid, Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.EntityId.Replace("_", "%"))), Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.AppId.Replace("_", "%")))));
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<EditData0>().With<EditData1>().With<EditData2>().With<EditData3>().With<EditData4>().Execute("@QueryType", "@MandateId", "@UserId", "@EntityId", "@AppId", "EditMandate",data.MandateId, Dbsecurity.Decrypt(data.UserId), Dbsecurity.Decrypt(data.EntityId), Dbsecurity.Decrypt(data.AppId)));
                 return Result;
             }
             catch (Exception ex)
@@ -125,7 +125,7 @@ namespace SaveEditMandateAPI.Models.BankForm
             try
             {
 
-                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<BindGrid>().Execute("@QueryType", "@UserId", "@AppId", "grdMandate", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(UserId.Replace("_", "%"))), Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(AppId.Replace("_", "%")))));
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<BindGrid>().Execute("@QueryType", "@UserId", "@AppId", "grdMandate", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(UserId.Replace("_", "%"))), Dbsecurity.Decrypt(AppId)));
                 return Result;
             }
 
