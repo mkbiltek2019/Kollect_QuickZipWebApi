@@ -16,6 +16,7 @@ namespace RolesWebApi.Controllers
         [Route("api/BankRoles/BindData")]
         public BindResponseData BindData([FromBody] BindJsonData bindata)
         {
+
             try
             {
                 return obj.BindData(bindata);
