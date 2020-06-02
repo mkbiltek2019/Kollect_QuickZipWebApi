@@ -35,8 +35,8 @@ namespace LoginWebApi.Models.Login
                     dataList = Logindata.Cast<Logindetails>().ToList();
                     if (dataList.Count > 0)
                     {
-                        string strDbPassword = Dbsecurity.Decypt(Convert.ToString(Logindata.Cast<Logindetails>().ToList().Select(x => x.Password).First().ToString()));
-                        if (strDbPassword.Trim() != Dbsecurity.Decypt(Login.Password))
+                        string strDbPassword = Dbsecurity.Decrypt(Convert.ToString(Logindata.Cast<Logindetails>().ToList().Select(x => x.Password).First().ToString()));
+                        if (strDbPassword.Trim() != Dbsecurity.Decrypt(Login.Password))
                         {
                             if (Convert.ToBoolean(Logindata.Cast<Logindetails>().ToList().Select(x => x.IsAccountBlocked).First().ToString()) == true)
                             {
@@ -230,6 +230,7 @@ namespace LoginWebApi.Models.Login
                 common.Add(emailobect);
             }
 
+
             return common;
         }
         public IEnumerable<ChangePasswordRes> UpdatePassworddtail(ChangePasswordJsn changepassword)
@@ -240,7 +241,7 @@ namespace LoginWebApi.Models.Login
             {
                 List<Forgotflag> dataList = new List<Forgotflag>();
                 var Result = dbcontext.MultipleResults("[dbo].[sp_UserLogin]").With<Forgotflag>().Execute("@QueryType", "@ChangePassword",
-                           "@UserId", "UpdatePassword",changepassword.password, Dbsecurity.Decypt(changepassword.Userid));
+                           "@UserId", "UpdatePassword",changepassword.password, Dbsecurity.Decrypt(changepassword.Userid));
                 dataList = Result.FirstOrDefault().Cast<Forgotflag>().ToList();
                 if (dataList.Count > 0)
                 {

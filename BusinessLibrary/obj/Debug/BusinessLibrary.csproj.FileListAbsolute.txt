@@ -175,3 +175,15 @@ D:\Projects\WorkingProject\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\Busi
 D:\Projects\WorkingProject\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CopyComplete
 D:\Projects\WorkingProject\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.dll
 D:\Projects\WorkingProject\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.pdb
+D:\Mandavi\Kollekt_QuickZipLatest\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\BusinessLibrary.dll.config
+D:\Mandavi\Kollekt_QuickZipLatest\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\BusinessLibrary.dll
+D:\Mandavi\Kollekt_QuickZipLatest\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\BusinessLibrary.pdb
+D:\Mandavi\Kollekt_QuickZipLatest\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\EntityFramework.dll
+D:\Mandavi\Kollekt_QuickZipLatest\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\Mandavi\Kollekt_QuickZipLatest\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\EntityFramework.xml
+D:\Mandavi\Kollekt_QuickZipLatest\Kollect_QuickZipWebApi\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\Mandavi\Kollekt_QuickZipLatest\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CoreCompileInputs.cache
+D:\Mandavi\Kollekt_QuickZipLatest\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CopyComplete
+D:\Mandavi\Kollekt_QuickZipLatest\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.dll
+D:\Mandavi\Kollekt_QuickZipLatest\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.pdb
+D:\Mandavi\Kollekt_QuickZipLatest\Kollect_QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.csprojAssemblyReference.cache
