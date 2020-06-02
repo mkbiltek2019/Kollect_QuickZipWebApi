@@ -11,6 +11,8 @@ namespace DownloadmandateApi.Models
         public string strToDate { get; set; }
         public string strFromDate { get; set; } //cv date
         public string BankName { get; set; }
+        public string[] JPGPath { get; set; }
+        public string[] TIPPath { get; set; }
         public string[] strTable { get; set; }
         
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -54,17 +55,25 @@ namespace DownloadmandateApi.Controllers
         }
         //Exceldata
 
+        //[HttpPost]
+        //[Route("api/DownloadMandate/getexceldownload")]
+        //public Dictionary<string, object> getexceldownload([FromBody] Exceldata data)
+        //{
+            
+        //    return objdmandate.ExcelDownload(data);
+        //}
+
+
         [HttpPost]
         [Route("api/DownloadMandate/getexceldownload")]
-        public Dictionary<string, object> getexceldownload([FromBody] Exceldata data)
+        public BindExcelData getexceldownload([FromBody] Exceldata data)
         {
-            
+
             return objdmandate.ExcelDownload(data);
         }
-
         //[HttpPost]
         //[Route("api/DownloadMandate/getzip/")]
-        //public IEnumerable<DownloadMandateDetails> getzip([FromBody] ZipDownload data)
+        //public string getzip([FromBody] ZipDownload data)
         //{
         //    return objdmandate.getzip(data);
         //}
@@ -73,7 +82,7 @@ namespace DownloadmandateApi.Controllers
 
         [HttpPost]
         [Route("api/DownloadMandate/getzip/")]
-        public IEnumerable<DownloadMandateDetails> getzip([FromBody] ZipDownload data)
+        public string getzip([FromBody] ZipDownload data)
         {
             //using (ZipFile zip = new ZipFile())  [FromBody] ZipDownload data
             //{
@@ -83,50 +92,81 @@ namespace DownloadmandateApi.Controllers
             //    zip.Save(output);
             //   // return File(output, "application/zip", "sample.zip");
             //}
-            return objdmandate.getzip(data);
+            data.JPGPath[0].Remove(0,2);
+          
 
+            string temppath = System.Web.Hosting.HostingEnvironment.MapPath("~/");
+
+            //string temppath1 = System.Web.Hosting.HostingEnvironment.MapPath(data.JPGPath[0]);
+
+            string filePath = ConfigurationManager.AppSettings["FilePath"];
+
+            //FileStream fs = new FileStream(temppath + "/MandateFile/" + "10000119082900003" + "/" + "Avasfin_03092019_987798" + ".png", FileMode.Open, FileAccess.Read);
 
             //Create HTTP Response.
-            //HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK);
-            //    string[] url = { "E:/vscode angular/QuickcheckApi/QuickZipWebAPI/Images/CHKrDLa.jpg", "E:/vscode angular/QuickcheckApi/QuickZipWebAPI/Images/LW8EKdK.jpg" };
-            //    //Create the Zip File.
-            //    using (ZipFile zip = new ZipFile())
-            //    {
-            //        zip.AlternateEncodingUsage = ZipOption.AsNecessary;
-            //        zip.AddDirectoryByName("Files");
-            //        //foreach (FileModel file in files)
-            //        //{
-            //        //    if (file.IsSelected)
-            //        //    {
-            //        for (int i = 0; i < url.Length; i++)
-            //        {
-            //            zip.AddFile(url[i], "Files");
-            //        }
-            //        //    }
-            //        //}
+            HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK);
+            string[] url = { "E:/vscode angular/QuickcheckApi/QuickZipWebAPI/Images/CHKrDLa.jpg", "E:/vscode angular/QuickcheckApi/QuickZipWebAPI/Images/LW8EKdK.jpg" };
+            //Create the Zip File.
+            using (ZipFile zip = new ZipFile())
+            {
+                zip.AlternateEncodingUsage = ZipOption.AsNecessary;
+                zip.AddDirectoryByName("Files");
+                //foreach (FileModel file in files)
+                //{
+                //    if (file.IsSelected)
+                //    {
+                for (int i = 0; i < data.JPGPath.Length; i++)
+                { //
+                    
+                     string[] spath = data.JPGPath[i].Split('/');
+                    string Zpath = "E:/NewQuickZip/QuickZIpAPI/DownloadmandateApi/" + ""+ data.JPGPath[i].Remove(0, 3);
+                    //for (int j = 0; j < spath.Length; j++)
+                    //{
+                    //    Zpath= temppath +""+"/"+
+                    //}
 
-            //        //Set the Name of Zip File.
-            //        string zipName = String.Format("Zip_{0}.zip", DateTime.Now.ToString("yyyy-MMM-dd-HHmmss"));
-            //        using (MemoryStream memoryStream = new MemoryStream())
-            //        {
-            //            //Save the Zip File to MemoryStream.
-            //            zip.Save(memoryStream);
+                    // string Zpath= temppath +""+ data.JPGPath[i].Remove(0, 3);
+                    zip.AddFile(Zpath, "Files");
+                }
 
-            //            //Set the Response Content.
-            //            System.Web.HttpContext.Current.Response.conte = new ByteArrayContent(memoryStream.ToArray());
 
-            //            //Set the Response Content Length.
-            //            response.Content.Headers.ContentLength = memoryStream.ToArray().LongLength;
 
-            //            //Set the Content Disposition Header Value and FileName.
-            //            response.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
-            //            response.Content.Headers.ContentDisposition.FileName = zipName;
+                for (int i = 0; i < data.TIPPath.Length; i++)
+                { //
 
-            //            //Set the File Content Type.
-            //            response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/zip");
-            //            return response;
-            //        }
-            //    }
+                    string[] spath = data.TIPPath[i].Split('/');
+                    string Zpath1 = "E:/NewQuickZip/QuickZIpAPI/DownloadmandateApi/" + "" + data.TIPPath[i].Remove(0, 3);
+                    //for (int j = 0; j < spath.Length; j++)
+                    //{
+                    //    Zpath= temppath +""+"/"+
+                    //}
+
+                    // string Zpath= temppath +""+ data.JPGPath[i].Remove(0, 3);
+                    zip.AddFile(Zpath1, "Files");
+                }
+
+                //Set the Name of Zip File.
+                string zipName = String.Format("Zip_{0}.zip", DateTime.Now.ToString("yyyy-MMM-dd-HHmmss"));
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    //Save the Zip File to MemoryStream.
+                    zip.Save(memoryStream);
+
+                    ////Set the Response Content.
+                    //response.Content = new ByteArrayContent(memoryStream.ToArray());
+
+                    ////Set the Response Content Length.
+                    //response.Content.Headers.ContentLength = memoryStream.ToArray().LongLength;
+
+                    ////Set the Content Disposition Header Value and FileName.
+                    //response.Content.Headers.ContentDisposition = new ContentDispositionHeaderValue("attachment");
+                    //response.Content.Headers.ContentDisposition.FileName = zipName;
+
+                    ////Set the File Content Type.
+                    //response.Content.Headers.ContentType = new MediaTypeHeaderValue("application/zip");
+                    return  Convert.ToBase64String(memoryStream.ToArray()); 
+                }
+            }
         }
 
 
