@@ -42,6 +42,35 @@ namespace RolesWebApi.Controllers.BusinessLogic
             }
         }
 
+        public BindResponseDataCorporate BindDataCorporate(BindJsonData obj2)
+        {
+
+            try
+            {
+
+                BindResponseDataCorporate res = new BindResponseDataCorporate();
+                //CountResponseData res = new CountResponseData();
+
+                List<BindCorporateRole> GridBindlist1 = new List<BindCorporateRole>();
+
+
+
+                var Result = dbcontext.MultipleResults("[dbo].[Sp_CreateUser]").With<BindCorporateRole>().
+                    Execute("@QueryType", "@EntityId", "@AppId", "@SearchText", "BindUserRoles", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(obj2.EntityId.Replace("_", "%"))), Dbsecurity.Decrypt(obj2.AppId), obj2.SearchText);
+
+
+                res.GridBindlist1 = Result[0].Cast<BindCorporateRole>().ToList();
+
+
+                return res;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
         public BindResponseSecBranch BindSecBranch(int Id)
         {
             
