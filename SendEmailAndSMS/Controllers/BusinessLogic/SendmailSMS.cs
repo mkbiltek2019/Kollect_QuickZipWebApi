@@ -36,7 +36,7 @@ namespace SendEmailAndSMS.Controllers.BusinessLogic
                 string UserId = GetCredentialList[0].Amazon_UserId;// ConfigurationManager.AppSettings["Amazon_UserId"].ToString();
                 string MailPassword = GetCredentialList[0].Amazon_MailPassword;// ConfigurationManager.AppSettings["Amazon_MailPassword"].ToString();
                 string SMTPPort = GetCredentialList[0].Amazon_SMTPPort;// ConfigurationManager.AppSettings["Amazon_SMTPPort"].ToString();
-                string SMTPEnableSsl = GetCredentialList[0].Amazon_SMTPEnableSsl;// ConfigurationManager.AppSettings["Amazon_SMTPEnableSsl"].ToString();
+                string SMTPEnableSsl =Convert.ToString(GetCredentialList[0].Amazon_SMTPEnableSsl);// ConfigurationManager.AppSettings["Amazon_SMTPEnableSsl"].ToString();
                 string FromMailId = GetCredentialList[0].Amazon_FromMailId;// ConfigurationManager.AppSettings["Amazon_FromMailId" + Dbsecurity.Decrypt(Data.AppId)].ToString();
                 string Teamtext = GetCredentialList[0].Team; //ConfigurationManager.AppSettings["Team"].ToString();
 

@@ -46,7 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Encryptions">
-      <HintPath>C:\Users\AIY-0010\Desktop\Encryptions.dll</HintPath>
+      <HintPath>..\..\..\TempData\Encryptions.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\SetupAPI\bin\EntityFramework.dll</HintPath>

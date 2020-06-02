@@ -64,7 +64,7 @@ namespace SendEmailAndSMS.Models
     {
         public string Amazon_SMTPHost { get; set; }
         public string Amazon_SMTPPort { get; set; }
-        public string Amazon_SMTPEnableSsl { get; set; }
+        public Nullable<Boolean> Amazon_SMTPEnableSsl { get; set; }
         public string Amazon_UserId { get; set; }
         public string Amazon_MailPassword { get; set; }
         public string Amazon_FromMailId { get; set; }

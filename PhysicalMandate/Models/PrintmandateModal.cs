@@ -55,4 +55,20 @@ namespace PhysicalMandate.Models
 
         public string BenificiaryName { get; set; }
     }
+    public class GetCredential
+    {
+        public string Amazon_SMTPHost { get; set; }
+        public string Amazon_SMTPPort { get; set; }
+        public Nullable<Boolean> Amazon_SMTPEnableSsl { get; set; }
+        public string Amazon_UserId { get; set; }
+        public string Amazon_MailPassword { get; set; }
+        public string Amazon_FromMailId { get; set; }
+        public string Team { get; set; }
+        public string AuthKey { get; set; }
+        public string SenderId { get; set; }
+        public string FilePath_SaveEditAPI { get; set; }
+        public string IsClientSmsApi { get; set; }
+        public string EWebAppUrl { get; set; }
+
+    }
 }
