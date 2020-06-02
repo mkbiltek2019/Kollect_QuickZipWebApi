@@ -48,9 +48,7 @@
   <ItemGroup>
     <Reference Include="Encryptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-
-      <HintPath>..\..\..\TempData\Encryptions.dll</HintPath>
-
+      <HintPath>C:\Users\YoekiDev\Downloads\Encryptions.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -59,6 +57,10 @@
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="QRCoder, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Vimal\DLL\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -201,6 +203,7 @@
     <Compile Include="Models\BankForm\BindSponserCode.cs" />
     <Compile Include="Models\BankForm\ChecKmandate.cs" />
     <Compile Include="Models\BankForm\CheckReference.cs" />
+    <Compile Include="Models\BankForm\QRCodeMaker.cs" />
     <Compile Include="Models\BankForm\RemoveImage.cs" />
     <Compile Include="Models\BankForm\SaveData.cs" />
     <Compile Include="Models\BankForm\UserEntity.cs" />
@@ -218,6 +221,27 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="MandateQrcode\123456\12345620052600001.png" />
+    <Content Include="MandateQrcode\123456\12345620052800009\12345620052800009.png" />
+    <Content Include="MandateQrcode\123456\12345620052800010\12345620052800010.png" />
+    <Content Include="MandateQrcode\123456\12345620052900001\12345620052900001.png" />
+    <Content Include="MandateQrcode\123456\12345620052900002.png" />
+    <Content Include="MandateQrcode\123456\12345620052900003.png" />
+    <Content Include="MandateQrcode\123456\12345620052900004.png" />
+    <Content Include="MandateQrcode\123456\12345620052900005.png" />
+    <Content Include="MandateQrcode\123456\12345620052900006\12345620052900006.png" />
+    <Content Include="MandateQrcode\123456\12345620053000001.png" />
+    <Content Include="MandateQrcode\123456\12345620053000002\12345620053000002.png" />
+    <Content Include="MandateQrcode\123456\12345620060100001.png" />
+    <Content Include="MandateQrcode\123456\12345620060100002.png" />
+    <Content Include="MandateQrcode\123456\12345620060100003.png" />
+    <Content Include="MandateQrcode\123456\12345620060100004.png" />
+    <Content Include="MandateQrcode\123456\12345620060100005.png" />
+    <Content Include="MandateQrcode\123456\12345620060200001.png" />
+    <Content Include="MandateQrcode\123456\12345620060200002.png" />
+    <Content Include="MandateQrcode\123456\12345620060200003.png" />
+    <Content Include="MandateQrcode\123456\12345620060200004.png" />
+    <Content Include="MandateQrcode\123456\12345620060200005.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
