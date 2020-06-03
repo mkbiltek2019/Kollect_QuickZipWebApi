@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -46,23 +45,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BusinessLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\AccountvalidationWebAPI\bin\BusinessLibrary.dll</HintPath>
+    <Reference Include="BusinessLibrary">
+      <HintPath>..\HistoricalMandateWebAPI\bin\BusinessLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="Encryptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\YoekiDev\Downloads\Encryptions.dll</HintPath>
+    <Reference Include="Encryptions">
+      <HintPath>C:\Users\dhruv\Desktop\New dll\Encryptions.dll</HintPath>
     </Reference>
-    <Reference Include="EntityDAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\AccountvalidationWebAPI\bin\EntityDAL.dll</HintPath>
+    <Reference Include="EntityDAL">
+      <HintPath>..\HistoricalMandateWebAPI\bin\EntityDAL.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
-      <HintPath>..\AccountvalidationWebAPI\bin\EntityFramework.dll</HintPath>
+      <HintPath>..\HistoricalMandateWebAPI\bin\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\AccountvalidationWebAPI\bin\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\HistoricalMandateWebAPI\bin\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -186,21 +182,20 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\BranchMController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProjectMaster\BindControllerController.cs" />
+    <Compile Include="Controllers\ProjectMaster\BindExportExcelControllerController.cs" />
+    <Compile Include="Controllers\ProjectMaster\SaveDataControllerController.cs" />
+    <Compile Include="Controllers\ProjectMaster\UpdateDataControllerController.cs" />
+    <Compile Include="Controllers\RegionMasterController.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Branch_Master\BrachMasterAttribute.cs" />
-    <Compile Include="Models\Branch_Master\BranchAttibute.cs" />
-    <Compile Include="Models\Branch_Master\BranchClass.cs" />
-    <Compile Include="Models\Branch_Master\ExcelAttribute.cs" />
-    <Compile Include="Models\Branch_Master\Excelparameter.cs" />
-    <Compile Include="Models\Branch_Master\GetDTCls.cs" />
-    <Compile Include="Models\Branch_Master\InsertjsonData.cs" />
-    <Compile Include="Models\Branch_Master\PageCountAtrribute.cs" />
-    <Compile Include="Models\Branch_Master\RegionClsAttribute.cs" />
-    <Compile Include="Models\Branch_Master\returndata.cs" />
-    <Compile Include="Models\Branch_Master\upjsondata.cs" />
+    <Compile Include="Models\Branchmaste.cs" />
+    <Compile Include="Models\BranchMastermethod.cs" />
+    <Compile Include="Models\RegionMaster.cs" />
+    <Compile Include="Models\RegionMasterMethod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -239,7 +234,9 @@
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -319,10 +316,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
-    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
   </Target>
-  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
