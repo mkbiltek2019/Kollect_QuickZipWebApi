@@ -15,7 +15,9 @@ using System.IO.Compression;
 using System.IO;
 using System.Reflection;
 using System.Configuration;
-
+using System.Web.UI;
+using System.Text;
+using ClosedXML.Excel;
 namespace DownloadmandateApi.Models
 {
     public class DownloadMandate
@@ -31,9 +33,9 @@ namespace DownloadmandateApi.Models
         public IEnumerable<DownloadMandateDetails> Binddropdownbank(string userId)
         {
             // List<DownloadMandateDetails> dataList = new List<DownloadMandateDetails>();
-            try//Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(userId.Replace("_", "%")))
+            try//Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(userId.Replace("_", "%")))
             {
-                 var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateDetails>().Execute("@QueryType", "@UserId", "UserBank", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(userId.Replace("_", "%"))));
+                var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateDetails>().Execute("@QueryType", "@UserId", "UserBank", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(userId.Replace("_", "%"))));
 
                 foreach (var employe in Result)
                 {
@@ -128,12 +130,12 @@ namespace DownloadmandateApi.Models
 
 
             }
-            
+
             string strTable = GetXmlByDatable(dt);
 
             try
             {
-                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@RejectedReason", "RejectdataDateWise", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), todate[0], fromdate[0], strTable,data.RejectedReason));
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@RejectedReason", "RejectdataDateWise", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), todate[0], fromdate[0], strTable, data.RejectedReason));
                 return Result;
             }
             catch (Exception ex)
@@ -198,8 +200,8 @@ namespace DownloadmandateApi.Models
 
         //    try
         //    {      //.With<ExcelGrid>()  .With<ExcelGrid>() .With<ExcelGrid>()
-        //        var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ExcelGrid1>().With<ExcelGrid>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@BankName", "testExeceldataDateWise", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable, data.BankName));
-        //        //   var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ExcelGrid1>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@BankName", "testExeceldataDateWise", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable, data.BankName);
+        //        var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ExcelGrid1>().With<ExcelGrid>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@BankName", "testExeceldataDateWise", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable, data.BankName));
+        //        //   var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ExcelGrid1>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@BankName", "testExeceldataDateWise", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable, data.BankName);
         //        ///  var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_user]").With<Maker>().With<NachUser>().Execute("@QueryType", "@EntityId", "@UserId", "BindPresentmentMaker", DbSecurity.Decrypt(HttpContext.Current.Server.UrlDecode(EntityId.Replace("_", "%"))), DbSecurity.Decrypt(HttpContext.Current.Server.UrlDecode(UserId.Replace("_", "%")))));
         //        //foreach (var employe in Result)
         //        //{
@@ -215,8 +217,10 @@ namespace DownloadmandateApi.Models
         //}
 
 
-        public void savePhysicalZip(DataTable dtExcelData,string userid)
+        public string savePhysicalZip(DataTable dtExcelData, string userid)
         {
+
+            string base64 = "";
             try
             {
 
@@ -264,8 +268,8 @@ namespace DownloadmandateApi.Models
                                 zip.AddFile(filePath, ConfigurationManager.AppSettings["ClientCode"].ToString() + "_" + ConfigurationManager.AppSettings["CollectionProductCode"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "_" + TempCount.Substring(TempCount.Length - 6)).FileName = ConfigurationManager.AppSettings["ClientCode"].ToString() + "_" + ConfigurationManager.AppSettings["CollectionProductCode"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "_" + TempCount.Substring(TempCount.Length - 6) + "//" + fileName + System.IO.Path.GetExtension(filePath);
 
                                 // string filetifPath = Server.MapPath(Convert.ToString(row["TIPPath"]).Replace("../", "/"));
-                               
-                                    string filetifPath = System.Web.Hosting.HostingEnvironment.MapPath(Convert.ToString(row["TIPPath"]).Replace("../", "/"));
+
+                                string filetifPath = System.Web.Hosting.HostingEnvironment.MapPath(Convert.ToString(row["TIPPath"]).Replace("../", "/"));
                                 pathArr = filetifPath.Split('\\');
                                 // fileName = System.IO.Path.GetExtension(filetifPath);
                                 zip.AddFile(filetifPath, ConfigurationManager.AppSettings["ClientCode"].ToString() + "_" + ConfigurationManager.AppSettings["CollectionProductCode"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "_" + TempCount.Substring(TempCount.Length - 6)).FileName = ConfigurationManager.AppSettings["ClientCode"].ToString() + "_" + ConfigurationManager.AppSettings["CollectionProductCode"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "_" + TempCount.Substring(TempCount.Length - 6) + "//" + fileName + System.IO.Path.GetExtension(filetifPath);
@@ -289,22 +293,25 @@ namespace DownloadmandateApi.Models
                         catch (System.IO.IOException e)
                         {
                             Console.WriteLine(e.Message);
-                            return;
+                            //return;
                         }
 
-                        //
-                        HttpContext.Current.Response.Clear();
-                        HttpContext.Current.Response.BufferOutput = false;
-                        // string zipName = String.Format("Zip_{0}.zip", (ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "_" + dtExcelData.Rows.Count));
-                        HttpContext.Current.Response.ContentType = "application/zip";
-                        HttpContext.Current.Response.AddHeader("content-disposition", "attachment; filename=" + zipName);
+                        MemoryStream memoryStream = new MemoryStream();
+                        zip.Save(memoryStream);
+                        base64 = Convert.ToBase64String(memoryStream.ToArray());
+
+                        //HttpContext.Current.Response.Clear();
+                        //HttpContext.Current.Response.BufferOutput = false;
+                        //// string zipName = String.Format("Zip_{0}.zip", (ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "_" + dtExcelData.Rows.Count));
+                        //HttpContext.Current.Response.ContentType = "application/zip";
+                        //HttpContext.Current.Response.AddHeader("content-disposition", "attachment; filename=" + zipName);
                         //Response.Charset = "";
                         //this.EnableViewState = false;
                         //Response.Write("<html xmlns:x=\"urn:schemas-microsoft-com:office:excel\">");
                         //Response.Write("\r\n");
                         //Response.Write("<style> td {mso-number-format:" + "\\@" + "; text-align:center;} </style>");
-                        zip.Save(HttpContext.Current.Response.OutputStream);
-                        HttpContext.Current.Response.End();
+                        //zip.Save(HttpContext.Current.Response.OutputStream);
+                        //HttpContext.Current.Response.End();
                     }
 
                     try
@@ -319,7 +326,7 @@ namespace DownloadmandateApi.Models
                     catch (System.IO.IOException e)
                     {
                         Console.WriteLine(e.Message);
-                        return;
+                        //return
                     }
                     //}
                 }
@@ -328,10 +335,11 @@ namespace DownloadmandateApi.Models
             {
                 //RaiseError("savePhysicalZip " + ex.Message, EntityId);
             }
+            return base64;
         }
 
 
-        protected void PhysicalDownloadExcel(DataTable dtExcelData,string userid)
+        protected void PhysicalDownloadExcel(DataTable dtExcelData, string userid)
         {
             try
             {
@@ -441,6 +449,7 @@ namespace DownloadmandateApi.Models
                     DataRow dr = dt.NewRow();
                     dt.Rows.Add(data.strTable[i]);
 
+
                 }
                 string strTable = GetXmlByDatable(dt);
                 string UserID = Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%")));
@@ -448,20 +457,39 @@ namespace DownloadmandateApi.Models
                 //    Execute("@QueryType", "@PageCount", "@SearchText", "@AppId", "@EntityId", "BindGrid", obj2.PageCount, obj2.SearchText, obj2.AppId, Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(obj2.EntityId.Replace("_", "%"))));
                 var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ExcelGrid1>().With<ExcelGrid>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@BankName", "testExeceldataDateWise", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable, data.BankName);
                 //.With<ExcelGrid>()s
-               // res.ExcelGrid_1_list=Result[0].Cast<ExcelGrid1>().ToList();
+                // res.ExcelGrid_1_list=Result[0].Cast<ExcelGrid1>().ToList();
 
                 res.ExcelGrid_1_list = Result[0].Cast<ExcelGrid1>().ToList();
                 res.ExcelGridlist = Result[1].Cast<ExcelGrid>().ToList();
-                
 
-                DataTable dtExcelData0 = ToDataTable(res.ExcelGridlist);
-                DataTable dtExcelData1 = ToDataTable(res.ExcelGrid_1_list);
+               // Result[1].Legal_Account_Number.Cast<ExcelGrid>().ToList();
+
+                DataTable dtExcelData1 = ToDataTable(res.ExcelGridlist);
+                DataTable dtExcelData0 = ToDataTable(res.ExcelGrid_1_list);
+
+                for (int j=0;j<(dtExcelData1.Rows.Count);j++)
+                {
+                    dtExcelData1.Rows[j]["Legal_Account_Number"] = Dbsecurity.Decrypt((Convert.ToString(dtExcelData1.Rows[j]["Legal_Account_Number"])));
+                    dtExcelData1.Rows[j]["Debit_Amt_of_Maximum_amt"] = Dbsecurity.Decrypt((Convert.ToString(dtExcelData1.Rows[j]["Debit_Amt_of_Maximum_amt"])));
+                    dtExcelData1.Rows[j]["Start_date"] = Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(Convert.ToString(dtExcelData1.Rows[j]["Start_date"]).Replace("_", "%")));
+                    dtExcelData1.Rows[j]["End_Date"] = Dbsecurity.Decrypt(Convert.ToString(dtExcelData1.Rows[j]["End_Date"]));
+                }
 
                 if (data.BankName == "IDFC Bank")
                 {
-                    savePhysicalZip(dtExcelData0, UserID);
                     PhysicalDownloadExcel(dtExcelData1, UserID);
+                    res.base64IDFC = savePhysicalZip(dtExcelData0, UserID);
 
+                }
+
+                if (dtExcelData1.Rows.Count > 0)
+                {
+                    string filename = ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "_" + dtExcelData1.Rows.Count + ".xls";
+                    res.base64 = ExportExcel(dtExcelData1);
+                }
+                else
+                {
+                    //handle in code
                 }
                 return res;
             }
@@ -473,7 +501,95 @@ namespace DownloadmandateApi.Models
         }
 
 
+        protected string ExportExcel(DataTable dt)
+        {
+            string base64 = "";
+            if (dt.Rows.Count > 0)
+            {
+                //string FileName = "E-Mandate_ActivityId_" + Convert.ToString(dt.Rows[0]["Reference1"]) + ".xlsx";
 
+                string filename = ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "_" + dt.Rows.Count + ".xls";
+                using (XLWorkbook wb = new XLWorkbook())
+                {
+                    //foreach (DataTable dt in ds.Tables)
+                    //{
+                    wb.Worksheets.Add(dt, dt.TableName);
+                    //  }
+                    //Response.Clear();
+                    //Response.Buffer = true;
+                    //Response.Charset = "";
+                    //Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+                    //Response.AddHeader("content-disposition", "attachment;filename=" + FileName);
+                    using (MemoryStream MyMemoryStream = new MemoryStream())
+                    {
+                        wb.SaveAs(MyMemoryStream);
+                        //MyMemoryStream.WriteTo(Response.OutputStream);
+                        //Response.Flush();
+                        //Response.End();
+                        base64 = Convert.ToBase64String(MyMemoryStream.ToArray());
+                    }
+                }
+            }
+            return base64;
+        }
+        //public string CreateExcel(System.Data.DataTable dt, string FileName)
+        //{
+        //    string Base64 = "";
+        //    try
+        //    {
+        //        System.Data.DataTable dtTemp = new System.Data.DataTable();
+
+        //        foreach (System.Data.DataColumn dc in dt.Columns)
+        //        {
+        //            try
+        //            {
+        //                dtTemp.Columns.Add(dc.ColumnName.ToString(), string.Empty.GetType());
+        //            }
+        //            catch
+        //            {
+        //            }
+        //        }
+
+        //        foreach (System.Data.DataRow dr in dt.Rows)
+        //        {
+        //            System.Data.DataRow row = dtTemp.NewRow();
+        //            foreach (System.Data.DataColumn DC in dt.Columns)
+        //            {
+        //                row[DC.ColumnName] = dr[DC.ColumnName];
+        //            }
+        //            dtTemp.Rows.Add(row);
+        //        }
+        //        DataGrid DataGrid1 = new DataGrid();
+        //        DataGrid1.DataSource = dtTemp;
+        //        DataGrid1.DataBind();
+
+        //        //Response.Cache.SetExpires(DateTime.Now.AddSeconds(1));
+        //        //Response.ContentType = "application/vnd.ms-excel";
+        //        //Response.Charset = "";
+        //        //this.EnableViewState = false;
+        //        //Response.Write("<html xmlns:x=\"urn:schemas-microsoft-com:office:excel\">");
+        //        //Response.Write("\r\n");
+        //        //Response.Write("<style> td {mso-number-format:" + "\\@" + "; text-align:center;} </style>");
+        //       // var memoryStream = new MemoryStream();
+        //        //StringWriter tw = new StringWriter(memoryStream);
+        //        StringWriter tw = new StringWriter();
+
+        //        HtmlTextWriter hw = new HtmlTextWriter(tw);
+        //        DataGrid1.RenderControl(hw);
+        //        // byte[] myBinary = new byte[];
+        //        // byte[] bytes = Encoding.ASCII.GetBytes(tw);
+        //        // Convert.ToBase64String(tw);
+        //        byte[] bytes = Encoding.ASCII.GetBytes(tw.ToString());
+        //     return  Convert.ToBase64String(bytes);
+        //        //Response.AppendHeader("content-disposition", "attachment;filename=" + FileName + ".xls");
+        //        //Response.Write(tw.ToString());
+        //        //Response.End();
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //    }
+        //}
 
 
 
@@ -505,13 +621,13 @@ namespace DownloadmandateApi.Models
             try
             {
 
-                // var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "SnapdataDateWise", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable));
+                // var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "SnapdataDateWise", Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), data.strToDate, data.strFromDate, strTable));
 
                 //  var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateGridDetails>().Execute("@QueryType", "@UserId", "@strToDate", "@strFromDate", "@strTable", "@RejectedReason", "RejectdataDateWise", DbSecurity.Decrypt(HttpContext.Current.Server.UrlDecode(userID.Replace("_", "%"))), todate, fromdate, strTable, rejectcomnt));
                 var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<DownloadMandateDetails>().Execute("@QueryType", "@UserId", "UserBank", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode("0IMQt1aVz7k_3d_7cXydbXRkAQiA_3d".Replace("_", "%"))));
 
 
-                //var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ZipGrid>().Execute("@QueryType", "@strTable", "@strToDate" , "@strFromDate", "@UserId", "SnapdataDateWise", strTable, data.strToDate,data.strFromDate, Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))));
+                //var Result = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<ZipGrid>().Execute("@QueryType", "@strTable", "@strToDate" , "@strFromDate", "@UserId", "SnapdataDateWise", strTable, data.strToDate,data.strFromDate, Dbsecurity.Decypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))));
 
                 foreach (var employe in Result)
                 {
@@ -594,13 +710,14 @@ namespace DownloadmandateApi.Models
                     //Response.Write("\r\n");
                     //Response.Write("<style> td {mso-number-format:" + "\\@" + "; text-align:center;} </style>");
 
-                    if (HttpContext.Current.Response.IsClientConnected) {
+                    if (HttpContext.Current.Response.IsClientConnected)
+                    {
                         zip.Save(HttpContext.Current.Response.OutputStream);
 
                         HttpContext.Current.Response.Close();
                         //Response.End(); Flush EndRequest End
                     }// }
-                    
+
                 }
 
                 // }
