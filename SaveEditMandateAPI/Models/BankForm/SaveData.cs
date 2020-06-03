@@ -94,6 +94,7 @@ namespace SaveEditMandateAPI.Models.BankForm
         public Nullable<bool> isAccountValidation { get; set; }
         public string CategoryCode { get; set; }
         public Nullable<Int32> EmandateBankLive { get; set; }
+        public Nullable<Int64> ProductId { get; set; }
 
     }
     public class EditData1

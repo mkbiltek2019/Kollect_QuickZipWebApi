@@ -35,16 +35,18 @@ namespace SaveEditMandateAPI.Models.MandateDetails
         public string EmailId { get; set; }
         public string PhoneNo { get; set; }
         public string EMandatetype { get; set; }
-        public string CreatedBy { get; set; }
+        public Nullable<Int64> CreatedBy { get; set; }
         public string EntityIFSC { get; set; }
         public string EntityBankName { get; set; }
         public string Paise { get; set; }
         public string AcceptRefNo { get; set; }
         public string MandateStatus { get; set; }
 
-        public string IsShowConsent { get; set; }
+        public Nullable<bool> IsShowConsent { get; set; }
         public string Isexpire { get; set; }
         public string CustIFSC { get; set; }
+        public string url { get; set; }
+        public string xml { get; set; }
         
     }
 

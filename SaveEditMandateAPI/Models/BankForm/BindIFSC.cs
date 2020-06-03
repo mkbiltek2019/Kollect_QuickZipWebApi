@@ -9,5 +9,6 @@ namespace SaveEditMandateAPI.Models.BankForm
     {
         public string BankName { get; set; }
         public string IFSC { get; set; }
+        public double BankId { get; set; }
     }
 }
