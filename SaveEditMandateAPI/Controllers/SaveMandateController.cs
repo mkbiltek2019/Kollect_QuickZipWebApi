@@ -35,5 +35,19 @@ namespace SaveEditMandateAPI.Controllers
         {
             return objbankform.BindIFSC(BankName);
         }
+
+        [HttpGet]
+        [Route("api/SaveMandate/BindALLIFSC")]
+        public Dictionary<string, object> BindALLIFSC()
+        {
+            return objbankform.BindALLIFSC();
+        }
+
+        [HttpGet]
+        [Route("api/SaveMandate/BindBankFromIFSC/{IFSC}")]
+        public Dictionary<string, object> BindBankFromIFSC(string IFSC)
+        {
+            return objbankform.BindBankFromIFSC(IFSC);
+        }
     }
 }

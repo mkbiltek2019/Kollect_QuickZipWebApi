@@ -24,7 +24,7 @@ namespace SaveEditMandateAPI.Models.BankForm
         {
             try
             {
-                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<BindEntityDetails>().With<BindLogoImageDetails>().With<BindBankNameDetails>().With<BindSponserCode>().With<BindBankUtilityCode>().With<BindBankPaymentMode>().With<BindEntityDetailsdata>().With<BindDebitType>().With<Bindfrequency>().With<BindEntityPeriods>().With<BindEntitydebitcredit>().With<BindEntityCategorytype>().With<BindLogincheck>().Execute("@QueryType", "@UserId", "@EntityId", "UserData", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.UserId.Replace("_", "%"))), Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(data.EntityId.Replace("_", "%")))));
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<BindEntityDetails>().With<BindLogoImageDetails>().With<BindBankNameDetails>().With<BindSponserCode>().With<BindBankUtilityCode>().With<BindBankPaymentMode>().With<BindEntityDetailsdata>().With<BindDebitType>().With<Bindfrequency>().With<BindEntityPeriods>().With<BindEntitydebitcredit>().With<BindEntityCategorytype>().With<BindLogincheck>().With<BindProductDropDown>().Execute("@QueryType", "@UserId", "@EntityId", "@AppId","UserData", Dbsecurity.Decrypt(data.UserId), Dbsecurity.Decrypt(data.EntityId), Dbsecurity.Decrypt(data.AppId)));
                 return Result;
 
             }
@@ -67,10 +67,10 @@ namespace SaveEditMandateAPI.Models.BankForm
                     List<SaveData4> MandateDataList = new List<SaveData4>();
                     var res = dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<SaveData0>().With<SaveData1>().With<SaveData2>().With<SaveData3>().With<SaveData4>().With<SaveData5>().With<SaveData6>().With<SaveData7>().With<SaveData8>().Execute("@QueryType", "@SponsorCode", "@UtilityCode", "@DebitType", "@Frequency", "@UserId", "@EntityId",
                         "@ToDebit", "@AcNo", "@BankName", "@IFSC", "@MICR", "@AmountRupees", "@Refrence1", "@Refrence2", "@PhNumber",
-                                "@EmailId", "@From", "@To", "@Customer1", "@Customer2", "@Customer3", "@DateOnMandate", "@MandateMode", "@AmountWords", "@CategoryCode", "@AppId", "SaveData", savedata.Sponsorcode, savedata.Utilitycode, savedata.Debittype, savedata.Frequency, Dbsecurity.Decrypt(savedata.UserId), Dbsecurity.Decrypt(savedata.EntityId),
+                                "@EmailId", "@From", "@To", "@Customer1", "@Customer2", "@Customer3", "@DateOnMandate", "@MandateMode", "@AmountWords", "@CategoryCode", "@AppId", "@ProductId", "SaveData", savedata.Sponsorcode, savedata.Utilitycode, savedata.Debittype, savedata.Frequency, Dbsecurity.Decrypt(savedata.UserId), Dbsecurity.Decrypt(savedata.EntityId),
                                 savedata.Todebit, savedata.Bankaccountno, savedata.Withbank,
                        savedata.IFSC.ToUpper(), savedata.MICR.ToUpper(), savedata.Amountrupees, savedata.Refrence1, savedata.Refrence2, savedata.Phoneno, savedata.Email, savedata.PeriodFrom, savedata.PeriodTo, savedata.Customer1.ToUpper(),
-                       savedata.Customer2.ToUpper(), savedata.Customer3.ToUpper(), savedata.UMRNDATE, savedata.MandateMode, savedata.Amount, savedata.Catagorycode, savedata.AppId);
+                       savedata.Customer2.ToUpper(), savedata.Customer3.ToUpper(), savedata.UMRNDATE, savedata.MandateMode, savedata.Amount, savedata.Catagorycode, savedata.AppId,savedata.ProductName);
 
                     MandateDataList = res[4].Cast<SaveData4>().ToList();
 
@@ -85,10 +85,10 @@ namespace SaveEditMandateAPI.Models.BankForm
                 {
                     Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<SaveData0>().With<SaveData1>().With<SaveData2>().With<SaveData3>().With<SaveData4>().With<SaveData5>().With<SaveData6>().With<SaveData7>().With<SaveData8>().Execute("@QueryType", "@SponsorCode", "@UtilityCode", "@DebitType", "@Frequency", "@UserId", "@EntityId",
                         "@ToDebit", "@AcNo", "@BankName", "@IFSC", "@MICR", "@AmountRupees", "@Refrence1", "@Refrence2", "@PhNumber",
-                                "@EmailId", "@From", "@To", "@Customer1", "@Customer2", "@Customer3", "@DateOnMandate", "@MandateMode", "@AmountWords", "@CategoryCode", "@MandateId", "@AppId", "UpdateData", savedata.Sponsorcode, savedata.Utilitycode, savedata.Debittype, savedata.Frequency, Dbsecurity.Decrypt(savedata.UserId), Dbsecurity.Decrypt(savedata.EntityId),
+                                "@EmailId", "@From", "@To", "@Customer1", "@Customer2", "@Customer3", "@DateOnMandate", "@MandateMode", "@AmountWords", "@CategoryCode", "@MandateId", "@AppId", "@ProductId", "UpdateData", savedata.Sponsorcode, savedata.Utilitycode, savedata.Debittype, savedata.Frequency, Dbsecurity.Decrypt(savedata.UserId), Dbsecurity.Decrypt(savedata.EntityId),
                                 savedata.Todebit, savedata.Bankaccountno, savedata.Withbank,
                        savedata.IFSC.ToUpper(), savedata.MICR.ToUpper(), savedata.Amountrupees, savedata.Refrence1, savedata.Refrence2, savedata.Phoneno, savedata.Email, savedata.PeriodFrom, savedata.PeriodTo, savedata.Customer1.ToUpper(),
-                       savedata.Customer2.ToUpper(), savedata.Customer3.ToUpper(), savedata.UMRNDATE, savedata.MandateMode, savedata.Amount, savedata.Catagorycode, mandateid, savedata.AppId));
+                       savedata.Customer2.ToUpper(), savedata.Customer3.ToUpper(), savedata.UMRNDATE, savedata.MandateMode, savedata.Amount, savedata.Catagorycode, mandateid, savedata.AppId,savedata.ProductName));
                 }
                 return Result;
             }
@@ -136,6 +136,36 @@ namespace SaveEditMandateAPI.Models.BankForm
             {
 
                 var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<BindGrid>().Execute("@QueryType", "@UserId", "@AppId", "grdMandate", Dbsecurity.Decrypt(HttpContext.Current.Server.UrlDecode(UserId.Replace("_", "%"))), Dbsecurity.Decrypt(AppId)));
+                return Result;
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Dictionary<string, object> BindALLIFSC()
+        {
+            try
+            {
+
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<BindIFSC>().Execute("@QueryType", "BindALLIFSC"));
+                return Result;
+            }
+
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public Dictionary<string, object> BindBankFromIFSC(string IFSC)
+        {
+            try
+            {
+
+                var Result = Common.Getdata(dbcontext.MultipleResults("[dbo].[Sp_Mandate]").With<BindIFSC>().Execute("@QueryType", "@IFSC", "BindBankFromIFSC", IFSC));
                 return Result;
             }
 
