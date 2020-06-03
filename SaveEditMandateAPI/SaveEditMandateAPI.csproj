@@ -200,6 +200,7 @@
     <Compile Include="Models\BankForm\BindIFSC.cs" />
     <Compile Include="Models\BankForm\BindLogincheck.cs" />
     <Compile Include="Models\BankForm\BindLogoImageDetails.cs" />
+    <Compile Include="Models\BankForm\BindProductDropDown.cs" />
     <Compile Include="Models\BankForm\BindSponserCode.cs" />
     <Compile Include="Models\BankForm\ChecKmandate.cs" />
     <Compile Include="Models\BankForm\CheckReference.cs" />

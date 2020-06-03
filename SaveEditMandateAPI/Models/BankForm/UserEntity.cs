@@ -18,6 +18,7 @@ namespace SaveEditMandateAPI.Models.BankForm
         public string UMRN { get; set; }
         public string UMRNDATE { get; set; }
         public string Sponsorcode { get; set; }
+        public string ProductName { get; set; }
         public string Utilitycode { get; set; }
         public string Authrizename { get; set; }
         public string Todebit { get; set; }
