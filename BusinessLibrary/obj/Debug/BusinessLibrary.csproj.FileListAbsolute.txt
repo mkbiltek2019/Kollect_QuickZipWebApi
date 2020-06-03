@@ -187,3 +187,15 @@ E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLib
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CopyComplete
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLibrary.dll
 E:\Fateh\CloudProjects\Kollect_QuickZipAPI\BusinessLibrary\obj\Debug\BusinessLibrary.pdb
+D:\QuickZip(Angular)\QuickZipWebApi\BusinessLibrary\bin\Debug\BusinessLibrary.dll.config
+D:\QuickZip(Angular)\QuickZipWebApi\BusinessLibrary\bin\Debug\BusinessLibrary.dll
+D:\QuickZip(Angular)\QuickZipWebApi\BusinessLibrary\bin\Debug\BusinessLibrary.pdb
+D:\QuickZip(Angular)\QuickZipWebApi\BusinessLibrary\bin\Debug\EntityFramework.dll
+D:\QuickZip(Angular)\QuickZipWebApi\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\QuickZip(Angular)\QuickZipWebApi\BusinessLibrary\bin\Debug\EntityFramework.xml
+D:\QuickZip(Angular)\QuickZipWebApi\BusinessLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\QuickZip(Angular)\QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.csprojAssemblyReference.cache
+D:\QuickZip(Angular)\QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CoreCompileInputs.cache
+D:\QuickZip(Angular)\QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.csproj.CopyComplete
+D:\QuickZip(Angular)\QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.dll
+D:\QuickZip(Angular)\QuickZipWebApi\BusinessLibrary\obj\Debug\BusinessLibrary.pdb

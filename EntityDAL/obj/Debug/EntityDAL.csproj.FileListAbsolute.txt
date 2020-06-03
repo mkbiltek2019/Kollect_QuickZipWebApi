@@ -73,3 +73,15 @@ D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\obj\Debug\EntityDAL.csproj.CopyCo
 D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\obj\Debug\EntityDAL.dll
 D:\CloudProjects\QuickZip WebAPI Git\EntityDAL\obj\Debug\EntityDAL.pdb
 >>>>>>> 9afa2534b5bc2a01c0665a2e1fbc84ce7ad46b62
+D:\QuickZip(Angular)\QuickZipWebApi\EntityDAL\bin\Debug\EntityDAL.dll.config
+D:\QuickZip(Angular)\QuickZipWebApi\EntityDAL\bin\Debug\EntityDAL.dll
+D:\QuickZip(Angular)\QuickZipWebApi\EntityDAL\bin\Debug\EntityDAL.pdb
+D:\QuickZip(Angular)\QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.dll
+D:\QuickZip(Angular)\QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\QuickZip(Angular)\QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.xml
+D:\QuickZip(Angular)\QuickZipWebApi\EntityDAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\QuickZip(Angular)\QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.csprojAssemblyReference.cache
+D:\QuickZip(Angular)\QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.csproj.CoreCompileInputs.cache
+D:\QuickZip(Angular)\QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.csproj.CopyComplete
+D:\QuickZip(Angular)\QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.dll
+D:\QuickZip(Angular)\QuickZipWebApi\EntityDAL\obj\Debug\EntityDAL.pdb
