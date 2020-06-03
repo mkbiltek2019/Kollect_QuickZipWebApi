@@ -32,6 +32,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendEmailAndSMS", "SendEmai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SidebarLinksAPI", "SidebarLinksAPI\SidebarLinksAPI.csproj", "{B8D995E7-DDA9-4EC3-B500-56320D6A9167}"
 EndProject
+
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadmandateApi", "DownloadmandateApi\DownloadmandateApi.csproj", "{625F28A3-DD0C-4CFB-8AFF-B34047C1252F}"
 
 EndProject
@@ -99,10 +100,12 @@ Global
 		{B8D995E7-DDA9-4EC3-B500-56320D6A9167}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8D995E7-DDA9-4EC3-B500-56320D6A9167}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8D995E7-DDA9-4EC3-B500-56320D6A9167}.Release|Any CPU.Build.0 = Release|Any CPU
+
 		{625F28A3-DD0C-4CFB-8AFF-B34047C1252F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{625F28A3-DD0C-4CFB-8AFF-B34047C1252F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{625F28A3-DD0C-4CFB-8AFF-B34047C1252F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{625F28A3-DD0C-4CFB-8AFF-B34047C1252F}.Release|Any CPU.Build.0 = Release|Any CPU
+
 
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
