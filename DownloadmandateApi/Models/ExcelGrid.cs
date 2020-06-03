@@ -5,7 +5,7 @@ using System.Web;
 
 namespace DownloadmandateApi.Models
 {
-   public class ExcelGrid
+    public class ExcelGrid
     {
         public string Mandate_Date { get; set; }
         public string Sponsor_Bank_Code { get; set; }
@@ -47,7 +47,8 @@ namespace DownloadmandateApi.Models
 
         public List<ExcelGrid> ExcelGridlist { get; set; }
         public List<ExcelGrid1> ExcelGrid_1_list { get; set; }
-
+        public string base64 { get; set; }
+        public string base64IDFC { get; set; }
     }
 
 

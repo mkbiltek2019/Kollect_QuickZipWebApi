@@ -97,6 +97,7 @@ namespace DownloadmandateApi.Controllers
           
 
             string temppath = System.Web.Hosting.HostingEnvironment.MapPath("~/");
+            string pth = System.Web.Hosting.HostingEnvironment.MapPath("~/"+""+data.JPGPath[0].Remove(0, 2));
             string temp = HttpContext.Current.Server.MapPath("~/");
 
             //string temppath1 = System.Web.Hosting.HostingEnvironment.MapPath(data.JPGPath[0]);
@@ -117,58 +118,76 @@ namespace DownloadmandateApi.Controllers
                 //{
                 //    if (file.IsSelected)
                 //    {
+
                 for (int i = 0; i < data.JPGPath.Length; i++)
                 { //
-                    
-                     string[] spath = data.JPGPath[i].Split('/');
-                    string Zpath = "E:/NewQuickZip/QuickZIpAPI/DownloadmandateApi/" + ""+ data.JPGPath[i].Remove(0, 3);
+
+                    string[] spath = data.JPGPath[i].Split('/');
+                    string Zpath = System.Web.Hosting.HostingEnvironment.MapPath("~/" + "" + data.JPGPath[i].Remove(0, 2));
+                    //string Zpath = "E:/NewQuickZip/QuickZIpAPI/DownloadmandateApi/" + ""+ data.JPGPath[i].Remove(0, 3);
                     //for (int j = 0; j < spath.Length; j++)
                     //{
                     //    Zpath= temppath +""+"/"+
                     //}
 
                     // string Zpath= temppath +""+ data.JPGPath[i].Remove(0, 3);
+                    if (Zpath != temppath) {
 
-                    string[] pathArr = Zpath.Split('\\');
-                    string fileName = pathArr.Last();
+                        string[] pathArr = Zpath.Split('\\');
+                        string fileName = pathArr.Last();
 
-                    string[] New_FileName_jpg = fileName.Split('_');
+                        string[] New_FileName_jpg = fileName.Split('_');
 
-                    string[] last_name_jpg = New_FileName_jpg[2].Split('.');
+                        string[] last_name_jpg = New_FileName_jpg[2].Split('.');
 
-                    zip.AddFile(Zpath, ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy")).FileName =
-                                        //ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "/" + mandateid + "_" + fileName;
-                                        ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "/" + last_name_jpg[0].ToString() + "_" + data.strTable[i] + "_" + New_FileName_jpg[0].ToString() + "." + last_name_jpg[1].ToString();
-                  //  zip.AddFile(Zpath, "Files");
+                        zip.AddFile(Zpath, ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy")).FileName =
+                                            //ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "/" + mandateid + "_" + fileName;
+                                            ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "/" + last_name_jpg[0].ToString() + "_" + data.strTable[i] + "_" + New_FileName_jpg[0].ToString() + "." + last_name_jpg[1].ToString();
+                        //  zip.AddFile(Zpath, "Files");
+                        string Zpath1 = System.Web.Hosting.HostingEnvironment.MapPath("~/" + "" + data.TIPPath[i].Remove(0, 2));
+
+                         pathArr = Zpath1.Split('\\');
+                         fileName = pathArr.Last();
+
+                         New_FileName_jpg = fileName.Split('_');
+
+                         last_name_jpg = New_FileName_jpg[2].Split('.');
+
+
+                        zip.AddFile(Zpath1, ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy")).FileName =
+                                               //ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "/" + mandateid + "_" + fileName;
+                                               ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "/" + last_name_jpg[0].ToString() + "_" + data.strTable[i] + "_" + New_FileName_jpg[0].ToString() + "." + last_name_jpg[1].ToString();
+
+                    }
                 }
 
 
+                //for (int i = 0; i < data.TIPPath.Length; i++)
+                //{ //
 
-                for (int i = 0; i < data.TIPPath.Length; i++)
-                { //
+                //    string[] spath = data.TIPPath[i].Split('/');
+                //    //string Zpath1 = "E:/NewQuickZip/QuickZIpAPI/DownloadmandateApi/" + "" + data.TIPPath[i].Remove(0, 3);
+                //    string Zpath1 = System.Web.Hosting.HostingEnvironment.MapPath("~/" + "" + data.TIPPath[i].Remove(0, 2));
+                //    //for (int j = 0; j < spath.Length; j++)
+                //    //{
+                //    //    Zpath= temppath +""+"/"+
+                //    //}
 
-                    string[] spath = data.TIPPath[i].Split('/');
-                    string Zpath1 = "E:/NewQuickZip/QuickZIpAPI/DownloadmandateApi/" + "" + data.TIPPath[i].Remove(0, 3);
-                    //for (int j = 0; j < spath.Length; j++)
-                    //{
-                    //    Zpath= temppath +""+"/"+
-                    //}
+                //    // string Zpath= temppath +""+ data.JPGPath[i].Remove(0, 3);
 
-                    // string Zpath= temppath +""+ data.JPGPath[i].Remove(0, 3);
+                //    string[] pathArr = Zpath1.Split('\\');
+                //    string fileName = pathArr.Last();
 
-                    string[] pathArr = Zpath1.Split('\\');
-                    string fileName = pathArr.Last();
+                //    string[] New_FileName_jpg = fileName.Split('_');
 
-                    string[] New_FileName_jpg = fileName.Split('_');
-
-                    string[] last_name_jpg = New_FileName_jpg[2].Split('.');
+                //    string[] last_name_jpg = New_FileName_jpg[2].Split('.');
 
 
-                    zip.AddFile(Zpath1, ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy")).FileName =
-                                           //ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "/" + mandateid + "_" + fileName;
-                                           ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "/" + last_name_jpg[0].ToString() + "_" + data.strTable[i] + "_" + New_FileName_jpg[0].ToString() + "." + last_name_jpg[1].ToString();
-                    //  zip.AddFile(Zpath1, "Files");
-                }
+                //    zip.AddFile(Zpath1, ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy")).FileName =
+                //                           //ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "/" + mandateid + "_" + fileName;
+                //                           ConfigurationManager.AppSettings["DownloadFileName"].ToString() + "_" + DateTime.Now.ToString("ddMMyyyy") + "/" + last_name_jpg[0].ToString() + "_" + data.strTable[i] + "_" + New_FileName_jpg[0].ToString() + "." + last_name_jpg[1].ToString();
+                //    //  zip.AddFile(Zpath1, "Files");
+                //}
 
                 //Set the Name of Zip File.
                 string zipName = String.Format("Zip_{0}.zip", DateTime.Now.ToString("yyyy-MMM-dd-HHmmss"));
