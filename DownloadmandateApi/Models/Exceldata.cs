@@ -12,5 +12,7 @@ namespace DownloadmandateApi.Models
         public string strFromDate { get; set; } //cv date
         public string BankName { get; set; }
         public string[] strTable { get; set; }
+
+
     }
 }

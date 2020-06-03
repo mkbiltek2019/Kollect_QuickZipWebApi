@@ -49,9 +49,11 @@
     <Reference Include="BusinessLibrary">
       <HintPath>..\BusinessLibrary\bin\Debug\BusinessLibrary.dll</HintPath>
     </Reference>
+
     <Reference Include="Encryptions">
 
       <HintPath>..\..\..\TempData\Encryptions.dll</HintPath>
+
 
     </Reference>
     <Reference Include="EntityDAL">
@@ -187,9 +189,12 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\BusinessLogic\Scanandupload.cs" />
     <Compile Include="Controllers\BusinessLogic\UploadA4Scanimages.cs" />
     <Compile Include="Controllers\GetMandateStatusController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ScanandUploadController.cs" />
+    <Compile Include="Controllers\ScannedMandateController.cs" />
     <Compile Include="Controllers\UploadMandateController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
